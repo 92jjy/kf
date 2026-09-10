@@ -1,0 +1,40 @@
+running develop
+running egg_info
+creating rse_gaussian_filters.egg-info
+writing rse_gaussian_filters.egg-info/PKG-INFO
+writing dependency_links to rse_gaussian_filters.egg-info/dependency_links.txt
+writing entry points to rse_gaussian_filters.egg-info/entry_points.txt
+writing requirements to rse_gaussian_filters.egg-info/requires.txt
+writing top-level names to rse_gaussian_filters.egg-info/top_level.txt
+writing manifest file 'rse_gaussian_filters.egg-info/SOURCES.txt'
+reading manifest file 'rse_gaussian_filters.egg-info/SOURCES.txt'
+writing manifest file 'rse_gaussian_filters.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse-gaussian-filters.egg-link (link to .)
+Installing einf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing einf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing einf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing einf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing inf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing kf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+
+Installed /home/jjy/ros2_ws/build/rse_gaussian_filters
+running symlink_data
+creating /home/jjy/ros2_ws/install/rse_gaussian_filters/share/ament_index
+creating /home/jjy/ros2_ws/install/rse_gaussian_filters/share/ament_index/resource_index
+creating /home/jjy/ros2_ws/install/rse_gaussian_filters/share/ament_index/resource_index/packages
+symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/resource/rse_gaussian_filters -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/ament_index/resource_index/packages
+symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/package.xml -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/launch/rviz_launch.launch.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/rviz/kalman.rviz -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/rviz/kalman_robot_localization.rviz -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/urdf/shl_robot.urdf -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/urdf/zed2.stl -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters

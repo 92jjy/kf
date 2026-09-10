@@ -1,0 +1,3 @@
+[console_scripts]
+occupancy_grid_mapping = rse_occupancy_grid_mapping.occupancy_grid_mapping_node:main
+

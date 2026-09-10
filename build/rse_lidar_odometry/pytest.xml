@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="1" tests="3" time="0.175" timestamp="2026-09-07T18:47:02.684920" hostname="Alienware"><testcase classname="rse_lidar_odometry.test.test_copyright" name="test_copyright" time="0.000"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/jjy/ros2_ws/src/rse_prob_robotics/rse_lidar_odometry/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="rse_lidar_odometry.test.test_flake8" name="test_flake8" time="0.090"><failure message="AssertionError: Found 43 code style errors / warnings:&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:5:1: F401 '.conversions.read_points' imported but unused&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:13:1: F401 'rse_common_utils.sensor_utils.rotate_pose2D' imported but unused&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:15:1: E302 expected 2 blank lines, found 1&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:29:20: E261 at least two spaces before inline comment&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:29:21: E262 inline comment should start with '# '&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:34:9: E303 too many blank lines (2)&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:37:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:48:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:49:5: E303 too many blank lines (2)&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:52:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:55:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:57:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:58:28: E203 whitespace before ','&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:59:9: E265 block comment should start with '# '&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:83:47: W291 trailing whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:85:48: E261 at least two spaces before inline comment&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:88:43: W291 trailing whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:92:100: E501 line too long (101 &gt; 99 characters)&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:95:13: E117 over-indented&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:110:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:114:100: E501 line too long (110 &gt; 99 characters)&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:130:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:154:57: E128 continuation line under-indented for visual indent&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:157:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:158:5: E303 too many blank lines (2)&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:163:21: W291 trailing whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:164:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:172:1: W293 blank line contains whitespace&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:173:1: E302 expected 2 blank lines, found 1&#10;  ./rse_lidar_odometry/laser_scan_odometry_node.py:183:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./rse_lidar_odometry/conversions.py:8:28: E221 multiple spaces before operator&#10;  ./rse_lidar_odometry/conversions.py:9:29: E221 multiple spaces before operator&#10;  ./rse_lidar_odometry/conversions.py:10:29: E221 multiple spaces before operator&#10;  ./rse_lidar_odometry/conversions.py:11:30: E221 multiple spaces before operator&#10;  ./rse_lidar_odometry/conversions.py:12:29: E221 multiple spaces before operator&#10;  ./rse_lidar_odometry/conversions.py:13:30: E221 multiple spaces before operator&#10;  ./rse_lidar_odometry/conversions.py:17:1: E302 expected 2 blank lines, found 1&#10;  ./rse_lidar_odometry/conversions.py:17:100: E501 line too long (108 &gt; 99 characters)&#10;  ./rse_lidar_odometry/conversions.py:26:100: E501 line too long (105 &gt; 99 characters)&#10;  ./rse_lidar_odometry/conversions.py:33:100: E501 line too long (138 &gt; 99 characters)&#10;  ./rse_lidar_odometry/conversions.py:83:100: E501 line too long (117 &gt; 99 characters)&#10;  ./rse_lidar_odometry/conversions.py:91:16: E221 multiple spaces before operator&#10;  ./rse_lidar_odometry/conversions.py:94:15: W292 no newline at end of file&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 43 code style errors / warnings:
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:5:1: F401 '.conversions.read_points' imported but unused
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:13:1: F401 'rse_common_utils.sensor_utils.rotate_pose2D' imported but unused
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:15:1: E302 expected 2 blank lines, found 1
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:29:20: E261 at least two spaces before inline comment
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:29:21: E262 inline comment should start with '# '
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:34:9: E303 too many blank lines (2)
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:37:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:48:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:49:5: E303 too many blank lines (2)
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:52:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:55:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:57:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:58:28: E203 whitespace before ','
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:59:9: E265 block comment should start with '# '
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:83:47: W291 trailing whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:85:48: E261 at least two spaces before inline comment
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:88:43: W291 trailing whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:92:100: E501 line too long (101 &gt; 99 characters)
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:95:13: E117 over-indented
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:110:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:114:100: E501 line too long (110 &gt; 99 characters)
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:130:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:154:57: E128 continuation line under-indented for visual indent
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:157:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:158:5: E303 too many blank lines (2)
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:163:21: W291 trailing whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:164:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:172:1: W293 blank line contains whitespace
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:173:1: E302 expected 2 blank lines, found 1
+E     ./rse_lidar_odometry/laser_scan_odometry_node.py:183:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./rse_lidar_odometry/conversions.py:8:28: E221 multiple spaces before operator
+E     ./rse_lidar_odometry/conversions.py:9:29: E221 multiple spaces before operator
+E     ./rse_lidar_odometry/conversions.py:10:29: E221 multiple spaces before operator
+E     ./rse_lidar_odometry/conversions.py:11:30: E221 multiple spaces before operator
+E     ./rse_lidar_odometry/conversions.py:12:29: E221 multiple spaces before operator
+E     ./rse_lidar_odometry/conversions.py:13:30: E221 multiple spaces before operator
+E     ./rse_lidar_odometry/conversions.py:17:1: E302 expected 2 blank lines, found 1
+E     ./rse_lidar_odometry/conversions.py:17:100: E501 line too long (108 &gt; 99 characters)
+E     ./rse_lidar_odometry/conversions.py:26:100: E501 line too long (105 &gt; 99 characters)
+E     ./rse_lidar_odometry/conversions.py:33:100: E501 line too long (138 &gt; 99 characters)
+E     ./rse_lidar_odometry/conversions.py:83:100: E501 line too long (117 &gt; 99 characters)
+E     ./rse_lidar_odometry/conversions.py:91:16: E221 multiple spaces before operator
+E     ./rse_lidar_odometry/conversions.py:94:15: W292 no newline at end of file
+E   assert 1 == 0</failure></testcase><testcase classname="rse_lidar_odometry.test.test_pep257" name="test_pep257" time="0.020"><failure message="AssertionError: Found code style errors / warnings&#10;assert 1 == 0">test/test_pep257.py:23: in test_pep257
+    assert rc == 0, 'Found code style errors / warnings'
+E   AssertionError: Found code style errors / warnings
+E   assert 1 == 0</failure></testcase></testsuite></testsuites>

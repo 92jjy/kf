@@ -1,0 +1,37 @@
+[0.337s] Invoking command in '/home/jjy/ros2_ws/build/rse_gaussian_filters': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_gaussian_filters/build --no-deps symlink_data --force
+[0.473s] running develop
+[0.554s] running egg_info
+[0.554s] writing rse_gaussian_filters.egg-info/PKG-INFO
+[0.554s] writing dependency_links to rse_gaussian_filters.egg-info/dependency_links.txt
+[0.555s] writing entry points to rse_gaussian_filters.egg-info/entry_points.txt
+[0.555s] writing requirements to rse_gaussian_filters.egg-info/requires.txt
+[0.555s] writing top-level names to rse_gaussian_filters.egg-info/top_level.txt
+[0.556s] reading manifest file 'rse_gaussian_filters.egg-info/SOURCES.txt'
+[0.556s] writing manifest file 'rse_gaussian_filters.egg-info/SOURCES.txt'
+[0.557s] running build_ext
+[0.557s] Creating /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse-gaussian-filters.egg-link (link to .)
+[0.557s] Installing einf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing einf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing einf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing einf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ekf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ekf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ekf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ekf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing inf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing kf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ukf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ukf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ukf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.558s] Installing ukf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.559s] 
+[0.559s] Installed /home/jjy/ros2_ws/build/rse_gaussian_filters
+[0.559s] running symlink_data
+[0.559s] symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/resource/rse_gaussian_filters -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/ament_index/resource_index/packages
+[0.559s] symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/package.xml -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.559s] symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/launch/rviz_launch.launch.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.559s] symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/rviz/kalman.rviz -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.559s] symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/rviz/kalman_robot_localization.rviz -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.559s] symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/urdf/shl_robot.urdf -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.559s] symbolically linking /home/jjy/ros2_ws/build/rse_gaussian_filters/urdf/zed2.stl -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.575s] Invoked command in '/home/jjy/ros2_ws/build/rse_gaussian_filters' returned '0': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_gaussian_filters/build --no-deps symlink_data --force

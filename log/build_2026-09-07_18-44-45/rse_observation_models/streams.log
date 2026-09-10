@@ -1,0 +1,23 @@
+[1.403s] Invoking command in '/home/jjy/ros2_ws/build/rse_observation_models': PYTHONPATH=/home/jjy/ros2_ws/build/rse_observation_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_observation_models/build --no-deps symlink_data
+[1.628s] running develop
+[1.822s] running egg_info
+[1.822s] creating rse_observation_models.egg-info
+[1.823s] writing rse_observation_models.egg-info/PKG-INFO
+[1.823s] writing dependency_links to rse_observation_models.egg-info/dependency_links.txt
+[1.823s] writing entry points to rse_observation_models.egg-info/entry_points.txt
+[1.823s] writing requirements to rse_observation_models.egg-info/requires.txt
+[1.823s] writing top-level names to rse_observation_models.egg-info/top_level.txt
+[1.823s] writing manifest file 'rse_observation_models.egg-info/SOURCES.txt'
+[1.825s] reading manifest file 'rse_observation_models.egg-info/SOURCES.txt'
+[1.825s] writing manifest file 'rse_observation_models.egg-info/SOURCES.txt'
+[1.826s] running build_ext
+[1.826s] Creating /home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages/rse-observation-models.egg-link (link to .)
+[1.827s] 
+[1.827s] Installed /home/jjy/ros2_ws/build/rse_observation_models
+[1.827s] running symlink_data
+[1.827s] creating /home/jjy/ros2_ws/install/rse_observation_models/share/ament_index
+[1.827s] creating /home/jjy/ros2_ws/install/rse_observation_models/share/ament_index/resource_index
+[1.828s] creating /home/jjy/ros2_ws/install/rse_observation_models/share/ament_index/resource_index/packages
+[1.828s] symbolically linking /home/jjy/ros2_ws/build/rse_observation_models/resource/rse_observation_models -> /home/jjy/ros2_ws/install/rse_observation_models/share/ament_index/resource_index/packages
+[1.828s] symbolically linking /home/jjy/ros2_ws/build/rse_observation_models/package.xml -> /home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models
+[1.843s] Invoked command in '/home/jjy/ros2_ws/build/rse_observation_models' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_observation_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_observation_models/build --no-deps symlink_data

@@ -1,0 +1,23 @@
+[1.402s] Invoking command in '/home/jjy/ros2_ws/build/rse_map_models': PYTHONPATH=/home/jjy/ros2_ws/build/rse_map_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_map_models/build --no-deps symlink_data
+[1.685s] running develop
+[1.861s] running egg_info
+[1.861s] creating rse_map_models.egg-info
+[1.861s] writing rse_map_models.egg-info/PKG-INFO
+[1.861s] writing dependency_links to rse_map_models.egg-info/dependency_links.txt
+[1.862s] writing entry points to rse_map_models.egg-info/entry_points.txt
+[1.862s] writing requirements to rse_map_models.egg-info/requires.txt
+[1.862s] writing top-level names to rse_map_models.egg-info/top_level.txt
+[1.862s] writing manifest file 'rse_map_models.egg-info/SOURCES.txt'
+[1.863s] reading manifest file 'rse_map_models.egg-info/SOURCES.txt'
+[1.863s] writing manifest file 'rse_map_models.egg-info/SOURCES.txt'
+[1.864s] running build_ext
+[1.864s] Creating /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse-map-models.egg-link (link to .)
+[1.865s] 
+[1.865s] Installed /home/jjy/ros2_ws/build/rse_map_models
+[1.865s] running symlink_data
+[1.865s] creating /home/jjy/ros2_ws/install/rse_map_models/share/ament_index
+[1.865s] creating /home/jjy/ros2_ws/install/rse_map_models/share/ament_index/resource_index
+[1.865s] creating /home/jjy/ros2_ws/install/rse_map_models/share/ament_index/resource_index/packages
+[1.867s] symbolically linking /home/jjy/ros2_ws/build/rse_map_models/resource/rse_map_models -> /home/jjy/ros2_ws/install/rse_map_models/share/ament_index/resource_index/packages
+[1.867s] symbolically linking /home/jjy/ros2_ws/build/rse_map_models/package.xml -> /home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models
+[2.053s] Invoked command in '/home/jjy/ros2_ws/build/rse_map_models' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_map_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_map_models/build --no-deps symlink_data

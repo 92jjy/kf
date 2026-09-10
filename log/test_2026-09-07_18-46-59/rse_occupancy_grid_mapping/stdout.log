@@ -1,0 +1,233 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/.pytest_cache
+rootdir: /home/jjy/ros2_ws/src/rse_prob_robotics/rse_occupancy_grid_mapping
+plugins: ament-lint-0.12.14, launch-testing-1.0.13, ament-pep257-0.12.14, ament-copyright-0.12.14, launch-testing-ros-0.19.13, ament-xmllint-0.12.14, ament-flake8-0.12.14, cov-3.0.0, colcon-core-0.20.1
+collected 3 items
+
+test/test_copyright.py s                                                 [ 33%]
+test/test_flake8.py F                                                    [ 66%]
+test/test_pep257.py F                                                    [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_flake8 __________________________________
+test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 33 code style errors / warnings:
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:4:1: E302 expected 2 blank lines, found 1
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:6:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:7:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:9:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:20: E261 at least two spaces before inline comment
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:54: E261 at least two spaces before inline comment
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:13:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:14:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:15:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:16:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:17:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W293 blank line contains whitespace
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:19:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:20:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:23: E222 multiple spaces after operator
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:84: W291 trailing whitespace
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:23:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:24:1: W191 indentation contains tabs
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:26:1: W391 blank line at end of file
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:21:1: E302 expected 2 blank lines, found 1
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:27:25: E261 at least two spaces before inline comment
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:50:100: E501 line too long (100 > 99 characters)
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:65:100: E501 line too long (104 > 99 characters)
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:108:32: W291 trailing whitespace
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:117:23: W291 trailing whitespace
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:120:100: E501 line too long (130 > 99 characters)
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:148:100: E501 line too long (106 > 99 characters)
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:154:1: E302 expected 2 blank lines, found 1
+E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:169:11: W292 no newline at end of file
+E   assert 1 == 0
+----------------------------- Captured stdout call -----------------------------
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:4:1: E302 expected 2 blank lines, found 1
+class OccupancyGridMapping:
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:6:1: W191 indentation contains tabs
+	def __init__(self):
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:7:1: W191 indentation contains tabs
+		self.sensor_model = InverseSensorModels()
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:9:1: W191 indentation contains tabs
+	def update_grid_with_sensor_reading(self, grid_map, x_t, z_t):
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:1: W191 indentation contains tabs
+		x, y, theta = x_t # the robot pose
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:20: E261 at least two spaces before inline comment
+		x, y, theta = x_t # the robot pose
+		                 ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:1: W191 indentation contains tabs
+		_, _, _, sensor_range_max, sensor_angle_range = z_t # the sensor reading
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:54: E261 at least two spaces before inline comment
+		_, _, _, sensor_range_max, sensor_angle_range = z_t # the sensor reading
+		                                                   ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:13:1: W191 indentation contains tabs
+		# Loop over all cells in the grid
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:14:1: W191 indentation contains tabs
+		for x_grid in range(grid_map.data.shape[0]):
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:15:1: W191 indentation contains tabs
+			for y_grid in range(grid_map.data.shape[1]):
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:16:1: W191 indentation contains tabs
+				# Get the center of mass of the current cell
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:17:1: W191 indentation contains tabs
+				m_i = grid_map.get_cell_center_mass(x_grid, y_grid)
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W191 indentation contains tabs
+				
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W293 blank line contains whitespace
+				
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:19:1: W191 indentation contains tabs
+				if is_in_perceptual_field(m_i, (x, y), theta, sensor_range_max, sensor_angle_range):
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:20:1: W191 indentation contains tabs
+					# Apply the inverse sensor model
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:1: W191 indentation contains tabs
+					log_odds_update =  self.sensor_model.inverse_range_sensor_model(m_i, x_t, z_t) 
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:23: E222 multiple spaces after operator
+					log_odds_update =  self.sensor_model.inverse_range_sensor_model(m_i, x_t, z_t) 
+					                 ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:84: W291 trailing whitespace
+					log_odds_update =  self.sensor_model.inverse_range_sensor_model(m_i, x_t, z_t) 
+					                                                                              ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:23:1: W191 indentation contains tabs
+					# Update the cell in the grid with the new log-odds value
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:24:1: W191 indentation contains tabs
+					grid_map.data[x_grid, y_grid] += log_odds_update
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:26:1: W391 blank line at end of file
+
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:21:1: E302 expected 2 blank lines, found 1
+class OccupancyGridMappingNode(Node):
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:27:25: E261 at least two spaces before inline comment
+        resolution = 0.1 # Grid resolution in [m]
+                        ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:50:100: E501 line too long (100 > 99 characters)
+        self.map_update_timer = self.create_timer(map_update_timer_period, self.map_update_callback)
+                                                                                                   ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:65:100: E501 line too long (104 > 99 characters)
+            filename = input("Enter the filename to save the map to (default: grid_map.json): ").strip()
+                                                                                                   ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:108:32: W291 trailing whitespace
+        map_msg.data = occ_grid 
+                               ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:117:23: W291 trailing whitespace
+        cv2.waitKey(1)  
+                      ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:120:100: E501 line too long (130 > 99 characters)
+        return (self.odom.pose.pose.position.x, self.odom.pose.pose.position.y, self.quat_to_yaw(self.odom.pose.pose.orientation))
+                                                                                                   ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:148:100: E501 line too long (106 > 99 characters)
+        cv2.arrowedLine(grayscale_image, (y_grid, x_grid), (end_y, end_x), color=(255, 0, 0), thickness=1)
+                                                                                                   ^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:154:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:169:11: W292 no newline at end of file
+    main()          ^
+
+1     E222 multiple spaces after operator
+3     E261 at least two spaces before inline comment
+3     E302 expected 2 blank lines, found 1
+4     E501 line too long (100 > 99 characters)
+16    W191 indentation contains tabs
+3     W291 trailing whitespace
+1     W292 no newline at end of file
+1     W293 blank line contains whitespace
+1     W391 blank line at end of file
+
+7 files checked
+33 errors
+
+'E'-type errors: 11
+'W'-type errors: 22
+
+Checked files:
+
+* ./setup.py
+* ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py
+* ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py
+* ./rse_occupancy_grid_mapping/__init__.py
+* ./test/test_copyright.py
+* ./test/test_pep257.py
+* ./test/test_flake8.py
+----------------------------- Captured stderr call -----------------------------
+option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+_________________________________ test_pep257 __________________________________
+test/test_pep257.py:23: in test_pep257
+    assert rc == 0, 'Found code style errors / warnings'
+E   AssertionError: Found code style errors / warnings
+E   assert 1 == 0
+----------------------------- Captured stdout call -----------------------------
+checking ./rse_occupancy_grid_mapping/__init__.py
+checking ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py
+checking ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py
+./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:59 in public method `handle_shutdown`: D200: One-line docstring should fit on one line with quotes (found 3)
+checking ./setup.py
+checking ./test/test_copyright.py
+checking ./test/test_flake8.py
+checking ./test/test_pep257.py
+checking test/test_copyright.py
+checking test/test_flake8.py
+checking test/test_pep257.py
+1 errors
+- generated xml file: /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 33 code style...
+FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...
+=================== 2 failed, 1 skipped, 2 warnings in 0.24s ===================

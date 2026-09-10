@@ -1,0 +1,31 @@
+running develop
+Removing /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse-map-models.egg-link (link to .)
+running egg_info
+writing ../../../build/rse_map_models/rse_map_models.egg-info/PKG-INFO
+writing dependency_links to ../../../build/rse_map_models/rse_map_models.egg-info/dependency_links.txt
+writing entry points to ../../../build/rse_map_models/rse_map_models.egg-info/entry_points.txt
+writing requirements to ../../../build/rse_map_models/rse_map_models.egg-info/requires.txt
+writing top-level names to ../../../build/rse_map_models/rse_map_models.egg-info/top_level.txt
+reading manifest file '../../../build/rse_map_models/rse_map_models.egg-info/SOURCES.txt'
+writing manifest file '../../../build/rse_map_models/rse_map_models.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jjy/ros2_ws/build/rse_map_models/build
+creating /home/jjy/ros2_ws/build/rse_map_models/build/lib
+creating /home/jjy/ros2_ws/build/rse_map_models/build/lib/rse_map_models
+copying rse_map_models/__init__.py -> /home/jjy/ros2_ws/build/rse_map_models/build/lib/rse_map_models
+copying rse_map_models/grid_map.py -> /home/jjy/ros2_ws/build/rse_map_models/build/lib/rse_map_models
+running install
+running install_lib
+creating /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse_map_models
+copying /home/jjy/ros2_ws/build/rse_map_models/build/lib/rse_map_models/__init__.py -> /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse_map_models
+copying /home/jjy/ros2_ws/build/rse_map_models/build/lib/rse_map_models/grid_map.py -> /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse_map_models
+byte-compiling /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse_map_models/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse_map_models/grid_map.py to grid_map.cpython-310.pyc
+running install_data
+copying resource/rse_map_models -> /home/jjy/ros2_ws/install/rse_map_models/share/ament_index/resource_index/packages
+copying package.xml -> /home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models
+running install_egg_info
+Copying ../../../build/rse_map_models/rse_map_models.egg-info to /home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages/rse_map_models-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/jjy/ros2_ws/build/rse_map_models/install.log'

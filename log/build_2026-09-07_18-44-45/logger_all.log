@@ -1,0 +1,621 @@
+[0.094s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.094s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x72884db4d120>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72884db4ccd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72884db4ccd0>>)
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.346s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jjy/ros2_ws'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'ros'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extensions ['cmake', 'python']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'cmake'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'python'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extensions ['python_setup_py']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics) by extension 'python_setup_py'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/log) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/log) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/log) ignored
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'ros'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extensions ['cmake', 'python']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'cmake'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'python'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extensions ['python_setup_py']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/maps) by extension 'python_setup_py'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extension 'ignore'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extension 'ignore_ament_install'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extensions ['colcon_pkg']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extension 'colcon_pkg'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extensions ['colcon_meta']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extension 'colcon_meta'
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extensions ['ros']
+[0.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_common_utils) by extension 'ros'
+[0.363s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_common_utils' with type 'ros.ament_python' and name 'rse_common_utils'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extension 'colcon_meta'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extensions ['ros']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_gaussian_filters) by extension 'ros'
+[0.364s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_gaussian_filters' with type 'ros.ament_python' and name 'rse_gaussian_filters'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extension 'colcon_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extensions ['colcon_meta']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extension 'colcon_meta'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extensions ['ros']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_lidar_odometry) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_lidar_odometry' with type 'ros.ament_python' and name 'rse_lidar_odometry'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extension 'ignore_ament_install'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extensions ['colcon_pkg']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extension 'colcon_meta'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extensions ['ros']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_map_models) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_map_models' with type 'ros.ament_python' and name 'rse_map_models'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extension 'colcon_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extensions ['colcon_meta']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_motion_models) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_motion_models' with type 'ros.ament_python' and name 'rse_motion_models'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extension 'colcon_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extensions ['colcon_meta']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_nonparametric_filters) by extension 'ros'
+[0.367s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_nonparametric_filters' with type 'ros.ament_python' and name 'rse_nonparametric_filters'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extensions ['ignore', 'ignore_ament_install']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extension 'ignore'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extension 'ignore_ament_install'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extensions ['colcon_pkg']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extension 'colcon_pkg'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extensions ['colcon_meta']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extension 'colcon_meta'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extensions ['ros']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_observation_models) by extension 'ros'
+[0.367s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_observation_models' with type 'ros.ament_python' and name 'rse_observation_models'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_occupancy_grid_mapping) by extension 'ros'
+[0.368s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_occupancy_grid_mapping' with type 'ros.ament_python' and name 'rse_occupancy_grid_mapping'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'ros'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extensions ['cmake', 'python']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'cmake'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'python'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extensions ['python_setup_py']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments) by extension 'python_setup_py'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'colcon_pkg'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extensions ['colcon_meta']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'ros'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extensions ['cmake', 'python']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'cmake'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'python'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extensions ['python_setup_py']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_perception_experiments/notebooks) by extension 'python_setup_py'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extension 'colcon_pkg'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extensions ['colcon_meta']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/rse_prob_robotics/rse_sensor_models) by extension 'ros'
+[0.370s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rse_prob_robotics/rse_sensor_models' with type 'ros.ament_python' and name 'rse_sensor_models'
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.393s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 392 installed packages in /opt/ros/humble
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.426s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'cmake_args' from command line to 'None'
+[0.426s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'cmake_target' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'cmake_clean_cache' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'cmake_clean_first' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'cmake_force_configure' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'ament_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'catkin_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_map_models' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.427s] DEBUG:colcon.colcon_core.verb:Building package 'rse_map_models' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_map_models', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_map_models', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_map_models', 'symlink_install': True, 'test_result_base': None}
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'cmake_target' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'cmake_clean_cache' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'cmake_clean_first' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'cmake_force_configure' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'ament_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'catkin_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_motion_models' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.427s] DEBUG:colcon.colcon_core.verb:Building package 'rse_motion_models' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_motion_models', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_motion_models', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_motion_models', 'symlink_install': True, 'test_result_base': None}
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'cmake_target' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'cmake_clean_cache' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'cmake_clean_first' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'cmake_force_configure' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'ament_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'catkin_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'rse_nonparametric_filters' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.428s] DEBUG:colcon.colcon_core.verb:Building package 'rse_nonparametric_filters' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_nonparametric_filters', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_nonparametric_filters', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_nonparametric_filters', 'symlink_install': True, 'test_result_base': None}
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'cmake_target' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'cmake_clean_cache' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'cmake_clean_first' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'cmake_force_configure' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'ament_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'catkin_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_observation_models' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.428s] DEBUG:colcon.colcon_core.verb:Building package 'rse_observation_models' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_observation_models', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_observation_models', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_observation_models', 'symlink_install': True, 'test_result_base': None}
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'cmake_target' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'rse_occupancy_grid_mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.428s] DEBUG:colcon.colcon_core.verb:Building package 'rse_occupancy_grid_mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_occupancy_grid_mapping', 'symlink_install': True, 'test_result_base': None}
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'cmake_target' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'cmake_clean_cache' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'cmake_clean_first' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'cmake_force_configure' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'ament_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'catkin_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_sensor_models' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.429s] DEBUG:colcon.colcon_core.verb:Building package 'rse_sensor_models' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_sensor_models', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_sensor_models', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_sensor_models', 'symlink_install': True, 'test_result_base': None}
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'cmake_target' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_common_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.429s] DEBUG:colcon.colcon_core.verb:Building package 'rse_common_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_common_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_common_utils', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_common_utils', 'symlink_install': True, 'test_result_base': None}
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'cmake_target' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'cmake_clean_cache' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'cmake_clean_first' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'cmake_force_configure' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'ament_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'catkin_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'rse_gaussian_filters' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.429s] DEBUG:colcon.colcon_core.verb:Building package 'rse_gaussian_filters' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_gaussian_filters', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_gaussian_filters', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_gaussian_filters', 'symlink_install': True, 'test_result_base': None}
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'cmake_target' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'rse_lidar_odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.430s] DEBUG:colcon.colcon_core.verb:Building package 'rse_lidar_odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jjy/ros2_ws/build/rse_lidar_odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jjy/ros2_ws/install/rse_lidar_odometry', 'merge_install': False, 'path': '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_lidar_odometry', 'symlink_install': True, 'test_result_base': None}
+[0.430s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.430s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.431s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_motion_models' with build type 'ament_python'
+[0.431s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_motion_models', 'ament_prefix_path')
+[0.433s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/hook/ament_prefix_path.ps1'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/hook/ament_prefix_path.dsv'
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/hook/ament_prefix_path.sh'
+[0.435s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.435s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.440s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_observation_models' with build type 'ament_python'
+[0.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_observation_models', 'ament_prefix_path')
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/hook/ament_prefix_path.ps1'
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/hook/ament_prefix_path.dsv'
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/hook/ament_prefix_path.sh'
+[0.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.442s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.446s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_map_models' with build type 'ament_python'
+[0.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_map_models', 'ament_prefix_path')
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/hook/ament_prefix_path.ps1'
+[0.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/hook/ament_prefix_path.dsv'
+[0.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/hook/ament_prefix_path.sh'
+[0.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.447s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.452s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_nonparametric_filters' with build type 'ament_python'
+[0.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_nonparametric_filters', 'ament_prefix_path')
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/ament_prefix_path.ps1'
+[0.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/ament_prefix_path.dsv'
+[0.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/ament_prefix_path.sh'
+[0.453s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.453s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.457s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_occupancy_grid_mapping' with build type 'ament_python'
+[0.458s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_occupancy_grid_mapping', 'ament_prefix_path')
+[0.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/ament_prefix_path.ps1'
+[0.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/ament_prefix_path.dsv'
+[0.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/ament_prefix_path.sh'
+[0.459s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.459s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.464s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_sensor_models' with build type 'ament_python'
+[0.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_sensor_models', 'ament_prefix_path')
+[0.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/hook/ament_prefix_path.ps1'
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/hook/ament_prefix_path.dsv'
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/hook/ament_prefix_path.sh'
+[0.466s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.466s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.644s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_motion_models'
+[0.644s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.644s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.814s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_observation_models'
+[0.814s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.814s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.990s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_map_models'
+[0.991s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.991s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.157s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_nonparametric_filters'
+[1.157s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.157s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.346s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_occupancy_grid_mapping'
+[1.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.517s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_sensor_models'
+[1.517s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.517s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_observation_models': PYTHONPATH=/home/jjy/ros2_ws/build/rse_observation_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_observation_models/build --no-deps symlink_data
+[1.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_map_models': PYTHONPATH=/home/jjy/ros2_ws/build/rse_map_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_map_models/build --no-deps symlink_data
+[1.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping': PYTHONPATH=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/build --no-deps symlink_data
+[1.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_nonparametric_filters': PYTHONPATH=/home/jjy/ros2_ws/build/rse_nonparametric_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_nonparametric_filters/build --no-deps symlink_data
+[1.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_motion_models': PYTHONPATH=/home/jjy/ros2_ws/build/rse_motion_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_motion_models/build --no-deps symlink_data
+[1.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_sensor_models': PYTHONPATH=/home/jjy/ros2_ws/build/rse_sensor_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_sensor_models/build --no-deps symlink_data
+[2.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_motion_models', 'pythonpath_develop')
+[2.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_motion_models/share/rse_motion_models/hook/pythonpath_develop.ps1'
+[2.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_motion_models' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_motion_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_motion_models/build --no-deps symlink_data
+[2.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_motion_models/share/rse_motion_models/hook/pythonpath_develop.dsv'
+[2.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_motion_models/share/rse_motion_models/hook/pythonpath_develop.sh'
+[2.237s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_motion_models' for CMake module files
+[2.238s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_motion_models' for CMake config files
+[2.239s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_motion_models/lib'
+[2.239s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_motion_models/bin'
+[2.239s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_motion_models/lib/pkgconfig/rse_motion_models.pc'
+[2.239s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages'
+[2.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_motion_models', 'pythonpath')
+[2.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/hook/pythonpath.ps1'
+[2.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/hook/pythonpath.dsv'
+[2.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/hook/pythonpath.sh'
+[2.240s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_motion_models/bin'
+[2.240s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_motion_models)
+[2.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/package.ps1'
+[2.242s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/package.dsv'
+[2.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/package.sh'
+[2.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/package.bash'
+[2.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_motion_models/share/rse_motion_models/package.zsh'
+[2.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_motion_models/share/colcon-core/packages/rse_motion_models)
+[2.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_sensor_models', 'pythonpath_develop')
+[2.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_sensor_models/share/rse_sensor_models/hook/pythonpath_develop.ps1'
+[2.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_sensor_models' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_sensor_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_sensor_models/build --no-deps symlink_data
+[2.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_sensor_models/share/rse_sensor_models/hook/pythonpath_develop.dsv'
+[2.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_sensor_models/share/rse_sensor_models/hook/pythonpath_develop.sh'
+[2.250s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_sensor_models' for CMake module files
+[2.250s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_sensor_models' for CMake config files
+[2.251s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_sensor_models/lib'
+[2.251s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_sensor_models/bin'
+[2.251s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_sensor_models/lib/pkgconfig/rse_sensor_models.pc'
+[2.251s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages'
+[2.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_sensor_models', 'pythonpath')
+[2.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/hook/pythonpath.ps1'
+[2.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/hook/pythonpath.dsv'
+[2.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/hook/pythonpath.sh'
+[2.252s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_sensor_models/bin'
+[2.252s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_sensor_models)
+[2.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/package.ps1'
+[2.253s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/package.dsv'
+[2.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/package.sh'
+[2.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/package.bash'
+[2.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models/package.zsh'
+[2.254s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_sensor_models/share/colcon-core/packages/rse_sensor_models)
+[2.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_nonparametric_filters', 'pythonpath_develop')
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/pythonpath_develop.ps1'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/pythonpath_develop.dsv'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/pythonpath_develop.sh'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_nonparametric_filters' for CMake module files
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_nonparametric_filters' for CMake config files
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_nonparametric_filters/bin'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/pkgconfig/rse_nonparametric_filters.pc'
+[2.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_nonparametric_filters' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_nonparametric_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_nonparametric_filters/build --no-deps symlink_data
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages'
+[2.258s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_nonparametric_filters', 'pythonpath')
+[2.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/pythonpath.ps1'
+[2.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/pythonpath.dsv'
+[2.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/hook/pythonpath.sh'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_nonparametric_filters/bin'
+[2.260s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_nonparametric_filters)
+[2.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/package.ps1'
+[2.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/package.dsv'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/package.sh'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/package.bash'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters/package.zsh'
+[2.262s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_nonparametric_filters/share/colcon-core/packages/rse_nonparametric_filters)
+[2.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_occupancy_grid_mapping', 'pythonpath_develop')
+[2.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/pythonpath_develop.ps1'
+[2.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/build --no-deps symlink_data
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/pythonpath_develop.dsv'
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/pythonpath_develop.sh'
+[2.275s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping' for CMake module files
+[2.275s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping' for CMake config files
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib'
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/bin'
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/pkgconfig/rse_occupancy_grid_mapping.pc'
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages'
+[2.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_occupancy_grid_mapping', 'pythonpath')
+[2.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/pythonpath.ps1'
+[2.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/pythonpath.dsv'
+[2.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/hook/pythonpath.sh'
+[2.277s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/bin'
+[2.277s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_occupancy_grid_mapping)
+[2.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/package.ps1'
+[2.277s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/package.dsv'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/package.sh'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/package.bash'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping/package.zsh'
+[2.278s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/colcon-core/packages/rse_occupancy_grid_mapping)
+[2.283s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_observation_models', 'pythonpath_develop')
+[2.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_observation_models/share/rse_observation_models/hook/pythonpath_develop.ps1'
+[2.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_observation_models' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_observation_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_observation_models/build --no-deps symlink_data
+[2.284s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_observation_models/share/rse_observation_models/hook/pythonpath_develop.dsv'
+[2.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_observation_models/share/rse_observation_models/hook/pythonpath_develop.sh'
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_observation_models' for CMake module files
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_observation_models' for CMake config files
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_observation_models/lib'
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_observation_models/bin'
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_observation_models/lib/pkgconfig/rse_observation_models.pc'
+[2.286s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages'
+[2.286s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_observation_models', 'pythonpath')
+[2.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/hook/pythonpath.ps1'
+[2.286s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/hook/pythonpath.dsv'
+[2.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/hook/pythonpath.sh'
+[2.287s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_observation_models/bin'
+[2.287s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_observation_models)
+[2.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/package.ps1'
+[2.287s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/package.dsv'
+[2.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/package.sh'
+[2.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/package.bash'
+[2.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_observation_models/share/rse_observation_models/package.zsh'
+[2.288s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_observation_models/share/colcon-core/packages/rse_observation_models)
+[2.289s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_common_utils' with build type 'ament_python'
+[2.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_common_utils', 'ament_prefix_path')
+[2.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/hook/ament_prefix_path.ps1'
+[2.289s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/hook/ament_prefix_path.dsv'
+[2.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/hook/ament_prefix_path.sh'
+[2.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.492s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_common_utils'
+[2.492s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.492s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.498s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_map_models', 'pythonpath_develop')
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_map_models/share/rse_map_models/hook/pythonpath_develop.ps1'
+[2.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_map_models' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_map_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_map_models/build --no-deps symlink_data
+[2.500s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_map_models/share/rse_map_models/hook/pythonpath_develop.dsv'
+[2.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_map_models/share/rse_map_models/hook/pythonpath_develop.sh'
+[2.500s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_map_models' for CMake module files
+[2.501s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_map_models' for CMake config files
+[2.501s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_map_models/lib'
+[2.501s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_map_models/bin'
+[2.501s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_map_models/lib/pkgconfig/rse_map_models.pc'
+[2.501s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages'
+[2.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_map_models', 'pythonpath')
+[2.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/hook/pythonpath.ps1'
+[2.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/hook/pythonpath.dsv'
+[2.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/hook/pythonpath.sh'
+[2.503s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_map_models/bin'
+[2.503s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_map_models)
+[2.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/package.ps1'
+[2.503s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/package.dsv'
+[2.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/package.sh'
+[2.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/package.bash'
+[2.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_map_models/share/rse_map_models/package.zsh'
+[2.505s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_map_models/share/colcon-core/packages/rse_map_models)
+[2.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_common_utils': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_common_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_common_utils/build --no-deps symlink_data
+[3.059s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_common_utils', 'pythonpath_develop')
+[3.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_common_utils/share/rse_common_utils/hook/pythonpath_develop.ps1'
+[3.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_common_utils' returned '0': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_common_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_common_utils/build --no-deps symlink_data
+[3.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_common_utils/share/rse_common_utils/hook/pythonpath_develop.dsv'
+[3.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_common_utils/share/rse_common_utils/hook/pythonpath_develop.sh'
+[3.061s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_common_utils' for CMake module files
+[3.061s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_common_utils' for CMake config files
+[3.062s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_common_utils/lib'
+[3.062s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_common_utils/bin'
+[3.062s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_common_utils/lib/pkgconfig/rse_common_utils.pc'
+[3.062s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages'
+[3.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_common_utils', 'pythonpath')
+[3.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/hook/pythonpath.ps1'
+[3.062s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/hook/pythonpath.dsv'
+[3.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/hook/pythonpath.sh'
+[3.063s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_common_utils/bin'
+[3.063s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_common_utils)
+[3.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/package.ps1'
+[3.064s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/package.dsv'
+[3.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/package.sh'
+[3.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/package.bash'
+[3.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_common_utils/share/rse_common_utils/package.zsh'
+[3.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_common_utils/share/colcon-core/packages/rse_common_utils)
+[3.065s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_gaussian_filters' with build type 'ament_python'
+[3.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_gaussian_filters', 'ament_prefix_path')
+[3.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/hook/ament_prefix_path.ps1'
+[3.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/hook/ament_prefix_path.dsv'
+[3.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/hook/ament_prefix_path.sh'
+[3.066s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.066s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.071s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_lidar_odometry' with build type 'ament_python'
+[3.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_lidar_odometry', 'ament_prefix_path')
+[3.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/hook/ament_prefix_path.ps1'
+[3.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/hook/ament_prefix_path.dsv'
+[3.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/hook/ament_prefix_path.sh'
+[3.073s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.073s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.283s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_gaussian_filters'
+[3.284s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.472s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_lidar_odometry'
+[3.472s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.472s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_gaussian_filters': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_gaussian_filters/build --no-deps symlink_data
+[3.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jjy/ros2_ws/build/rse_lidar_odometry': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_lidar_odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_lidar_odometry/build --no-deps symlink_data
+[4.025s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_gaussian_filters', 'pythonpath_develop')
+[4.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath_develop.ps1'
+[4.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_gaussian_filters' returned '0': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_gaussian_filters/build --no-deps symlink_data
+[4.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath_develop.dsv'
+[4.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath_develop.sh'
+[4.027s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_gaussian_filters' for CMake module files
+[4.028s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_gaussian_filters' for CMake config files
+[4.029s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_gaussian_filters/lib'
+[4.029s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_gaussian_filters/bin'
+[4.029s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/pkgconfig/rse_gaussian_filters.pc'
+[4.029s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages'
+[4.029s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_gaussian_filters', 'pythonpath')
+[4.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath.ps1'
+[4.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath.dsv'
+[4.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath.sh'
+[4.031s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_gaussian_filters/bin'
+[4.031s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_gaussian_filters)
+[4.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/package.ps1'
+[4.032s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/package.dsv'
+[4.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/package.sh'
+[4.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/package.bash'
+[4.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters/package.zsh'
+[4.034s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_gaussian_filters/share/colcon-core/packages/rse_gaussian_filters)
+[4.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_lidar_odometry', 'pythonpath_develop')
+[4.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jjy/ros2_ws/build/rse_lidar_odometry' returned '0': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_lidar_odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_lidar_odometry/build --no-deps symlink_data
+[4.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_lidar_odometry/share/rse_lidar_odometry/hook/pythonpath_develop.ps1'
+[4.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/build/rse_lidar_odometry/share/rse_lidar_odometry/hook/pythonpath_develop.dsv'
+[4.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/build/rse_lidar_odometry/share/rse_lidar_odometry/hook/pythonpath_develop.sh'
+[4.040s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_lidar_odometry' for CMake module files
+[4.041s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_lidar_odometry' for CMake config files
+[4.041s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_lidar_odometry/lib'
+[4.041s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_lidar_odometry/bin'
+[4.041s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/pkgconfig/rse_lidar_odometry.pc'
+[4.041s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages'
+[4.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('rse_lidar_odometry', 'pythonpath')
+[4.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/hook/pythonpath.ps1'
+[4.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/hook/pythonpath.dsv'
+[4.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/hook/pythonpath.sh'
+[4.042s] Level 1:colcon.colcon_core.environment:checking '/home/jjy/ros2_ws/install/rse_lidar_odometry/bin'
+[4.042s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rse_lidar_odometry)
+[4.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/package.ps1'
+[4.043s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/package.dsv'
+[4.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/package.sh'
+[4.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/package.bash'
+[4.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry/package.zsh'
+[4.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jjy/ros2_ws/install/rse_lidar_odometry/share/colcon-core/packages/rse_lidar_odometry)
+[4.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.044s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.049s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.049s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.049s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.058s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.059s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jjy/ros2_ws/install/local_setup.ps1'
+[4.060s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jjy/ros2_ws/install/_local_setup_util_ps1.py'
+[4.061s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jjy/ros2_ws/install/setup.ps1'
+[4.061s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jjy/ros2_ws/install/local_setup.sh'
+[4.062s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jjy/ros2_ws/install/_local_setup_util_sh.py'
+[4.062s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jjy/ros2_ws/install/setup.sh'
+[4.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jjy/ros2_ws/install/local_setup.bash'
+[4.063s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jjy/ros2_ws/install/setup.bash'
+[4.064s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jjy/ros2_ws/install/local_setup.zsh'
+[4.064s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jjy/ros2_ws/install/setup.zsh'

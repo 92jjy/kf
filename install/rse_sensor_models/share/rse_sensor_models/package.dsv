@@ -1,0 +1,6 @@
+source;share/rse_sensor_models/hook/pythonpath.ps1
+source;share/rse_sensor_models/hook/pythonpath.dsv
+source;share/rse_sensor_models/hook/pythonpath.sh
+source;share/rse_sensor_models/hook/ament_prefix_path.ps1
+source;share/rse_sensor_models/hook/ament_prefix_path.dsv
+source;share/rse_sensor_models/hook/ament_prefix_path.sh

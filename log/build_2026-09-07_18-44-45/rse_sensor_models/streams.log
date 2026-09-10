@@ -1,0 +1,23 @@
+[1.403s] Invoking command in '/home/jjy/ros2_ws/build/rse_sensor_models': PYTHONPATH=/home/jjy/ros2_ws/build/rse_sensor_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_sensor_models/build --no-deps symlink_data
+[1.619s] running develop
+[1.748s] running egg_info
+[1.749s] creating rse_sensor_models.egg-info
+[1.751s] writing rse_sensor_models.egg-info/PKG-INFO
+[1.751s] writing dependency_links to rse_sensor_models.egg-info/dependency_links.txt
+[1.751s] writing entry points to rse_sensor_models.egg-info/entry_points.txt
+[1.751s] writing requirements to rse_sensor_models.egg-info/requires.txt
+[1.751s] writing top-level names to rse_sensor_models.egg-info/top_level.txt
+[1.752s] writing manifest file 'rse_sensor_models.egg-info/SOURCES.txt'
+[1.752s] reading manifest file 'rse_sensor_models.egg-info/SOURCES.txt'
+[1.752s] writing manifest file 'rse_sensor_models.egg-info/SOURCES.txt'
+[1.752s] running build_ext
+[1.753s] Creating /home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages/rse-sensor-models.egg-link (link to .)
+[1.753s] 
+[1.753s] Installed /home/jjy/ros2_ws/build/rse_sensor_models
+[1.754s] running symlink_data
+[1.754s] creating /home/jjy/ros2_ws/install/rse_sensor_models/share/ament_index
+[1.754s] creating /home/jjy/ros2_ws/install/rse_sensor_models/share/ament_index/resource_index
+[1.754s] creating /home/jjy/ros2_ws/install/rse_sensor_models/share/ament_index/resource_index/packages
+[1.754s] symbolically linking /home/jjy/ros2_ws/build/rse_sensor_models/resource/rse_sensor_models -> /home/jjy/ros2_ws/install/rse_sensor_models/share/ament_index/resource_index/packages
+[1.754s] symbolically linking /home/jjy/ros2_ws/build/rse_sensor_models/package.xml -> /home/jjy/ros2_ws/install/rse_sensor_models/share/rse_sensor_models
+[1.784s] Invoked command in '/home/jjy/ros2_ws/build/rse_sensor_models' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_sensor_models/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_sensor_models/build --no-deps symlink_data

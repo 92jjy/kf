@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="1" tests="3" time="0.174" timestamp="2026-09-07T18:47:00.883427" hostname="Alienware"><testcase classname="rse_map_models.test.test_copyright" name="test_copyright" time="0.000"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/jjy/ros2_ws/src/rse_prob_robotics/rse_map_models/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="rse_map_models.test.test_flake8" name="test_flake8" time="0.091"><failure message="AssertionError: Found 80 code style errors / warnings:&#10;  ./rse_map_models/grid_map.py:9:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:12:16: E741 ambiguous variable name 'l'&#10;  ./rse_map_models/grid_map.py:13:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:17:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:18:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:19:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:20:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:21:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:22:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:24:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:25:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:27:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:29:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:30:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:32:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:33:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:34:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:36:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:38:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:39:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:40:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:40:57: W291 trailing whitespace&#10;  ./rse_map_models/grid_map.py:41:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:42:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:44:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:46:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:47:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:48:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:49:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:50:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:52:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:54:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:55:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:56:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:58:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:60:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:61:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:62:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:63:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:64:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:65:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:66:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:67:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:68:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:68:1: W293 blank line contains whitespace&#10;  ./rse_map_models/grid_map.py:69:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:70:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:72:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:74:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:75:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:77:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:78:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:80:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:82:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:84:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:85:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:86:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:87:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:89:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:90:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:90:26: E251 unexpected spaces around keyword / parameter equals&#10;  ./rse_map_models/grid_map.py:90:28: E251 unexpected spaces around keyword / parameter equals&#10;  ./rse_map_models/grid_map.py:90:41: E231 missing whitespace after ','&#10;  ./rse_map_models/grid_map.py:90:43: E231 missing whitespace after ','&#10;  ./rse_map_models/grid_map.py:90:56: W291 trailing whitespace&#10;  ./rse_map_models/grid_map.py:91:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:91:8: E101 indentation contains mixed spaces and tabs&#10;  ./rse_map_models/grid_map.py:91:10: E128 continuation line under-indented for visual indent&#10;  ./rse_map_models/grid_map.py:91:17: E251 unexpected spaces around keyword / parameter equals&#10;  ./rse_map_models/grid_map.py:91:19: E251 unexpected spaces around keyword / parameter equals&#10;  ./rse_map_models/grid_map.py:92:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:92:8: E101 indentation contains mixed spaces and tabs&#10;  ./rse_map_models/grid_map.py:92:10: E128 continuation line under-indented for visual indent&#10;  ./rse_map_models/grid_map.py:92:14: E251 unexpected spaces around keyword / parameter equals&#10;  ./rse_map_models/grid_map.py:92:16: E251 unexpected spaces around keyword / parameter equals&#10;  ./rse_map_models/grid_map.py:94:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:96:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:98:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:99:1: W191 indentation contains tabs&#10;  ./rse_map_models/grid_map.py:100:1: W191 indentation contains tabs&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 80 code style errors / warnings:
+E     ./rse_map_models/grid_map.py:9:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:12:16: E741 ambiguous variable name 'l'
+E     ./rse_map_models/grid_map.py:13:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:17:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:18:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:19:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:20:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:21:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:22:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:24:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:25:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:27:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:29:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:30:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:32:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:33:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:34:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:36:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:38:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:39:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:40:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:40:57: W291 trailing whitespace
+E     ./rse_map_models/grid_map.py:41:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:42:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:44:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:46:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:47:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:48:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:49:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:50:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:52:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:54:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:55:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:56:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:58:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:60:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:61:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:62:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:63:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:64:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:65:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:66:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:67:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:68:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:68:1: W293 blank line contains whitespace
+E     ./rse_map_models/grid_map.py:69:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:70:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:72:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:74:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:75:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:77:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:78:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:80:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:82:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:84:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:85:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:86:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:87:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:89:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:90:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:90:26: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_map_models/grid_map.py:90:28: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_map_models/grid_map.py:90:41: E231 missing whitespace after ','
+E     ./rse_map_models/grid_map.py:90:43: E231 missing whitespace after ','
+E     ./rse_map_models/grid_map.py:90:56: W291 trailing whitespace
+E     ./rse_map_models/grid_map.py:91:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:91:8: E101 indentation contains mixed spaces and tabs
+E     ./rse_map_models/grid_map.py:91:10: E128 continuation line under-indented for visual indent
+E     ./rse_map_models/grid_map.py:91:17: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_map_models/grid_map.py:91:19: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_map_models/grid_map.py:92:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:92:8: E101 indentation contains mixed spaces and tabs
+E     ./rse_map_models/grid_map.py:92:10: E128 continuation line under-indented for visual indent
+E     ./rse_map_models/grid_map.py:92:14: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_map_models/grid_map.py:92:16: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_map_models/grid_map.py:94:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:96:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:98:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:99:1: W191 indentation contains tabs
+E     ./rse_map_models/grid_map.py:100:1: W191 indentation contains tabs
+E   assert 1 == 0</failure></testcase><testcase classname="rse_map_models.test.test_pep257" name="test_pep257" time="0.017"><failure message="AssertionError: Found code style errors / warnings&#10;assert 1 == 0">test/test_pep257.py:23: in test_pep257
+    assert rc == 0, 'Found code style errors / warnings'
+E   AssertionError: Found code style errors / warnings
+E   assert 1 == 0</failure></testcase></testsuite></testsuites>

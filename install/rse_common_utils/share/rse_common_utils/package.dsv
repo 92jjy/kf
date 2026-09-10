@@ -1,0 +1,9 @@
+source;share/rse_common_utils/hook/pythonpath.ps1
+source;share/rse_common_utils/hook/pythonpath.dsv
+source;share/rse_common_utils/hook/pythonpath.sh
+source;share/rse_common_utils/hook/ament_prefix_path.ps1
+source;share/rse_common_utils/hook/ament_prefix_path.dsv
+source;share/rse_common_utils/hook/ament_prefix_path.sh
+source;../../build/rse_common_utils/share/rse_common_utils/hook/pythonpath_develop.ps1
+source;../../build/rse_common_utils/share/rse_common_utils/hook/pythonpath_develop.dsv
+source;../../build/rse_common_utils/share/rse_common_utils/hook/pythonpath_develop.sh

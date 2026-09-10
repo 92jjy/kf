@@ -1,0 +1,24 @@
+[0.664s] Invoking command in '/home/jjy/ros2_ws/build/rse_lidar_odometry': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_lidar_odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_lidar_odometry/build --no-deps symlink_data
+[0.835s] running develop
+[0.951s] running egg_info
+[0.951s] creating rse_lidar_odometry.egg-info
+[0.951s] writing rse_lidar_odometry.egg-info/PKG-INFO
+[0.951s] writing dependency_links to rse_lidar_odometry.egg-info/dependency_links.txt
+[0.951s] writing entry points to rse_lidar_odometry.egg-info/entry_points.txt
+[0.951s] writing requirements to rse_lidar_odometry.egg-info/requires.txt
+[0.951s] writing top-level names to rse_lidar_odometry.egg-info/top_level.txt
+[0.952s] writing manifest file 'rse_lidar_odometry.egg-info/SOURCES.txt'
+[0.952s] reading manifest file 'rse_lidar_odometry.egg-info/SOURCES.txt'
+[0.952s] writing manifest file 'rse_lidar_odometry.egg-info/SOURCES.txt'
+[0.963s] running build_ext
+[0.963s] Creating /home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages/rse-lidar-odometry.egg-link (link to .)
+[0.963s] Installing laser_scan_odometry script to /home/jjy/ros2_ws/install/rse_lidar_odometry/lib/rse_lidar_odometry
+[0.963s] 
+[0.963s] Installed /home/jjy/ros2_ws/build/rse_lidar_odometry
+[0.963s] running symlink_data
+[0.963s] creating /home/jjy/ros2_ws/install/rse_lidar_odometry/share/ament_index
+[0.963s] creating /home/jjy/ros2_ws/install/rse_lidar_odometry/share/ament_index/resource_index
+[0.963s] creating /home/jjy/ros2_ws/install/rse_lidar_odometry/share/ament_index/resource_index/packages
+[0.964s] symbolically linking /home/jjy/ros2_ws/build/rse_lidar_odometry/resource/rse_lidar_odometry -> /home/jjy/ros2_ws/install/rse_lidar_odometry/share/ament_index/resource_index/packages
+[0.964s] symbolically linking /home/jjy/ros2_ws/build/rse_lidar_odometry/package.xml -> /home/jjy/ros2_ws/install/rse_lidar_odometry/share/rse_lidar_odometry
+[0.968s] Invoked command in '/home/jjy/ros2_ws/build/rse_lidar_odometry' returned '0': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_lidar_odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jjy/ros2_ws/build/rse_lidar_odometry/build --no-deps symlink_data

@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating rse_occupancy_grid_mapping.egg-info
+writing rse_occupancy_grid_mapping.egg-info/PKG-INFO
+writing dependency_links to rse_occupancy_grid_mapping.egg-info/dependency_links.txt
+writing entry points to rse_occupancy_grid_mapping.egg-info/entry_points.txt
+writing requirements to rse_occupancy_grid_mapping.egg-info/requires.txt
+writing top-level names to rse_occupancy_grid_mapping.egg-info/top_level.txt
+writing manifest file 'rse_occupancy_grid_mapping.egg-info/SOURCES.txt'
+reading manifest file 'rse_occupancy_grid_mapping.egg-info/SOURCES.txt'
+writing manifest file 'rse_occupancy_grid_mapping.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages/rse-occupancy-grid-mapping.egg-link (link to .)
+Installing occupancy_grid_mapping script to /home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/rse_occupancy_grid_mapping
+
+Installed /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping
+running symlink_data
+creating /home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/ament_index
+creating /home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/ament_index/resource_index
+creating /home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/ament_index/resource_index/packages
+symbolically linking /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/resource/rse_occupancy_grid_mapping -> /home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/ament_index/resource_index/packages
+symbolically linking /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/package.xml -> /home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/share/rse_occupancy_grid_mapping

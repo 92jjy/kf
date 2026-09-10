@@ -1,0 +1,51 @@
+[0.957s] Invoking command in '/home/jjy/ros2_ws/build/rse_nonparametric_filters': PYTHONPATH=/home/jjy/ros2_ws/build/rse_nonparametric_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/jjy/ros2_ws/build/rse_nonparametric_filters/build
+[1.082s] running develop
+[1.157s] Removing /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse-nonparametric-filters.egg-link (link to .)
+[1.172s] Invoked command in '/home/jjy/ros2_ws/build/rse_nonparametric_filters' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_nonparametric_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/jjy/ros2_ws/build/rse_nonparametric_filters/build
+[1.174s] Invoking command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_nonparametric_filters': PYTHONPATH=/home/jjy/ros2_ws/build/rse_nonparametric_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rse_nonparametric_filters build --build-base /home/jjy/ros2_ws/build/rse_nonparametric_filters/build install --record /home/jjy/ros2_ws/build/rse_nonparametric_filters/install.log --single-version-externally-managed install_data --force
+[1.294s] running egg_info
+[1.295s] writing ../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info/PKG-INFO
+[1.295s] writing dependency_links to ../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info/dependency_links.txt
+[1.295s] writing entry points to ../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info/entry_points.txt
+[1.295s] writing requirements to ../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info/requires.txt
+[1.295s] writing top-level names to ../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info/top_level.txt
+[1.296s] reading manifest file '../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info/SOURCES.txt'
+[1.296s] writing manifest file '../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info/SOURCES.txt'
+[1.296s] running build
+[1.296s] running build_py
+[1.296s] creating /home/jjy/ros2_ws/build/rse_nonparametric_filters/build
+[1.296s] creating /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib
+[1.297s] creating /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters
+[1.297s] copying rse_nonparametric_filters/pf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters
+[1.297s] copying rse_nonparametric_filters/pf_3d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters
+[1.297s] copying rse_nonparametric_filters/__init__.py -> /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters
+[1.297s] copying rse_nonparametric_filters/pf_node.py -> /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters
+[1.297s] creating /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/filters
+[1.297s] copying rse_nonparametric_filters/filters/pf.py -> /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/filters
+[1.297s] copying rse_nonparametric_filters/filters/__init__.py -> /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/filters
+[1.297s] running install
+[1.297s] running install_lib
+[1.298s] creating /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters
+[1.298s] copying /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/pf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters
+[1.298s] copying /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/pf_3d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters
+[1.298s] creating /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/filters
+[1.298s] copying /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/filters/pf.py -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/filters
+[1.298s] copying /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/filters/__init__.py -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/filters
+[1.298s] copying /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/__init__.py -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters
+[1.298s] copying /home/jjy/ros2_ws/build/rse_nonparametric_filters/build/lib/rse_nonparametric_filters/pf_node.py -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters
+[1.298s] byte-compiling /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/pf_8d_state_estimation_no_cmd.py to pf_8d_state_estimation_no_cmd.cpython-310.pyc
+[1.299s] byte-compiling /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/pf_3d_state_estimation_no_cmd.py to pf_3d_state_estimation_no_cmd.cpython-310.pyc
+[1.299s] byte-compiling /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/filters/pf.py to pf.cpython-310.pyc
+[1.300s] byte-compiling /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/filters/__init__.py to __init__.cpython-310.pyc
+[1.300s] byte-compiling /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/__init__.py to __init__.cpython-310.pyc
+[1.300s] byte-compiling /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters/pf_node.py to pf_node.cpython-310.pyc
+[1.300s] running install_data
+[1.300s] copying resource/rse_nonparametric_filters -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/share/ament_index/resource_index/packages
+[1.300s] copying package.xml -> /home/jjy/ros2_ws/install/rse_nonparametric_filters/share/rse_nonparametric_filters
+[1.300s] running install_egg_info
+[1.301s] Copying ../../../build/rse_nonparametric_filters/rse_nonparametric_filters.egg-info to /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages/rse_nonparametric_filters-0.0.0-py3.10.egg-info
+[1.302s] running install_scripts
+[1.313s] Installing pf_estimation_3d script to /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/rse_nonparametric_filters
+[1.313s] Installing pf_estimation_8d script to /home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/rse_nonparametric_filters
+[1.313s] writing list of installed files to '/home/jjy/ros2_ws/build/rse_nonparametric_filters/install.log'
+[1.327s] Invoked command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_nonparametric_filters' returned '0': PYTHONPATH=/home/jjy/ros2_ws/build/rse_nonparametric_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rse_nonparametric_filters build --build-base /home/jjy/ros2_ws/build/rse_nonparametric_filters/build install --record /home/jjy/ros2_ws/build/rse_nonparametric_filters/install.log --single-version-externally-managed install_data --force

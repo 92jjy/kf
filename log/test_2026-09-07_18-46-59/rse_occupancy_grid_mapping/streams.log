@@ -1,0 +1,241 @@
+[0.999s] Invoking command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_occupancy_grid_mapping': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_motion_models:/home/jjy/ros2_ws/install/rse_map_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/pytest.xml --junit-prefix=rse_occupancy_grid_mapping -o cache_dir=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest
+[1.520s] ============================= test session starts ==============================
+[1.520s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[1.520s] cachedir: /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/.pytest_cache
+[1.520s] rootdir: /home/jjy/ros2_ws/src/rse_prob_robotics/rse_occupancy_grid_mapping
+[1.520s] plugins: ament-lint-0.12.14, launch-testing-1.0.13, ament-pep257-0.12.14, ament-copyright-0.12.14, launch-testing-ros-0.19.13, ament-xmllint-0.12.14, ament-flake8-0.12.14, cov-3.0.0, colcon-core-0.20.1
+[1.520s] collected 3 items
+[1.520s] 
+[1.520s] test/test_copyright.py s                                                 [ 33%]
+[1.521s] test/test_flake8.py F                                                    [ 66%]
+[1.521s] test/test_pep257.py F                                                    [100%]
+[1.521s] 
+[1.521s] =================================== FAILURES ===================================
+[1.521s] _________________________________ test_flake8 __________________________________
+[1.521s] test/test_flake8.py:23: in test_flake8
+[1.521s]     assert rc == 0, \
+[1.521s] E   AssertionError: Found 33 code style errors / warnings:
+[1.521s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:4:1: E302 expected 2 blank lines, found 1
+[1.521s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:6:1: W191 indentation contains tabs
+[1.521s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:7:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:9:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:20: E261 at least two spaces before inline comment
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:54: E261 at least two spaces before inline comment
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:13:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:14:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:15:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:16:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:17:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W293 blank line contains whitespace
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:19:1: W191 indentation contains tabs
+[1.522s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:20:1: W191 indentation contains tabs
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:1: W191 indentation contains tabs
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:23: E222 multiple spaces after operator
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:84: W291 trailing whitespace
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:23:1: W191 indentation contains tabs
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:24:1: W191 indentation contains tabs
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:26:1: W391 blank line at end of file
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:21:1: E302 expected 2 blank lines, found 1
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:27:25: E261 at least two spaces before inline comment
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:50:100: E501 line too long (100 > 99 characters)
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:65:100: E501 line too long (104 > 99 characters)
+[1.523s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:108:32: W291 trailing whitespace
+[1.524s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:117:23: W291 trailing whitespace
+[1.524s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:120:100: E501 line too long (130 > 99 characters)
+[1.524s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:148:100: E501 line too long (106 > 99 characters)
+[1.524s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:154:1: E302 expected 2 blank lines, found 1
+[1.524s] E     ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:169:11: W292 no newline at end of file
+[1.524s] E   assert 1 == 0
+[1.524s] ----------------------------- Captured stdout call -----------------------------
+[1.524s] 
+[1.524s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:4:1: E302 expected 2 blank lines, found 1
+[1.524s] class OccupancyGridMapping:
+[1.525s] ^
+[1.525s] 
+[1.525s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:6:1: W191 indentation contains tabs
+[1.525s] 	def __init__(self):
+[1.525s] ^
+[1.525s] 
+[1.525s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:7:1: W191 indentation contains tabs
+[1.525s] 		self.sensor_model = InverseSensorModels()
+[1.525s] ^
+[1.525s] 
+[1.526s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:9:1: W191 indentation contains tabs
+[1.526s] 	def update_grid_with_sensor_reading(self, grid_map, x_t, z_t):
+[1.526s] ^
+[1.526s] 
+[1.526s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:1: W191 indentation contains tabs
+[1.526s] 		x, y, theta = x_t # the robot pose
+[1.526s] ^
+[1.526s] 
+[1.526s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:10:20: E261 at least two spaces before inline comment
+[1.526s] 		x, y, theta = x_t # the robot pose
+[1.526s] 		                 ^
+[1.527s] 
+[1.527s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:1: W191 indentation contains tabs
+[1.527s] 		_, _, _, sensor_range_max, sensor_angle_range = z_t # the sensor reading
+[1.527s] ^
+[1.527s] 
+[1.527s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:11:54: E261 at least two spaces before inline comment
+[1.527s] 		_, _, _, sensor_range_max, sensor_angle_range = z_t # the sensor reading
+[1.527s] 		                                                   ^
+[1.527s] 
+[1.527s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:13:1: W191 indentation contains tabs
+[1.527s] 		# Loop over all cells in the grid
+[1.528s] ^
+[1.528s] 
+[1.528s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:14:1: W191 indentation contains tabs
+[1.528s] 		for x_grid in range(grid_map.data.shape[0]):
+[1.528s] ^
+[1.528s] 
+[1.528s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:15:1: W191 indentation contains tabs
+[1.528s] 			for y_grid in range(grid_map.data.shape[1]):
+[1.528s] ^
+[1.528s] 
+[1.528s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:16:1: W191 indentation contains tabs
+[1.529s] 				# Get the center of mass of the current cell
+[1.529s] ^
+[1.529s] 
+[1.529s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:17:1: W191 indentation contains tabs
+[1.529s] 				m_i = grid_map.get_cell_center_mass(x_grid, y_grid)
+[1.529s] ^
+[1.529s] 
+[1.529s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W191 indentation contains tabs
+[1.529s] 				
+[1.529s] ^
+[1.529s] 
+[1.530s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:18:1: W293 blank line contains whitespace
+[1.530s] 				
+[1.530s] ^
+[1.530s] 
+[1.530s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:19:1: W191 indentation contains tabs
+[1.530s] 				if is_in_perceptual_field(m_i, (x, y), theta, sensor_range_max, sensor_angle_range):
+[1.530s] ^
+[1.530s] 
+[1.530s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:20:1: W191 indentation contains tabs
+[1.530s] 					# Apply the inverse sensor model
+[1.530s] ^
+[1.530s] 
+[1.530s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:1: W191 indentation contains tabs
+[1.530s] 					log_odds_update =  self.sensor_model.inverse_range_sensor_model(m_i, x_t, z_t) 
+[1.530s] ^
+[1.531s] 
+[1.531s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:23: E222 multiple spaces after operator
+[1.531s] 					log_odds_update =  self.sensor_model.inverse_range_sensor_model(m_i, x_t, z_t) 
+[1.531s] 					                 ^
+[1.531s] 
+[1.531s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:21:84: W291 trailing whitespace
+[1.531s] 					log_odds_update =  self.sensor_model.inverse_range_sensor_model(m_i, x_t, z_t) 
+[1.531s] 					                                                                              ^
+[1.531s] 
+[1.531s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:23:1: W191 indentation contains tabs
+[1.531s] 					# Update the cell in the grid with the new log-odds value
+[1.531s] ^
+[1.531s] 
+[1.531s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:24:1: W191 indentation contains tabs
+[1.531s] 					grid_map.data[x_grid, y_grid] += log_odds_update
+[1.531s] ^
+[1.531s] 
+[1.532s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py:26:1: W391 blank line at end of file
+[1.532s] 
+[1.532s] ^
+[1.532s] 
+[1.532s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:21:1: E302 expected 2 blank lines, found 1
+[1.532s] class OccupancyGridMappingNode(Node):
+[1.532s] ^
+[1.532s] 
+[1.532s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:27:25: E261 at least two spaces before inline comment
+[1.532s]         resolution = 0.1 # Grid resolution in [m]
+[1.532s]                         ^
+[1.532s] 
+[1.532s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:50:100: E501 line too long (100 > 99 characters)
+[1.532s]         self.map_update_timer = self.create_timer(map_update_timer_period, self.map_update_callback)
+[1.532s]                                                                                                    ^
+[1.532s] 
+[1.532s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:65:100: E501 line too long (104 > 99 characters)
+[1.533s]             filename = input("Enter the filename to save the map to (default: grid_map.json): ").strip()
+[1.533s]                                                                                                    ^
+[1.533s] 
+[1.533s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:108:32: W291 trailing whitespace
+[1.533s]         map_msg.data = occ_grid 
+[1.533s]                                ^
+[1.533s] 
+[1.533s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:117:23: W291 trailing whitespace
+[1.533s]         cv2.waitKey(1)  
+[1.533s]                       ^
+[1.533s] 
+[1.533s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:120:100: E501 line too long (130 > 99 characters)
+[1.533s]         return (self.odom.pose.pose.position.x, self.odom.pose.pose.position.y, self.quat_to_yaw(self.odom.pose.pose.orientation))
+[1.533s]                                                                                                    ^
+[1.533s] 
+[1.533s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:148:100: E501 line too long (106 > 99 characters)
+[1.533s]         cv2.arrowedLine(grayscale_image, (y_grid, x_grid), (end_y, end_x), color=(255, 0, 0), thickness=1)
+[1.534s]                                                                                                    ^
+[1.534s] 
+[1.534s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:154:1: E302 expected 2 blank lines, found 1
+[1.534s] def main(args=None):
+[1.534s] ^
+[1.534s] 
+[1.534s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:169:11: W292 no newline at end of file
+[1.534s]     main()          ^
+[1.534s] 
+[1.534s] 1     E222 multiple spaces after operator
+[1.534s] 3     E261 at least two spaces before inline comment
+[1.534s] 3     E302 expected 2 blank lines, found 1
+[1.534s] 4     E501 line too long (100 > 99 characters)
+[1.534s] 16    W191 indentation contains tabs
+[1.534s] 3     W291 trailing whitespace
+[1.534s] 1     W292 no newline at end of file
+[1.534s] 1     W293 blank line contains whitespace
+[1.535s] 1     W391 blank line at end of file
+[1.535s] 
+[1.535s] 7 files checked
+[1.535s] 33 errors
+[1.535s] 
+[1.535s] 'E'-type errors: 11
+[1.535s] 'W'-type errors: 22
+[1.535s] 
+[1.535s] Checked files:
+[1.535s] 
+[1.535s] * ./setup.py
+[1.535s] * ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py
+[1.535s] * ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py
+[1.535s] * ./rse_occupancy_grid_mapping/__init__.py
+[1.535s] * ./test/test_copyright.py
+[1.535s] * ./test/test_pep257.py
+[1.535s] * ./test/test_flake8.py
+[1.536s] ----------------------------- Captured stderr call -----------------------------
+[1.536s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[1.536s] _________________________________ test_pep257 __________________________________
+[1.536s] test/test_pep257.py:23: in test_pep257
+[1.536s]     assert rc == 0, 'Found code style errors / warnings'
+[1.536s] E   AssertionError: Found code style errors / warnings
+[1.536s] E   assert 1 == 0
+[1.536s] ----------------------------- Captured stdout call -----------------------------
+[1.536s] checking ./rse_occupancy_grid_mapping/__init__.py
+[1.536s] checking ./rse_occupancy_grid_mapping/occupancy_grid_mapping.py
+[1.536s] checking ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py
+[1.536s] ./rse_occupancy_grid_mapping/occupancy_grid_mapping_node.py:59 in public method `handle_shutdown`: D200: One-line docstring should fit on one line with quotes (found 3)
+[1.536s] checking ./setup.py
+[1.536s] checking ./test/test_copyright.py
+[1.536s] checking ./test/test_flake8.py
+[1.536s] checking ./test/test_pep257.py
+[1.536s] checking test/test_copyright.py
+[1.537s] checking test/test_flake8.py
+[1.537s] checking test/test_pep257.py
+[1.537s] 1 errors
+[1.537s] - generated xml file: /home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/pytest.xml -
+[1.537s] =========================== short test summary info ============================
+[1.537s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 33 code style...
+[1.537s] FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...
+[1.537s] =================== 2 failed, 1 skipped, 2 warnings in 0.24s ===================
+[1.537s] =============================== warnings summary ===============================
+[1.537s] test/test_flake8.py::test_flake8
+[1.537s] test/test_flake8.py::test_flake8
+[1.537s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[1.537s] 
+[1.537s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[1.539s] Invoked command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_occupancy_grid_mapping' returned '1': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_motion_models:/home/jjy/ros2_ws/install/rse_map_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/pytest.xml --junit-prefix=rse_occupancy_grid_mapping -o cache_dir=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest

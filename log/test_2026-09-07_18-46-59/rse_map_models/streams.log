@@ -1,0 +1,509 @@
+[0.584s] Invoking command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_map_models': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_map_models:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_motion_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_map_models/pytest.xml --junit-prefix=rse_map_models -o cache_dir=/home/jjy/ros2_ws/build/rse_map_models/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest
+[1.348s] ============================= test session starts ==============================
+[1.348s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[1.348s] cachedir: /home/jjy/ros2_ws/build/rse_map_models/.pytest_cache
+[1.348s] rootdir: /home/jjy/ros2_ws/src/rse_prob_robotics/rse_map_models
+[1.348s] plugins: ament-lint-0.12.14, launch-testing-1.0.13, ament-pep257-0.12.14, ament-copyright-0.12.14, launch-testing-ros-0.19.13, ament-xmllint-0.12.14, ament-flake8-0.12.14, cov-3.0.0, colcon-core-0.20.1
+[1.348s] collected 3 items
+[1.348s] 
+[1.348s] test/test_copyright.py s                                                 [ 33%]
+[1.349s] test/test_flake8.py F                                                    [ 66%]
+[1.349s] test/test_pep257.py F                                                    [100%]
+[1.349s] 
+[1.349s] =================================== FAILURES ===================================
+[1.349s] _________________________________ test_flake8 __________________________________
+[1.349s] test/test_flake8.py:23: in test_flake8
+[1.349s]     assert rc == 0, \
+[1.349s] E   AssertionError: Found 80 code style errors / warnings:
+[1.349s] E     ./rse_map_models/grid_map.py:9:1: W191 indentation contains tabs
+[1.349s] E     ./rse_map_models/grid_map.py:12:16: E741 ambiguous variable name 'l'
+[1.349s] E     ./rse_map_models/grid_map.py:13:1: W191 indentation contains tabs
+[1.349s] E     ./rse_map_models/grid_map.py:17:1: W191 indentation contains tabs
+[1.349s] E     ./rse_map_models/grid_map.py:18:1: W191 indentation contains tabs
+[1.349s] E     ./rse_map_models/grid_map.py:19:1: W191 indentation contains tabs
+[1.349s] E     ./rse_map_models/grid_map.py:20:1: W191 indentation contains tabs
+[1.349s] E     ./rse_map_models/grid_map.py:21:1: W191 indentation contains tabs
+[1.349s] E     ./rse_map_models/grid_map.py:22:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:24:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:25:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:27:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:29:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:30:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:32:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:33:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:34:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:36:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:38:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:39:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:40:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:40:57: W291 trailing whitespace
+[1.350s] E     ./rse_map_models/grid_map.py:41:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:42:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:44:1: W191 indentation contains tabs
+[1.350s] E     ./rse_map_models/grid_map.py:46:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:47:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:48:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:49:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:50:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:52:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:54:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:55:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:56:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:58:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:60:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:61:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:62:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:63:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:64:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:65:1: W191 indentation contains tabs
+[1.351s] E     ./rse_map_models/grid_map.py:66:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:67:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:68:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:68:1: W293 blank line contains whitespace
+[1.352s] E     ./rse_map_models/grid_map.py:69:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:70:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:72:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:74:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:75:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:77:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:78:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:80:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:82:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:84:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:85:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:86:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:87:1: W191 indentation contains tabs
+[1.352s] E     ./rse_map_models/grid_map.py:89:1: W191 indentation contains tabs
+[1.353s] E     ./rse_map_models/grid_map.py:90:1: W191 indentation contains tabs
+[1.353s] E     ./rse_map_models/grid_map.py:90:26: E251 unexpected spaces around keyword / parameter equals
+[1.353s] E     ./rse_map_models/grid_map.py:90:28: E251 unexpected spaces around keyword / parameter equals
+[1.353s] E     ./rse_map_models/grid_map.py:90:41: E231 missing whitespace after ','
+[1.353s] E     ./rse_map_models/grid_map.py:90:43: E231 missing whitespace after ','
+[1.353s] E     ./rse_map_models/grid_map.py:90:56: W291 trailing whitespace
+[1.353s] E     ./rse_map_models/grid_map.py:91:1: W191 indentation contains tabs
+[1.353s] E     ./rse_map_models/grid_map.py:91:8: E101 indentation contains mixed spaces and tabs
+[1.353s] E     ./rse_map_models/grid_map.py:91:10: E128 continuation line under-indented for visual indent
+[1.353s] E     ./rse_map_models/grid_map.py:91:17: E251 unexpected spaces around keyword / parameter equals
+[1.353s] E     ./rse_map_models/grid_map.py:91:19: E251 unexpected spaces around keyword / parameter equals
+[1.353s] E     ./rse_map_models/grid_map.py:92:1: W191 indentation contains tabs
+[1.353s] E     ./rse_map_models/grid_map.py:92:8: E101 indentation contains mixed spaces and tabs
+[1.353s] E     ./rse_map_models/grid_map.py:92:10: E128 continuation line under-indented for visual indent
+[1.353s] E     ./rse_map_models/grid_map.py:92:14: E251 unexpected spaces around keyword / parameter equals
+[1.353s] E     ./rse_map_models/grid_map.py:92:16: E251 unexpected spaces around keyword / parameter equals
+[1.353s] E     ./rse_map_models/grid_map.py:94:1: W191 indentation contains tabs
+[1.354s] E     ./rse_map_models/grid_map.py:96:1: W191 indentation contains tabs
+[1.354s] E     ./rse_map_models/grid_map.py:98:1: W191 indentation contains tabs
+[1.354s] E     ./rse_map_models/grid_map.py:99:1: W191 indentation contains tabs
+[1.354s] E     ./rse_map_models/grid_map.py:100:1: W191 indentation contains tabs
+[1.354s] E   assert 1 == 0
+[1.354s] ----------------------------- Captured stdout call -----------------------------
+[1.354s] 
+[1.354s] ./rse_map_models/grid_map.py:9:1: W191 indentation contains tabs
+[1.354s] 	return np.log(p / (1 - p))
+[1.354s] ^
+[1.354s] 
+[1.354s] ./rse_map_models/grid_map.py:12:16: E741 ambiguous variable name 'l'
+[1.354s] def retrieve_p(l):
+[1.354s]                ^
+[1.354s] 
+[1.355s] ./rse_map_models/grid_map.py:13:1: W191 indentation contains tabs
+[1.355s] 	return 1 - 1 / (1 + np.exp(l))
+[1.355s] ^
+[1.355s] 
+[1.355s] ./rse_map_models/grid_map.py:17:1: W191 indentation contains tabs
+[1.355s] 	def __init__(self, X_lim, Y_lim, resolution, initial_p, normalize=False):
+[1.355s] ^
+[1.355s] 
+[1.355s] ./rse_map_models/grid_map.py:18:1: W191 indentation contains tabs
+[1.355s] 		self.resolution = resolution
+[1.355s] ^
+[1.355s] 
+[1.355s] ./rse_map_models/grid_map.py:19:1: W191 indentation contains tabs
+[1.355s] 		self.min_x = X_lim[0]
+[1.355s] ^
+[1.356s] 
+[1.356s] ./rse_map_models/grid_map.py:20:1: W191 indentation contains tabs
+[1.356s] 		self.min_y = Y_lim[0]
+[1.356s] ^
+[1.356s] 
+[1.356s] ./rse_map_models/grid_map.py:21:1: W191 indentation contains tabs
+[1.356s] 		self.max_x = X_lim[1]
+[1.356s] ^
+[1.356s] 
+[1.356s] ./rse_map_models/grid_map.py:22:1: W191 indentation contains tabs
+[1.356s] 		self.max_y = Y_lim[1]
+[1.356s] ^
+[1.356s] 
+[1.357s] ./rse_map_models/grid_map.py:24:1: W191 indentation contains tabs
+[1.357s] 		self.x_len = len(np.arange(start=self.min_x, stop=self.max_x + resolution, step=resolution))
+[1.357s] ^
+[1.357s] 
+[1.357s] ./rse_map_models/grid_map.py:25:1: W191 indentation contains tabs
+[1.357s] 		self.y_len = len(np.arange(start=self.min_y, stop=self.max_y + resolution, step=resolution))
+[1.357s] ^
+[1.358s] 
+[1.358s] ./rse_map_models/grid_map.py:27:1: W191 indentation contains tabs
+[1.358s] 		self.data = np.full(shape=(self.x_len, self.y_len), fill_value=initial_p)
+[1.358s] ^
+[1.358s] 
+[1.358s] ./rse_map_models/grid_map.py:29:1: W191 indentation contains tabs
+[1.358s] 		if normalize:
+[1.358s] ^
+[1.358s] 
+[1.358s] ./rse_map_models/grid_map.py:30:1: W191 indentation contains tabs
+[1.358s] 			self.normalize_probability()
+[1.358s] ^
+[1.358s] 
+[1.358s] ./rse_map_models/grid_map.py:32:1: W191 indentation contains tabs
+[1.358s] 	def normalize_probability(self):
+[1.358s] ^
+[1.358s] 
+[1.359s] ./rse_map_models/grid_map.py:33:1: W191 indentation contains tabs
+[1.359s] 		sump = np.sum(self.data)
+[1.359s] ^
+[1.359s] 
+[1.359s] ./rse_map_models/grid_map.py:34:1: W191 indentation contains tabs
+[1.359s] 		self.data /= sump
+[1.359s] ^
+[1.359s] 
+[1.359s] ./rse_map_models/grid_map.py:36:1: W191 indentation contains tabs
+[1.359s] 	def discretize(self, x_cont, y_cont):
+[1.359s] ^
+[1.359s] 
+[1.359s] ./rse_map_models/grid_map.py:38:1: W191 indentation contains tabs
+[1.359s] 		"""
+[1.359s] 		Convert world coordinates to grid coordinates, aligning with ROS 2's system.
+[1.359s] 		"""
+[1.360s] ^
+[1.360s] 
+[1.360s] ./rse_map_models/grid_map.py:39:1: W191 indentation contains tabs
+[1.360s] 		"""
+[1.360s] 		Convert world coordinates to grid coordinates, aligning with ROS 2's system.
+[1.360s] 		"""
+[1.360s] ^
+[1.360s] 
+[1.360s] ./rse_map_models/grid_map.py:40:1: W191 indentation contains tabs
+[1.360s] 		x_index = int((x_cont - self.min_x) / self.resolution) 
+[1.360s] ^
+[1.360s] 
+[1.360s] ./rse_map_models/grid_map.py:40:57: W291 trailing whitespace
+[1.360s] 		x_index = int((x_cont - self.min_x) / self.resolution) 
+[1.360s] 		                                                      ^
+[1.360s] 
+[1.360s] ./rse_map_models/grid_map.py:41:1: W191 indentation contains tabs
+[1.361s] 		y_index = int((y_cont - self.min_y) / self.resolution)
+[1.361s] ^
+[1.361s] 
+[1.361s] ./rse_map_models/grid_map.py:42:1: W191 indentation contains tabs
+[1.361s] 		return x_index, y_index
+[1.361s] ^
+[1.361s] 
+[1.361s] ./rse_map_models/grid_map.py:44:1: W191 indentation contains tabs
+[1.361s] 	def get_cell_center_mass(self, x_grid, y_grid):
+[1.361s] ^
+[1.361s] 
+[1.361s] ./rse_map_models/grid_map.py:46:1: W191 indentation contains tabs
+[1.361s] 		"""
+[1.361s] 		Get the center of mass for a cell given its grid coordinates.
+[1.361s] 		"""
+[1.361s] ^
+[1.361s] 
+[1.362s] ./rse_map_models/grid_map.py:47:1: W191 indentation contains tabs
+[1.362s] 		"""
+[1.362s] 		Get the center of mass for a cell given its grid coordinates.
+[1.362s] 		"""
+[1.362s] ^
+[1.362s] 
+[1.362s] ./rse_map_models/grid_map.py:48:1: W191 indentation contains tabs
+[1.362s] 		x_cont = (x_grid * self.resolution) + self.min_x + (self.resolution / 2)
+[1.362s] ^
+[1.362s] 
+[1.362s] ./rse_map_models/grid_map.py:49:1: W191 indentation contains tabs
+[1.362s] 		y_cont = (y_grid * self.resolution) + self.min_y + (self.resolution / 2)
+[1.362s] ^
+[1.362s] 
+[1.362s] ./rse_map_models/grid_map.py:50:1: W191 indentation contains tabs
+[1.362s] 		return x_cont, y_cont
+[1.362s] ^
+[1.363s] 
+[1.363s] ./rse_map_models/grid_map.py:52:1: W191 indentation contains tabs
+[1.363s] 	def check_pixel(self, x, y):
+[1.363s] ^
+[1.363s] 
+[1.363s] ./rse_map_models/grid_map.py:54:1: W191 indentation contains tabs
+[1.363s] 		"""
+[1.363s] 		Check if pixel (x,y) is within the map bounds.
+[1.363s] 		"""
+[1.363s] ^
+[1.363s] 
+[1.363s] ./rse_map_models/grid_map.py:55:1: W191 indentation contains tabs
+[1.363s] 		"""
+[1.363s] 		Check if pixel (x,y) is within the map bounds.
+[1.363s] 		"""
+[1.364s] ^
+[1.364s] 
+[1.364s] ./rse_map_models/grid_map.py:56:1: W191 indentation contains tabs
+[1.364s] 		return 0 <= x < self.x_len and 0 <= y < self.y_len
+[1.364s] ^
+[1.364s] 
+[1.364s] ./rse_map_models/grid_map.py:58:1: W191 indentation contains tabs
+[1.364s] 	def get_occupied_cells(self):
+[1.364s] ^
+[1.364s] 
+[1.364s] ./rse_map_models/grid_map.py:60:1: W191 indentation contains tabs
+[1.364s] 		"""
+[1.364s] 		Get the occupied cells in the map.
+[1.364s] 		"""
+[1.364s] ^
+[1.364s] 
+[1.364s] ./rse_map_models/grid_map.py:61:1: W191 indentation contains tabs
+[1.365s] 		"""
+[1.365s] 		Get the occupied cells in the map.
+[1.365s] 		"""
+[1.365s] ^
+[1.365s] 
+[1.365s] ./rse_map_models/grid_map.py:62:1: W191 indentation contains tabs
+[1.365s] 		occupied_cells = []
+[1.365s] ^
+[1.365s] 
+[1.365s] ./rse_map_models/grid_map.py:63:1: W191 indentation contains tabs
+[1.365s] 		for x in range(self.x_len):
+[1.365s] ^
+[1.365s] 
+[1.365s] ./rse_map_models/grid_map.py:64:1: W191 indentation contains tabs
+[1.365s] 			for y in range(self.y_len):
+[1.365s] ^
+[1.366s] 
+[1.366s] ./rse_map_models/grid_map.py:65:1: W191 indentation contains tabs
+[1.366s] 				if retrieve_p(self.data[y, x]) > P_0:  # Access in (row, col) format
+[1.366s] ^
+[1.366s] 
+[1.366s] ./rse_map_models/grid_map.py:66:1: W191 indentation contains tabs
+[1.366s] 					occupied_cells.append((x, y))
+[1.366s] ^
+[1.366s] 
+[1.366s] ./rse_map_models/grid_map.py:67:1: W191 indentation contains tabs
+[1.366s] 		return occupied_cells
+[1.366s] ^
+[1.366s] 
+[1.366s] ./rse_map_models/grid_map.py:68:1: W191 indentation contains tabs
+[1.366s] 	
+[1.366s] ^
+[1.366s] 
+[1.367s] ./rse_map_models/grid_map.py:68:1: W293 blank line contains whitespace
+[1.367s] 	
+[1.367s] ^
+[1.367s] 
+[1.367s] ./rse_map_models/grid_map.py:69:1: W191 indentation contains tabs
+[1.367s] 	def to_ros_occupancy_grid(self):
+[1.367s] ^
+[1.367s] 
+[1.367s] ./rse_map_models/grid_map.py:70:1: W191 indentation contains tabs
+[1.367s] 		map_array_2d = self.to_grayscale_image() * 100
+[1.367s] ^
+[1.367s] 
+[1.367s] ./rse_map_models/grid_map.py:72:1: W191 indentation contains tabs
+[1.367s] 		map_array_2d = map_array_2d.astype(int)
+[1.367s] ^
+[1.367s] 
+[1.368s] ./rse_map_models/grid_map.py:74:1: W191 indentation contains tabs
+[1.368s] 		# Flatten the 2D array to a 1D array
+[1.368s] ^
+[1.368s] 
+[1.368s] ./rse_map_models/grid_map.py:75:1: W191 indentation contains tabs
+[1.368s] 		map_array_1d = map_array_2d.flatten()
+[1.368s] ^
+[1.368s] 
+[1.368s] ./rse_map_models/grid_map.py:77:1: W191 indentation contains tabs
+[1.368s] 		# Convert to a list
+[1.368s] ^
+[1.368s] 
+[1.368s] ./rse_map_models/grid_map.py:78:1: W191 indentation contains tabs
+[1.368s] 		map_data_list = map_array_1d.tolist()
+[1.368s] ^
+[1.368s] 
+[1.368s] ./rse_map_models/grid_map.py:80:1: W191 indentation contains tabs
+[1.369s] 		return map_data_list
+[1.369s] ^
+[1.369s] 
+[1.369s] ./rse_map_models/grid_map.py:82:1: W191 indentation contains tabs
+[1.369s] 	def to_BGR_image(self):
+[1.369s] ^
+[1.369s] 
+[1.369s] ./rse_map_models/grid_map.py:84:1: W191 indentation contains tabs
+[1.369s] 		"""
+[1.369s] 		Transformation to BGR image format
+[1.369s] 		"""
+[1.369s] ^
+[1.369s] 
+[1.369s] ./rse_map_models/grid_map.py:85:1: W191 indentation contains tabs
+[1.369s] 		"""
+[1.369s] 		Transformation to BGR image format
+[1.369s] 		"""
+[1.370s] ^
+[1.370s] 
+[1.370s] ./rse_map_models/grid_map.py:86:1: W191 indentation contains tabs
+[1.370s] 		# grayscale image
+[1.370s] ^
+[1.370s] 
+[1.370s] ./rse_map_models/grid_map.py:87:1: W191 indentation contains tabs
+[1.370s] 		gray_image = 1 - retrieve_p(self.data)
+[1.370s] ^
+[1.370s] 
+[1.370s] ./rse_map_models/grid_map.py:89:1: W191 indentation contains tabs
+[1.370s] 		# repeat values of grayscale image among 3 axis to get BGR image
+[1.370s] ^
+[1.370s] 
+[1.370s] ./rse_map_models/grid_map.py:90:1: W191 indentation contains tabs
+[1.370s] 		rgb_image = np.repeat(a = gray_image[:,:,np.newaxis], 
+[1.370s] ^
+[1.371s] 
+[1.371s] ./rse_map_models/grid_map.py:90:26: E251 unexpected spaces around keyword / parameter equals
+[1.371s] 		rgb_image = np.repeat(a = gray_image[:,:,np.newaxis], 
+[1.371s] 		                       ^
+[1.371s] 
+[1.371s] ./rse_map_models/grid_map.py:90:28: E251 unexpected spaces around keyword / parameter equals
+[1.371s] 		rgb_image = np.repeat(a = gray_image[:,:,np.newaxis], 
+[1.371s] 		                         ^
+[1.371s] 
+[1.371s] ./rse_map_models/grid_map.py:90:41: E231 missing whitespace after ','
+[1.371s] 		rgb_image = np.repeat(a = gray_image[:,:,np.newaxis], 
+[1.371s] 		                                      ^
+[1.371s] 
+[1.371s] ./rse_map_models/grid_map.py:90:43: E231 missing whitespace after ','
+[1.371s] 		rgb_image = np.repeat(a = gray_image[:,:,np.newaxis], 
+[1.372s] 		                                        ^
+[1.372s] 
+[1.372s] ./rse_map_models/grid_map.py:90:56: W291 trailing whitespace
+[1.372s] 		rgb_image = np.repeat(a = gray_image[:,:,np.newaxis], 
+[1.372s] 		                                                     ^
+[1.372s] 
+[1.372s] ./rse_map_models/grid_map.py:91:1: W191 indentation contains tabs
+[1.372s] 							  repeats = 3,
+[1.372s] ^
+[1.372s] 
+[1.372s] ./rse_map_models/grid_map.py:91:8: E101 indentation contains mixed spaces and tabs
+[1.372s] 							  repeats = 3,
+[1.372s] 							^
+[1.372s] 
+[1.372s] ./rse_map_models/grid_map.py:91:10: E128 continuation line under-indented for visual indent
+[1.372s] 							  repeats = 3,
+[1.373s] 							  ^
+[1.373s] 
+[1.373s] ./rse_map_models/grid_map.py:91:17: E251 unexpected spaces around keyword / parameter equals
+[1.373s] 							  repeats = 3,
+[1.373s] 							         ^
+[1.373s] 
+[1.373s] ./rse_map_models/grid_map.py:91:19: E251 unexpected spaces around keyword / parameter equals
+[1.373s] 							  repeats = 3,
+[1.373s] 							           ^
+[1.373s] 
+[1.373s] ./rse_map_models/grid_map.py:92:1: W191 indentation contains tabs
+[1.373s] 							  axis = 2)
+[1.373s] ^
+[1.373s] 
+[1.373s] ./rse_map_models/grid_map.py:92:8: E101 indentation contains mixed spaces and tabs
+[1.373s] 							  axis = 2)
+[1.374s] 							^
+[1.374s] 
+[1.374s] ./rse_map_models/grid_map.py:92:10: E128 continuation line under-indented for visual indent
+[1.374s] 							  axis = 2)
+[1.374s] 							  ^
+[1.374s] 
+[1.374s] ./rse_map_models/grid_map.py:92:14: E251 unexpected spaces around keyword / parameter equals
+[1.374s] 							  axis = 2)
+[1.374s] 							      ^
+[1.374s] 
+[1.374s] ./rse_map_models/grid_map.py:92:16: E251 unexpected spaces around keyword / parameter equals
+[1.374s] 							  axis = 2)
+[1.374s] 							        ^
+[1.374s] 
+[1.374s] ./rse_map_models/grid_map.py:94:1: W191 indentation contains tabs
+[1.374s] 		return rgb_image
+[1.374s] ^
+[1.375s] 
+[1.375s] ./rse_map_models/grid_map.py:96:1: W191 indentation contains tabs
+[1.375s] 	def to_grayscale_image(self):
+[1.375s] ^
+[1.375s] 
+[1.375s] ./rse_map_models/grid_map.py:98:1: W191 indentation contains tabs
+[1.375s] 		"""
+[1.375s] 		Transformation to GRAYSCALE image format
+[1.375s] 		"""
+[1.375s] ^
+[1.375s] 
+[1.375s] ./rse_map_models/grid_map.py:99:1: W191 indentation contains tabs
+[1.375s] 		"""
+[1.375s] 		Transformation to GRAYSCALE image format
+[1.375s] 		"""
+[1.375s] ^
+[1.375s] 
+[1.376s] ./rse_map_models/grid_map.py:100:1: W191 indentation contains tabs
+[1.376s] 		return 1 - retrieve_p(self.data)
+[1.376s] ^
+[1.376s] 
+[1.376s] 2     E101 indentation contains mixed spaces and tabs
+[1.376s] 2     E128 continuation line under-indented for visual indent
+[1.376s] 2     E231 missing whitespace after ','
+[1.376s] 6     E251 unexpected spaces around keyword / parameter equals
+[1.376s] 1     E741 ambiguous variable name 'l'
+[1.376s] 64    W191 indentation contains tabs
+[1.376s] 2     W291 trailing whitespace
+[1.376s] 1     W293 blank line contains whitespace
+[1.376s] 
+[1.376s] 6 files checked
+[1.376s] 80 errors
+[1.376s] 
+[1.376s] 'E'-type errors: 13
+[1.377s] 'W'-type errors: 67
+[1.377s] 
+[1.377s] Checked files:
+[1.377s] 
+[1.377s] * ./setup.py
+[1.377s] * ./rse_map_models/__init__.py
+[1.377s] * ./rse_map_models/grid_map.py
+[1.377s] * ./test/test_copyright.py
+[1.377s] * ./test/test_pep257.py
+[1.377s] * ./test/test_flake8.py
+[1.377s] ----------------------------- Captured stderr call -----------------------------
+[1.377s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[1.377s] _________________________________ test_pep257 __________________________________
+[1.377s] test/test_pep257.py:23: in test_pep257
+[1.377s]     assert rc == 0, 'Found code style errors / warnings'
+[1.377s] E   AssertionError: Found code style errors / warnings
+[1.377s] E   assert 1 == 0
+[1.378s] ----------------------------- Captured stdout call -----------------------------
+[1.378s] checking ./rse_map_models/__init__.py
+[1.378s] checking ./rse_map_models/grid_map.py
+[1.378s] ./rse_map_models/grid_map.py:37 in public method `discretize`: D200: One-line docstring should fit on one line with quotes (found 3)
+[1.378s] ./rse_map_models/grid_map.py:45 in public method `get_cell_center_mass`: D200: One-line docstring should fit on one line with quotes (found 3)
+[1.378s] ./rse_map_models/grid_map.py:53 in public method `check_pixel`: D200: One-line docstring should fit on one line with quotes (found 3)
+[1.378s] ./rse_map_models/grid_map.py:59 in public method `get_occupied_cells`: D200: One-line docstring should fit on one line with quotes (found 3)
+[1.378s] ./rse_map_models/grid_map.py:83 in public method `to_BGR_image`: D200: One-line docstring should fit on one line with quotes (found 3)
+[1.378s] ./rse_map_models/grid_map.py:83 in public method `to_BGR_image`: D400: First line should end with a period (not 't')
+[1.378s] ./rse_map_models/grid_map.py:83 in public method `to_BGR_image`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+[1.378s] ./rse_map_models/grid_map.py:83 in public method `to_BGR_image`: D401: First line should be in imperative mood (perhaps 'Transform', not 'Transformation')
+[1.378s] ./rse_map_models/grid_map.py:97 in public method `to_grayscale_image`: D200: One-line docstring should fit on one line with quotes (found 3)
+[1.378s] ./rse_map_models/grid_map.py:97 in public method `to_grayscale_image`: D400: First line should end with a period (not 't')
+[1.378s] ./rse_map_models/grid_map.py:97 in public method `to_grayscale_image`: D415: First line should end with a period, question mark, or exclamation point (not 't')
+[1.378s] ./rse_map_models/grid_map.py:97 in public method `to_grayscale_image`: D401: First line should be in imperative mood (perhaps 'Transform', not 'Transformation')
+[1.378s] checking ./setup.py
+[1.379s] checking ./test/test_copyright.py
+[1.379s] checking ./test/test_flake8.py
+[1.379s] checking ./test/test_pep257.py
+[1.379s] checking test/test_copyright.py
+[1.379s] checking test/test_flake8.py
+[1.379s] checking test/test_pep257.py
+[1.379s] 12 errors
+[1.379s] ---- generated xml file: /home/jjy/ros2_ws/build/rse_map_models/pytest.xml -----
+[1.379s] =========================== short test summary info ============================
+[1.379s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 80 code style...
+[1.379s] FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...
+[1.379s] =================== 2 failed, 1 skipped, 2 warnings in 0.17s ===================
+[1.379s] =============================== warnings summary ===============================
+[1.379s] test/test_flake8.py::test_flake8
+[1.379s] test/test_flake8.py::test_flake8
+[1.379s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[1.380s] 
+[1.380s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[1.519s] Invoked command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_map_models' returned '1': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_map_models:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_motion_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_map_models/pytest.xml --junit-prefix=rse_map_models -o cache_dir=/home/jjy/ros2_ws/build/rse_map_models/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest

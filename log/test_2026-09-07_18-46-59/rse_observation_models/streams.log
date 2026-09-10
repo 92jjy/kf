@@ -1,0 +1,1637 @@
+[0.393s] Invoking command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_observation_models': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_motion_models:/home/jjy/ros2_ws/install/rse_map_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_observation_models/pytest.xml --junit-prefix=rse_observation_models -o cache_dir=/home/jjy/ros2_ws/build/rse_observation_models/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest
+[0.998s] ============================= test session starts ==============================
+[0.998s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.998s] cachedir: /home/jjy/ros2_ws/build/rse_observation_models/.pytest_cache
+[0.998s] rootdir: /home/jjy/ros2_ws/src/rse_prob_robotics/rse_observation_models
+[0.998s] plugins: ament-lint-0.12.14, launch-testing-1.0.13, ament-pep257-0.12.14, ament-copyright-0.12.14, launch-testing-ros-0.19.13, ament-xmllint-0.12.14, ament-flake8-0.12.14, cov-3.0.0, colcon-core-0.20.1
+[0.998s] collected 3 items
+[0.998s] 
+[0.998s] test/test_copyright.py s                                                 [ 33%]
+[0.998s] test/test_flake8.py F                                                    [ 66%]
+[1.248s] test/test_pep257.py F                                                    [100%]
+[1.248s] 
+[1.248s] =================================== FAILURES ===================================
+[1.248s] _________________________________ test_flake8 __________________________________
+[1.248s] test/test_flake8.py:23: in test_flake8
+[1.248s]     assert rc == 0, \
+[1.248s] E   AssertionError: Found 235 code style errors / warnings:
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:4:1: E302 expected 2 blank lines, found 1
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:5:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:6:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:8:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:12:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:13:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:14:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:14:1: W293 blank line contains whitespace
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:15:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:16:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:18:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:22:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:23:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:24:1: W191 indentation contains tabs
+[1.249s] E     ./rse_observation_models/odometry_observation_models.py:25:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:25:1: W293 blank line contains whitespace
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:26:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:27:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:28:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:29:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:29:1: W293 blank line contains whitespace
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:30:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:31:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:32:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:33:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:35:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:36:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:36:1: W293 blank line contains whitespace
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:37:1: W191 indentation contains tabs
+[1.250s] E     ./rse_observation_models/odometry_observation_models.py:37:26: W292 no newline at end of file
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:4:1: E302 expected 2 blank lines, found 1
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:5:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:6:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:7:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:8:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:9:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:11:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:12:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:15:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:15:2: E303 too many blank lines (2)
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:16:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:17:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:18:1: W191 indentation contains tabs
+[1.251s] E     ./rse_observation_models/odometry_imu_observation_models.py:19:1: W191 indentation contains tabs
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:19:1: W293 blank line contains whitespace
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:20:1: W191 indentation contains tabs
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:21:1: W191 indentation contains tabs
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:23:1: W191 indentation contains tabs
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:26:1: W191 indentation contains tabs
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:26:1: W293 blank line contains whitespace
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:27:1: W191 indentation contains tabs
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:27:2: E303 too many blank lines (3)
+[1.252s] E     ./rse_observation_models/odometry_imu_observation_models.py:28:1: W191 indentation contains tabs
+[1.253s] E     ./rse_observation_models/odometry_imu_observation_models.py:29:1: W191 indentation contains tabs
+[1.253s] E     ./rse_observation_models/odometry_imu_observation_models.py:30:1: W191 indentation contains tabs
+[1.253s] E     ./rse_observation_models/odometry_imu_observation_models.py:31:1: W191 indentation contains tabs
+[1.253s] E     ./rse_observation_models/odometry_imu_observation_models.py:32:1: W191 indentation contains tabs
+[1.253s] E     ./rse_observation_models/odometry_imu_observation_models.py:33:1: W191 indentation contains tabs
+[1.253s] E     ./rse_observation_models/odometry_imu_observation_models.py:34:1: W191 indentation contains tabs
+[1.253s] E     ./rse_observation_models/odometry_imu_observation_models.py:36:1: W191 indentation contains tabs
+[1.254s] E     ./rse_observation_models/odometry_imu_observation_models.py:37:1: W191 indentation contains tabs
+[1.254s] E     ./rse_observation_models/odometry_imu_observation_models.py:38:1: W191 indentation contains tabs
+[1.254s] E     ./rse_observation_models/odometry_imu_observation_models.py:39:1: W191 indentation contains tabs
+[1.254s] E     ./rse_observation_models/odometry_imu_observation_models.py:40:1: W191 indentation contains tabs
+[1.254s] E     ./rse_observation_models/odometry_imu_observation_models.py:41:1: W191 indentation contains tabs
+[1.254s] E     ./rse_observation_models/odometry_imu_observation_models.py:42:1: W191 indentation contains tabs
+[1.254s] E     ./rse_observation_models/odometry_imu_observation_models.py:43:1: W191 indentation contains tabs
+[1.255s] E     ./rse_observation_models/odometry_imu_observation_models.py:45:1: W191 indentation contains tabs
+[1.255s] E     ./rse_observation_models/odometry_imu_observation_models.py:47:1: E302 expected 2 blank lines, found 1
+[1.255s] E     ./rse_observation_models/odometry_imu_observation_models.py:48:1: W191 indentation contains tabs
+[1.255s] E     ./rse_observation_models/odometry_imu_observation_models.py:49:1: W191 indentation contains tabs
+[1.255s] E     ./rse_observation_models/odometry_imu_observation_models.py:50:1: W191 indentation contains tabs
+[1.255s] E     ./rse_observation_models/odometry_imu_observation_models.py:51:1: W191 indentation contains tabs
+[1.255s] E     ./rse_observation_models/odometry_imu_observation_models.py:51:1: W293 blank line contains whitespace
+[1.256s] E     ./rse_observation_models/odometry_imu_observation_models.py:52:1: W191 indentation contains tabs
+[1.256s] E     ./rse_observation_models/odometry_imu_observation_models.py:53:1: W191 indentation contains tabs
+[1.256s] E     ./rse_observation_models/odometry_imu_observation_models.py:53:56: W291 trailing whitespace
+[1.256s] E     ./rse_observation_models/odometry_imu_observation_models.py:54:1: E101 indentation contains mixed spaces and tabs
+[1.256s] E     ./rse_observation_models/odometry_imu_observation_models.py:54:57: W291 trailing whitespace
+[1.256s] E     ./rse_observation_models/odometry_imu_observation_models.py:55:1: E101 indentation contains mixed spaces and tabs
+[1.256s] E     ./rse_observation_models/odometry_imu_observation_models.py:55:57: W291 trailing whitespace
+[1.257s] E     ./rse_observation_models/odometry_imu_observation_models.py:56:1: E101 indentation contains mixed spaces and tabs
+[1.257s] E     ./rse_observation_models/odometry_imu_observation_models.py:56:57: W291 trailing whitespace
+[1.257s] E     ./rse_observation_models/odometry_imu_observation_models.py:57:1: E101 indentation contains mixed spaces and tabs
+[1.257s] E     ./rse_observation_models/odometry_imu_observation_models.py:57:57: W291 trailing whitespace
+[1.257s] E     ./rse_observation_models/odometry_imu_observation_models.py:58:1: E101 indentation contains mixed spaces and tabs
+[1.257s] E     ./rse_observation_models/odometry_imu_observation_models.py:58:57: W291 trailing whitespace
+[1.257s] E     ./rse_observation_models/odometry_imu_observation_models.py:59:1: E101 indentation contains mixed spaces and tabs
+[1.258s] E     ./rse_observation_models/odometry_imu_observation_models.py:59:58: W291 trailing whitespace
+[1.258s] E     ./rse_observation_models/odometry_imu_observation_models.py:60:1: E101 indentation contains mixed spaces and tabs
+[1.258s] E     ./rse_observation_models/odometry_imu_observation_models.py:60:1: W293 blank line contains whitespace
+[1.258s] E     ./rse_observation_models/odometry_imu_observation_models.py:62:1: W191 indentation contains tabs
+[1.258s] E     ./rse_observation_models/odometry_imu_observation_models.py:62:2: E303 too many blank lines (2)
+[1.258s] E     ./rse_observation_models/odometry_imu_observation_models.py:64:1: E302 expected 2 blank lines, found 1
+[1.258s] E     ./rse_observation_models/odometry_imu_observation_models.py:65:1: W191 indentation contains tabs
+[1.259s] E     ./rse_observation_models/odometry_imu_observation_models.py:66:1: W191 indentation contains tabs
+[1.259s] E     ./rse_observation_models/odometry_imu_observation_models.py:67:1: W191 indentation contains tabs
+[1.259s] E     ./rse_observation_models/odometry_imu_observation_models.py:68:1: W191 indentation contains tabs
+[1.259s] E     ./rse_observation_models/odometry_imu_observation_models.py:68:1: W293 blank line contains whitespace
+[1.259s] E     ./rse_observation_models/odometry_imu_observation_models.py:69:1: W191 indentation contains tabs
+[1.259s] E     ./rse_observation_models/odometry_imu_observation_models.py:70:1: W191 indentation contains tabs
+[1.259s] E     ./rse_observation_models/odometry_imu_observation_models.py:70:61: W291 trailing whitespace
+[1.260s] E     ./rse_observation_models/odometry_imu_observation_models.py:71:1: E101 indentation contains mixed spaces and tabs
+[1.260s] E     ./rse_observation_models/odometry_imu_observation_models.py:71:62: W291 trailing whitespace
+[1.260s] E     ./rse_observation_models/odometry_imu_observation_models.py:72:1: E101 indentation contains mixed spaces and tabs
+[1.260s] E     ./rse_observation_models/odometry_imu_observation_models.py:72:62: W291 trailing whitespace
+[1.260s] E     ./rse_observation_models/odometry_imu_observation_models.py:73:1: E101 indentation contains mixed spaces and tabs
+[1.260s] E     ./rse_observation_models/odometry_imu_observation_models.py:73:62: W291 trailing whitespace
+[1.260s] E     ./rse_observation_models/odometry_imu_observation_models.py:74:1: E101 indentation contains mixed spaces and tabs
+[1.261s] E     ./rse_observation_models/odometry_imu_observation_models.py:74:62: W291 trailing whitespace
+[1.261s] E     ./rse_observation_models/odometry_imu_observation_models.py:75:1: E101 indentation contains mixed spaces and tabs
+[1.261s] E     ./rse_observation_models/odometry_imu_observation_models.py:75:62: W291 trailing whitespace
+[1.261s] E     ./rse_observation_models/odometry_imu_observation_models.py:76:1: E101 indentation contains mixed spaces and tabs
+[1.261s] E     ./rse_observation_models/odometry_imu_observation_models.py:76:63: W291 trailing whitespace
+[1.261s] E     ./rse_observation_models/odometry_imu_observation_models.py:77:1: E101 indentation contains mixed spaces and tabs
+[1.261s] E     ./rse_observation_models/odometry_imu_observation_models.py:77:1: W293 blank line contains whitespace
+[1.262s] E     ./rse_observation_models/odometry_imu_observation_models.py:79:1: W191 indentation contains tabs
+[1.262s] E     ./rse_observation_models/odometry_imu_observation_models.py:79:2: E303 too many blank lines (2)
+[1.262s] E     ./rse_observation_models/odometry_imu_observation_models.py:81:1: E302 expected 2 blank lines, found 1
+[1.262s] E     ./rse_observation_models/odometry_imu_observation_models.py:82:1: W191 indentation contains tabs
+[1.262s] E     ./rse_observation_models/odometry_imu_observation_models.py:83:1: W191 indentation contains tabs
+[1.262s] E     ./rse_observation_models/odometry_imu_observation_models.py:83:3: E265 block comment should start with '# '
+[1.263s] E     ./rse_observation_models/odometry_imu_observation_models.py:84:1: W191 indentation contains tabs
+[1.263s] E     ./rse_observation_models/odometry_imu_observation_models.py:85:1: W191 indentation contains tabs
+[1.263s] E     ./rse_observation_models/odometry_imu_observation_models.py:86:1: W191 indentation contains tabs
+[1.263s] E     ./rse_observation_models/odometry_imu_observation_models.py:86:1: W293 blank line contains whitespace
+[1.263s] E     ./rse_observation_models/odometry_imu_observation_models.py:87:1: W191 indentation contains tabs
+[1.263s] E     ./rse_observation_models/odometry_imu_observation_models.py:88:1: W191 indentation contains tabs
+[1.263s] E     ./rse_observation_models/odometry_imu_observation_models.py:89:1: E101 indentation contains mixed spaces and tabs
+[1.264s] E     ./rse_observation_models/odometry_imu_observation_models.py:90:1: E101 indentation contains mixed spaces and tabs
+[1.264s] E     ./rse_observation_models/odometry_imu_observation_models.py:91:1: E101 indentation contains mixed spaces and tabs
+[1.264s] E     ./rse_observation_models/odometry_imu_observation_models.py:92:1: E101 indentation contains mixed spaces and tabs
+[1.264s] E     ./rse_observation_models/odometry_imu_observation_models.py:93:1: E101 indentation contains mixed spaces and tabs
+[1.264s] E     ./rse_observation_models/odometry_imu_observation_models.py:94:1: E101 indentation contains mixed spaces and tabs
+[1.264s] E     ./rse_observation_models/odometry_imu_observation_models.py:95:1: E101 indentation contains mixed spaces and tabs
+[1.264s] E     ./rse_observation_models/odometry_imu_observation_models.py:95:1: W293 blank line contains whitespace
+[1.265s] E     ./rse_observation_models/odometry_imu_observation_models.py:96:1: W191 indentation contains tabs
+[1.265s] E     ./rse_observation_models/odometry_imu_observation_models.py:100:1: W191 indentation contains tabs
+[1.265s] E     ./rse_observation_models/odometry_imu_observation_models.py:101:1: W191 indentation contains tabs
+[1.265s] E     ./rse_observation_models/odometry_imu_observation_models.py:102:1: W191 indentation contains tabs
+[1.265s] E     ./rse_observation_models/odometry_imu_observation_models.py:102:100: E501 line too long (124 > 99 characters)
+[1.265s] E     ./rse_observation_models/odometry_imu_observation_models.py:103:1: W191 indentation contains tabs
+[1.265s] E     ./rse_observation_models/odometry_imu_observation_models.py:103:1: W293 blank line contains whitespace
+[1.266s] E     ./rse_observation_models/odometry_imu_observation_models.py:104:1: W191 indentation contains tabs
+[1.266s] E     ./rse_observation_models/odometry_imu_observation_models.py:106:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.266s] E     ./rse_observation_models/odometry_imu_observation_models.py:108:1: W191 indentation contains tabs
+[1.266s] E     ./rse_observation_models/odometry_imu_observation_models.py:109:1: W191 indentation contains tabs
+[1.266s] E     ./rse_observation_models/odometry_imu_observation_models.py:110:1: W191 indentation contains tabs
+[1.266s] E     ./rse_observation_models/odometry_imu_observation_models.py:111:1: W191 indentation contains tabs
+[1.266s] E     ./rse_observation_models/odometry_imu_observation_models.py:111:1: W293 blank line contains whitespace
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:112:1: W191 indentation contains tabs
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:113:1: W191 indentation contains tabs
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:114:1: W191 indentation contains tabs
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:115:1: W191 indentation contains tabs
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:115:1: W293 blank line contains whitespace
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:116:1: W191 indentation contains tabs
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:117:1: W191 indentation contains tabs
+[1.267s] E     ./rse_observation_models/odometry_imu_observation_models.py:118:1: W191 indentation contains tabs
+[1.268s] E     ./rse_observation_models/odometry_imu_observation_models.py:119:1: W191 indentation contains tabs
+[1.268s] E     ./rse_observation_models/odometry_imu_observation_models.py:121:1: W191 indentation contains tabs
+[1.268s] E     ./rse_observation_models/odometry_imu_observation_models.py:122:1: W191 indentation contains tabs
+[1.268s] E     ./rse_observation_models/odometry_imu_observation_models.py:122:1: W293 blank line contains whitespace
+[1.268s] E     ./rse_observation_models/odometry_imu_observation_models.py:123:1: W191 indentation contains tabs
+[1.268s] E     ./rse_observation_models/odometry_imu_observation_models.py:126:1: E302 expected 2 blank lines, found 1
+[1.268s] E     ./rse_observation_models/odometry_imu_observation_models.py:127:1: E101 indentation contains mixed spaces and tabs
+[1.269s] E     ./rse_observation_models/odometry_imu_observation_models.py:128:1: E101 indentation contains mixed spaces and tabs
+[1.269s] E     ./rse_observation_models/odometry_imu_observation_models.py:129:1: E101 indentation contains mixed spaces and tabs
+[1.269s] E     ./rse_observation_models/odometry_imu_observation_models.py:131:1: E101 indentation contains mixed spaces and tabs
+[1.269s] E     ./rse_observation_models/odometry_imu_observation_models.py:132:1: E101 indentation contains mixed spaces and tabs
+[1.269s] E     ./rse_observation_models/odometry_imu_observation_models.py:134:1: E101 indentation contains mixed spaces and tabs
+[1.269s] E     ./rse_observation_models/odometry_imu_observation_models.py:135:1: E101 indentation contains mixed spaces and tabs
+[1.269s] E     ./rse_observation_models/odometry_imu_observation_models.py:136:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:137:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:139:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:140:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:141:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:142:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:144:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:145:1: E101 indentation contains mixed spaces and tabs
+[1.270s] E     ./rse_observation_models/odometry_imu_observation_models.py:150:1: E101 indentation contains mixed spaces and tabs
+[1.271s] E     ./rse_observation_models/odometry_imu_observation_models.py:151:1: E101 indentation contains mixed spaces and tabs
+[1.271s] E     ./rse_observation_models/odometry_imu_observation_models.py:152:1: E101 indentation contains mixed spaces and tabs
+[1.271s] E     ./rse_observation_models/odometry_imu_observation_models.py:154:1: E101 indentation contains mixed spaces and tabs
+[1.271s] E     ./rse_observation_models/odometry_imu_observation_models.py:155:1: E101 indentation contains mixed spaces and tabs
+[1.271s] E     ./rse_observation_models/odometry_imu_observation_models.py:156:1: E101 indentation contains mixed spaces and tabs
+[1.271s] E     ./rse_observation_models/odometry_imu_observation_models.py:158:1: E101 indentation contains mixed spaces and tabs
+[1.272s] E     ./rse_observation_models/odometry_imu_observation_models.py:159:1: E101 indentation contains mixed spaces and tabs
+[1.272s] E     ./rse_observation_models/odometry_imu_observation_models.py:161:1: E101 indentation contains mixed spaces and tabs
+[1.272s] E     ./rse_observation_models/odometry_imu_observation_models.py:162:1: E101 indentation contains mixed spaces and tabs
+[1.272s] E     ./rse_observation_models/odometry_imu_observation_models.py:163:1: E101 indentation contains mixed spaces and tabs
+[1.272s] E     ./rse_observation_models/odometry_imu_observation_models.py:165:1: E101 indentation contains mixed spaces and tabs
+[1.272s] E     ./rse_observation_models/odometry_imu_observation_models.py:166:1: E101 indentation contains mixed spaces and tabs
+[1.272s] E     ./rse_observation_models/odometry_imu_observation_models.py:167:1: E101 indentation contains mixed spaces and tabs
+[1.273s] E     ./rse_observation_models/odometry_imu_observation_models.py:169:1: E101 indentation contains mixed spaces and tabs
+[1.273s] E     ./rse_observation_models/odometry_imu_observation_models.py:170:1: E101 indentation contains mixed spaces and tabs
+[1.273s] E     ./rse_observation_models/odometry_imu_observation_models.py:171:1: E101 indentation contains mixed spaces and tabs
+[1.273s] E     ./rse_observation_models/odometry_imu_observation_models.py:172:1: E101 indentation contains mixed spaces and tabs
+[1.273s] E     ./rse_observation_models/odometry_imu_observation_models.py:173:1: E101 indentation contains mixed spaces and tabs
+[1.273s] E     ./rse_observation_models/odometry_imu_observation_models.py:174:1: E101 indentation contains mixed spaces and tabs
+[1.273s] E     ./rse_observation_models/odometry_imu_observation_models.py:175:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:176:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:178:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:179:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:180:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:182:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:183:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:185:1: E101 indentation contains mixed spaces and tabs
+[1.274s] E     ./rse_observation_models/odometry_imu_observation_models.py:186:1: E101 indentation contains mixed spaces and tabs
+[1.275s] E     ./rse_observation_models/odometry_imu_observation_models.py:187:1: E101 indentation contains mixed spaces and tabs
+[1.275s] E     ./rse_observation_models/odometry_imu_observation_models.py:188:1: E101 indentation contains mixed spaces and tabs
+[1.275s] E     ./rse_observation_models/odometry_imu_observation_models.py:189:1: E101 indentation contains mixed spaces and tabs
+[1.275s] E     ./rse_observation_models/odometry_imu_observation_models.py:191:1: E101 indentation contains mixed spaces and tabs
+[1.275s] E     ./rse_observation_models/odometry_imu_observation_models.py:192:1: E101 indentation contains mixed spaces and tabs
+[1.275s] E     ./rse_observation_models/odometry_imu_observation_models.py:193:1: E101 indentation contains mixed spaces and tabs
+[1.275s] E     ./rse_observation_models/odometry_imu_observation_models.py:194:1: E101 indentation contains mixed spaces and tabs
+[1.276s] E     ./rse_observation_models/odometry_imu_observation_models.py:195:1: E101 indentation contains mixed spaces and tabs
+[1.276s] E     ./rse_observation_models/odometry_imu_observation_models.py:196:1: E101 indentation contains mixed spaces and tabs
+[1.276s] E     ./rse_observation_models/odometry_imu_observation_models.py:198:1: E101 indentation contains mixed spaces and tabs
+[1.276s] E     ./rse_observation_models/odometry_imu_observation_models.py:199:1: E101 indentation contains mixed spaces and tabs
+[1.276s] E     ./rse_observation_models/odometry_imu_observation_models.py:200:1: E101 indentation contains mixed spaces and tabs
+[1.276s] E     ./rse_observation_models/odometry_imu_observation_models.py:202:1: E101 indentation contains mixed spaces and tabs
+[1.276s] E     ./rse_observation_models/odometry_imu_observation_models.py:203:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:204:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:205:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:206:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:207:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:208:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:209:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:211:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:212:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:213:1: E101 indentation contains mixed spaces and tabs
+[1.277s] E     ./rse_observation_models/odometry_imu_observation_models.py:214:1: E101 indentation contains mixed spaces and tabs
+[1.278s] E     ./rse_observation_models/odometry_imu_observation_models.py:215:1: E101 indentation contains mixed spaces and tabs
+[1.278s] E     ./rse_observation_models/odometry_imu_observation_models.py:217:1: E101 indentation contains mixed spaces and tabs
+[1.278s] E     ./rse_observation_models/odometry_imu_observation_models.py:219:1: W391 blank line at end of file
+[1.278s] E   assert 1 == 0
+[1.278s] ----------------------------- Captured stdout call -----------------------------
+[1.278s] 
+[1.278s] ./rse_observation_models/odometry_observation_models.py:4:1: E302 expected 2 blank lines, found 1
+[1.278s] def odometry_observation_model():
+[1.278s] ^
+[1.278s] 
+[1.278s] ./rse_observation_models/odometry_observation_models.py:5:1: W191 indentation contains tabs
+[1.278s] 	def observation_matrix_C():
+[1.278s] ^
+[1.278s] 
+[1.279s] ./rse_observation_models/odometry_observation_models.py:6:1: W191 indentation contains tabs
+[1.279s] 		return np.eye(3)
+[1.279s] ^
+[1.279s] 
+[1.279s] ./rse_observation_models/odometry_observation_models.py:8:1: W191 indentation contains tabs
+[1.279s] 	return observation_matrix_C
+[1.279s] ^
+[1.279s] 
+[1.279s] ./rse_observation_models/odometry_observation_models.py:12:1: W191 indentation contains tabs
+[1.279s] 	def observation_function_h(mu):
+[1.280s] ^
+[1.280s] 
+[1.280s] ./rse_observation_models/odometry_observation_models.py:13:1: W191 indentation contains tabs
+[1.280s] 		return mu
+[1.280s] ^
+[1.280s] 
+[1.280s] ./rse_observation_models/odometry_observation_models.py:14:1: W191 indentation contains tabs
+[1.280s] 	
+[1.280s] ^
+[1.281s] 
+[1.281s] ./rse_observation_models/odometry_observation_models.py:14:1: W293 blank line contains whitespace
+[1.281s] 	
+[1.281s] ^
+[1.281s] 
+[1.281s] ./rse_observation_models/odometry_observation_models.py:15:1: W191 indentation contains tabs
+[1.281s] 	def jacobian_of_h_wrt_state_H(mu):
+[1.281s] ^
+[1.281s] 
+[1.281s] ./rse_observation_models/odometry_observation_models.py:16:1: W191 indentation contains tabs
+[1.281s] 		return np.eye(3)
+[1.282s] ^
+[1.282s] 
+[1.282s] ./rse_observation_models/odometry_observation_models.py:18:1: W191 indentation contains tabs
+[1.282s] 	return observation_function_h, jacobian_of_h_wrt_state_H
+[1.282s] ^
+[1.282s] 
+[1.282s] ./rse_observation_models/odometry_observation_models.py:22:1: W191 indentation contains tabs
+[1.282s] 	def observation_model(particles, z, Q):
+[1.282s] ^
+[1.282s] 
+[1.283s] ./rse_observation_models/odometry_observation_models.py:23:1: W191 indentation contains tabs
+[1.283s] 		# Calculate the error between the measured pose and each particle's pose
+[1.283s] ^
+[1.283s] 
+[1.283s] ./rse_observation_models/odometry_observation_models.py:24:1: W191 indentation contains tabs
+[1.283s] 		error = particles - z
+[1.283s] ^
+[1.283s] 
+[1.283s] ./rse_observation_models/odometry_observation_models.py:25:1: W191 indentation contains tabs
+[1.283s] 		
+[1.283s] ^
+[1.283s] 
+[1.283s] ./rse_observation_models/odometry_observation_models.py:25:1: W293 blank line contains whitespace
+[1.283s] 		
+[1.284s] ^
+[1.284s] 
+[1.284s] ./rse_observation_models/odometry_observation_models.py:26:1: W191 indentation contains tabs
+[1.284s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.284s] ^
+[1.284s] 
+[1.284s] ./rse_observation_models/odometry_observation_models.py:27:1: W191 indentation contains tabs
+[1.284s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.284s] ^
+[1.284s] 
+[1.284s] ./rse_observation_models/odometry_observation_models.py:28:1: W191 indentation contains tabs
+[1.284s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.284s] ^
+[1.284s] 
+[1.285s] ./rse_observation_models/odometry_observation_models.py:29:1: W191 indentation contains tabs
+[1.285s] 		
+[1.285s] ^
+[1.285s] 
+[1.285s] ./rse_observation_models/odometry_observation_models.py:29:1: W293 blank line contains whitespace
+[1.285s] 		
+[1.285s] ^
+[1.285s] 
+[1.285s] ./rse_observation_models/odometry_observation_models.py:30:1: W191 indentation contains tabs
+[1.285s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.285s] ^
+[1.285s] 
+[1.285s] ./rse_observation_models/odometry_observation_models.py:31:1: W191 indentation contains tabs
+[1.285s] 		# The mean of the error is [0, 0, 0].
+[1.285s] ^
+[1.286s] 
+[1.286s] ./rse_observation_models/odometry_observation_models.py:32:1: W191 indentation contains tabs
+[1.286s] 		# This gives a high likelihood to particles with low error.
+[1.286s] ^
+[1.286s] 
+[1.286s] ./rse_observation_models/odometry_observation_models.py:33:1: W191 indentation contains tabs
+[1.286s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(3), cov=Q).pdf(error)
+[1.286s] ^
+[1.286s] 
+[1.286s] ./rse_observation_models/odometry_observation_models.py:35:1: W191 indentation contains tabs
+[1.286s] 		return likelihood
+[1.286s] ^
+[1.286s] 
+[1.287s] ./rse_observation_models/odometry_observation_models.py:36:1: W191 indentation contains tabs
+[1.287s] 	
+[1.287s] ^
+[1.287s] 
+[1.287s] ./rse_observation_models/odometry_observation_models.py:36:1: W293 blank line contains whitespace
+[1.287s] 	
+[1.287s] ^
+[1.287s] 
+[1.287s] ./rse_observation_models/odometry_observation_models.py:37:1: W191 indentation contains tabs
+[1.287s] 	return observation_model^
+[1.287s] 
+[1.287s] ./rse_observation_models/odometry_observation_models.py:37:26: W292 no newline at end of file
+[1.287s] 	return observation_model	                        ^
+[1.287s] 
+[1.287s] ./rse_observation_models/odometry_imu_observation_models.py:4:1: E302 expected 2 blank lines, found 1
+[1.288s] def odometry_imu_observation_model_linearized():
+[1.288s] ^
+[1.288s] 
+[1.288s] ./rse_observation_models/odometry_imu_observation_models.py:5:1: W191 indentation contains tabs
+[1.288s] 	def observation_function_h_v1(mu, u):
+[1.288s] ^
+[1.288s] 
+[1.288s] ./rse_observation_models/odometry_imu_observation_models.py:6:1: W191 indentation contains tabs
+[1.288s] 		# mu is [x, y, theta]
+[1.288s] ^
+[1.288s] 
+[1.288s] ./rse_observation_models/odometry_imu_observation_models.py:7:1: W191 indentation contains tabs
+[1.288s] 		# Predict sensor measurements purely based on the state estimate and perhaps physical models
+[1.288s] ^
+[1.288s] 
+[1.289s] ./rse_observation_models/odometry_imu_observation_models.py:8:1: W191 indentation contains tabs
+[1.289s] 		predicted_imu_theta = mu[2]  # Predicts IMU's theta should match the state's theta
+[1.289s] ^
+[1.289s] 
+[1.289s] ./rse_observation_models/odometry_imu_observation_models.py:9:1: W191 indentation contains tabs
+[1.289s] 		predicted_imu_omega = u[1]  # If omega from control is assumed to reflect actual omega
+[1.289s] ^
+[1.289s] 
+[1.289s] ./rse_observation_models/odometry_imu_observation_models.py:11:1: W191 indentation contains tabs
+[1.289s] 		# [x, y, theta, theta, w]
+[1.289s] ^
+[1.289s] 
+[1.289s] ./rse_observation_models/odometry_imu_observation_models.py:12:1: W191 indentation contains tabs
+[1.289s] 		return np.array([mu[0], mu[1], mu[2], predicted_imu_theta, predicted_imu_omega])
+[1.289s] ^
+[1.290s] 
+[1.290s] ./rse_observation_models/odometry_imu_observation_models.py:15:1: W191 indentation contains tabs
+[1.290s] 	def observation_function_h_v2(mu, previous_theta, delta_t):
+[1.290s] ^
+[1.290s] 
+[1.290s] ./rse_observation_models/odometry_imu_observation_models.py:15:2: E303 too many blank lines (2)
+[1.290s] 	def observation_function_h_v2(mu, previous_theta, delta_t):
+[1.290s] 	^
+[1.290s] 
+[1.290s] ./rse_observation_models/odometry_imu_observation_models.py:16:1: W191 indentation contains tabs
+[1.290s] 		# Compute omega from theta
+[1.290s] ^
+[1.290s] 
+[1.290s] ./rse_observation_models/odometry_imu_observation_models.py:17:1: W191 indentation contains tabs
+[1.290s] 		delta_theta = mu[2] - previous_theta
+[1.291s] ^
+[1.291s] 
+[1.291s] ./rse_observation_models/odometry_imu_observation_models.py:18:1: W191 indentation contains tabs
+[1.291s] 		predicted_imu_omega = delta_theta / delta_t
+[1.291s] ^
+[1.291s] 
+[1.291s] ./rse_observation_models/odometry_imu_observation_models.py:19:1: W191 indentation contains tabs
+[1.291s] 		
+[1.291s] ^
+[1.291s] 
+[1.291s] ./rse_observation_models/odometry_imu_observation_models.py:19:1: W293 blank line contains whitespace
+[1.291s] 		
+[1.291s] ^
+[1.291s] 
+[1.291s] ./rse_observation_models/odometry_imu_observation_models.py:20:1: W191 indentation contains tabs
+[1.291s] 		# Assume imu_theta measurement aligns with theta from state
+[1.292s] ^
+[1.292s] 
+[1.292s] ./rse_observation_models/odometry_imu_observation_models.py:21:1: W191 indentation contains tabs
+[1.292s] 		predicted_imu_theta = mu[2]  # This would be aligned with an actual IMU measurement for theta
+[1.292s] ^
+[1.292s] 
+[1.292s] ./rse_observation_models/odometry_imu_observation_models.py:23:1: W191 indentation contains tabs
+[1.292s] 		return np.array([[mu[0]], [mu[1]], [mu[2]], [predicted_imu_theta], [predicted_imu_omega]])
+[1.292s] ^
+[1.292s] 
+[1.292s] ./rse_observation_models/odometry_imu_observation_models.py:26:1: W191 indentation contains tabs
+[1.292s] 	
+[1.292s] ^
+[1.292s] 
+[1.292s] ./rse_observation_models/odometry_imu_observation_models.py:26:1: W293 blank line contains whitespace
+[1.293s] 	
+[1.293s] ^
+[1.293s] 
+[1.293s] ./rse_observation_models/odometry_imu_observation_models.py:27:1: W191 indentation contains tabs
+[1.293s] 	def jacobian_of_h_wrt_state_H_v1():
+[1.293s] ^
+[1.293s] 
+[1.293s] ./rse_observation_models/odometry_imu_observation_models.py:27:2: E303 too many blank lines (3)
+[1.293s] 	def jacobian_of_h_wrt_state_H_v1():
+[1.293s] 	^
+[1.293s] 
+[1.293s] ./rse_observation_models/odometry_imu_observation_models.py:28:1: W191 indentation contains tabs
+[1.293s] 		# Jacobian with respect to the state; note additional rows for IMU data
+[1.293s] ^
+[1.293s] 
+[1.294s] ./rse_observation_models/odometry_imu_observation_models.py:29:1: W191 indentation contains tabs
+[1.294s] 		# Here we assume theta from IMU aligns directly with theta from state
+[1.294s] ^
+[1.294s] 
+[1.294s] ./rse_observation_models/odometry_imu_observation_models.py:30:1: W191 indentation contains tabs
+[1.294s] 		H = np.zeros((5, 3))
+[1.294s] ^
+[1.294s] 
+[1.295s] ./rse_observation_models/odometry_imu_observation_models.py:31:1: W191 indentation contains tabs
+[1.295s] 		H[0:3, :] = np.eye(3)  # Odometry part affects x, y, theta
+[1.295s] ^
+[1.295s] 
+[1.295s] ./rse_observation_models/odometry_imu_observation_models.py:32:1: W191 indentation contains tabs
+[1.295s] 		H[3, 2] = 1  # IMU theta part affects state theta
+[1.296s] ^
+[1.296s] 
+[1.296s] ./rse_observation_models/odometry_imu_observation_models.py:33:1: W191 indentation contains tabs
+[1.296s] 		H[4, 2] = 0  # IMU omega does not depend on state directly in this simple model
+[1.296s] ^
+[1.296s] 
+[1.296s] ./rse_observation_models/odometry_imu_observation_models.py:34:1: W191 indentation contains tabs
+[1.296s] 		return H
+[1.296s] ^
+[1.296s] 
+[1.296s] ./rse_observation_models/odometry_imu_observation_models.py:36:1: W191 indentation contains tabs
+[1.297s] 	def jacobian_of_h_wrt_state_H_v2(delta_t):
+[1.297s] ^
+[1.297s] 
+[1.297s] ./rse_observation_models/odometry_imu_observation_models.py:37:1: W191 indentation contains tabs
+[1.297s] 		# Jacobian with respect to the state; note additional rows for IMU data
+[1.297s] ^
+[1.297s] 
+[1.297s] ./rse_observation_models/odometry_imu_observation_models.py:38:1: W191 indentation contains tabs
+[1.297s] 		# Here we assume theta from IMU aligns directly with theta from state
+[1.297s] ^
+[1.297s] 
+[1.297s] ./rse_observation_models/odometry_imu_observation_models.py:39:1: W191 indentation contains tabs
+[1.297s] 		H = np.zeros((5, 3))
+[1.298s] ^
+[1.298s] 
+[1.298s] ./rse_observation_models/odometry_imu_observation_models.py:40:1: W191 indentation contains tabs
+[1.298s] 		H[0:3, :] = np.eye(3)  # Odometry part affects x, y, theta
+[1.298s] ^
+[1.298s] 
+[1.298s] ./rse_observation_models/odometry_imu_observation_models.py:41:1: W191 indentation contains tabs
+[1.298s] 		H[3, 2] = 1  # IMU theta part affects state theta
+[1.298s] ^
+[1.298s] 
+[1.298s] ./rse_observation_models/odometry_imu_observation_models.py:42:1: W191 indentation contains tabs
+[1.298s] 		H[4, 2] = 1 / delta_t  # IMU omega does not depend on state directly in this simple model
+[1.298s] ^
+[1.298s] 
+[1.298s] ./rse_observation_models/odometry_imu_observation_models.py:43:1: W191 indentation contains tabs
+[1.299s] 		return H
+[1.299s] ^
+[1.299s] 
+[1.299s] ./rse_observation_models/odometry_imu_observation_models.py:45:1: W191 indentation contains tabs
+[1.299s] 	return observation_function_h_v2, jacobian_of_h_wrt_state_H_v2
+[1.299s] ^
+[1.299s] 
+[1.299s] ./rse_observation_models/odometry_imu_observation_models.py:47:1: E302 expected 2 blank lines, found 1
+[1.299s] def odometry_imu_observation_model_with_acceleration_motion_model_linearized_1():
+[1.299s] ^
+[1.299s] 
+[1.299s] ./rse_observation_models/odometry_imu_observation_models.py:48:1: W191 indentation contains tabs
+[1.299s] 	def observation_function_h(mu):
+[1.299s] ^
+[1.299s] 
+[1.300s] ./rse_observation_models/odometry_imu_observation_models.py:49:1: W191 indentation contains tabs
+[1.300s] 		x, y, theta, v, w, ax, ay = mu
+[1.300s] ^
+[1.300s] 
+[1.300s] ./rse_observation_models/odometry_imu_observation_models.py:50:1: W191 indentation contains tabs
+[1.300s] 		return np.array([[x], [y], [theta], [theta], [w], [ax], [ay]])
+[1.300s] ^
+[1.300s] 
+[1.300s] ./rse_observation_models/odometry_imu_observation_models.py:51:1: W191 indentation contains tabs
+[1.300s] 	
+[1.300s] ^
+[1.300s] 
+[1.300s] ./rse_observation_models/odometry_imu_observation_models.py:51:1: W293 blank line contains whitespace
+[1.300s] 	
+[1.300s] ^
+[1.301s] 
+[1.301s] ./rse_observation_models/odometry_imu_observation_models.py:52:1: W191 indentation contains tabs
+[1.301s] 	def jacobian_of_h_wrt_state_H(mu):
+[1.301s] ^
+[1.301s] 
+[1.301s] ./rse_observation_models/odometry_imu_observation_models.py:53:1: W191 indentation contains tabs
+[1.301s] 		return np.array([[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],    
+[1.301s] ^
+[1.301s] 
+[1.301s] ./rse_observation_models/odometry_imu_observation_models.py:53:56: W291 trailing whitespace
+[1.301s] 		return np.array([[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],    
+[1.301s] 		                                                     ^
+[1.301s] 
+[1.301s] ./rse_observation_models/odometry_imu_observation_models.py:54:1: E101 indentation contains mixed spaces and tabs
+[1.302s]                     [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.302s] ^
+[1.302s] 
+[1.302s] ./rse_observation_models/odometry_imu_observation_models.py:54:57: W291 trailing whitespace
+[1.303s]                     [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.303s]                                                         ^
+[1.303s] 
+[1.303s] ./rse_observation_models/odometry_imu_observation_models.py:55:1: E101 indentation contains mixed spaces and tabs
+[1.303s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.303s] ^
+[1.303s] 
+[1.303s] ./rse_observation_models/odometry_imu_observation_models.py:55:57: W291 trailing whitespace
+[1.303s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.303s]                                                         ^
+[1.303s] 
+[1.303s] ./rse_observation_models/odometry_imu_observation_models.py:56:1: E101 indentation contains mixed spaces and tabs
+[1.304s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],  	     
+[1.304s] ^
+[1.304s] 
+[1.304s] ./rse_observation_models/odometry_imu_observation_models.py:56:57: W291 trailing whitespace
+[1.304s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],  	     
+[1.304s]                                                         ^
+[1.304s] 
+[1.304s] ./rse_observation_models/odometry_imu_observation_models.py:57:1: E101 indentation contains mixed spaces and tabs
+[1.304s]                     [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0],   	     
+[1.304s] ^
+[1.304s] 
+[1.304s] ./rse_observation_models/odometry_imu_observation_models.py:57:57: W291 trailing whitespace
+[1.305s]                     [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0],   	     
+[1.305s]                                                         ^
+[1.305s] 
+[1.305s] ./rse_observation_models/odometry_imu_observation_models.py:58:1: E101 indentation contains mixed spaces and tabs
+[1.305s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0],   	     
+[1.305s] ^
+[1.305s] 
+[1.305s] ./rse_observation_models/odometry_imu_observation_models.py:58:57: W291 trailing whitespace
+[1.305s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0],   	     
+[1.305s]                                                         ^
+[1.305s] 
+[1.305s] ./rse_observation_models/odometry_imu_observation_models.py:59:1: E101 indentation contains mixed spaces and tabs
+[1.305s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]])   	 
+[1.305s] ^
+[1.306s] 
+[1.306s] ./rse_observation_models/odometry_imu_observation_models.py:59:58: W291 trailing whitespace
+[1.306s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]])   	 
+[1.306s]                                                          ^
+[1.306s] 
+[1.306s] ./rse_observation_models/odometry_imu_observation_models.py:60:1: E101 indentation contains mixed spaces and tabs
+[1.306s]                     
+[1.306s] ^
+[1.306s] 
+[1.306s] ./rse_observation_models/odometry_imu_observation_models.py:60:1: W293 blank line contains whitespace
+[1.306s]                     
+[1.306s] ^
+[1.306s] 
+[1.306s] ./rse_observation_models/odometry_imu_observation_models.py:62:1: W191 indentation contains tabs
+[1.307s] 	return observation_function_h, jacobian_of_h_wrt_state_H
+[1.307s] ^
+[1.307s] 
+[1.307s] ./rse_observation_models/odometry_imu_observation_models.py:62:2: E303 too many blank lines (2)
+[1.307s] 	return observation_function_h, jacobian_of_h_wrt_state_H
+[1.307s] 	^
+[1.307s] 
+[1.307s] ./rse_observation_models/odometry_imu_observation_models.py:64:1: E302 expected 2 blank lines, found 1
+[1.307s] def odometry_imu_observation_model_with_acceleration_motion_model_linearized_2():
+[1.307s] ^
+[1.307s] 
+[1.307s] ./rse_observation_models/odometry_imu_observation_models.py:65:1: W191 indentation contains tabs
+[1.307s] 	def observation_function_h(mu):
+[1.307s] ^
+[1.308s] 
+[1.308s] ./rse_observation_models/odometry_imu_observation_models.py:66:1: W191 indentation contains tabs
+[1.308s] 		x, y, theta, v_x, v_y, w, ax, ay = mu
+[1.308s] ^
+[1.308s] 
+[1.308s] ./rse_observation_models/odometry_imu_observation_models.py:67:1: W191 indentation contains tabs
+[1.308s] 		return np.array([[x], [y], [theta], [theta], [w], [ax], [ay]])
+[1.308s] ^
+[1.308s] 
+[1.308s] ./rse_observation_models/odometry_imu_observation_models.py:68:1: W191 indentation contains tabs
+[1.308s] 	
+[1.308s] ^
+[1.308s] 
+[1.308s] ./rse_observation_models/odometry_imu_observation_models.py:68:1: W293 blank line contains whitespace
+[1.309s] 	
+[1.309s] ^
+[1.309s] 
+[1.309s] ./rse_observation_models/odometry_imu_observation_models.py:69:1: W191 indentation contains tabs
+[1.309s] 	def jacobian_of_h_wrt_state_H(mu):
+[1.309s] ^
+[1.309s] 
+[1.309s] ./rse_observation_models/odometry_imu_observation_models.py:70:1: W191 indentation contains tabs
+[1.309s] 		return np.array([[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],       
+[1.309s] ^
+[1.309s] 
+[1.309s] ./rse_observation_models/odometry_imu_observation_models.py:70:61: W291 trailing whitespace
+[1.309s] 		return np.array([[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],       
+[1.309s] 		                                                          ^
+[1.309s] 
+[1.310s] ./rse_observation_models/odometry_imu_observation_models.py:71:1: E101 indentation contains mixed spaces and tabs
+[1.310s]                     [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.310s] ^
+[1.310s] 
+[1.310s] ./rse_observation_models/odometry_imu_observation_models.py:71:62: W291 trailing whitespace
+[1.310s]                     [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.310s]                                                              ^
+[1.310s] 
+[1.310s] ./rse_observation_models/odometry_imu_observation_models.py:72:1: E101 indentation contains mixed spaces and tabs
+[1.310s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.310s] ^
+[1.310s] 
+[1.310s] ./rse_observation_models/odometry_imu_observation_models.py:72:62: W291 trailing whitespace
+[1.310s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	     
+[1.311s]                                                              ^
+[1.311s] 
+[1.311s] ./rse_observation_models/odometry_imu_observation_models.py:73:1: E101 indentation contains mixed spaces and tabs
+[1.311s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  	         
+[1.311s] ^
+[1.311s] 
+[1.311s] ./rse_observation_models/odometry_imu_observation_models.py:73:62: W291 trailing whitespace
+[1.311s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  	         
+[1.311s]                                                              ^
+[1.311s] 
+[1.311s] ./rse_observation_models/odometry_imu_observation_models.py:74:1: E101 indentation contains mixed spaces and tabs
+[1.311s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0],   	     
+[1.311s] ^
+[1.311s] 
+[1.311s] ./rse_observation_models/odometry_imu_observation_models.py:74:62: W291 trailing whitespace
+[1.312s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0],   	     
+[1.312s]                                                              ^
+[1.312s] 
+[1.312s] ./rse_observation_models/odometry_imu_observation_models.py:75:1: E101 indentation contains mixed spaces and tabs
+[1.312s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0],   	     
+[1.312s] ^
+[1.312s] 
+[1.312s] ./rse_observation_models/odometry_imu_observation_models.py:75:62: W291 trailing whitespace
+[1.313s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0],   	     
+[1.313s]                                                              ^
+[1.313s] 
+[1.313s] ./rse_observation_models/odometry_imu_observation_models.py:76:1: E101 indentation contains mixed spaces and tabs
+[1.313s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]])   	     
+[1.313s] ^
+[1.314s] 
+[1.314s] ./rse_observation_models/odometry_imu_observation_models.py:76:63: W291 trailing whitespace
+[1.314s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]])   	     
+[1.314s]                                                               ^
+[1.314s] 
+[1.314s] ./rse_observation_models/odometry_imu_observation_models.py:77:1: E101 indentation contains mixed spaces and tabs
+[1.314s]                     
+[1.314s] ^
+[1.314s] 
+[1.314s] ./rse_observation_models/odometry_imu_observation_models.py:77:1: W293 blank line contains whitespace
+[1.315s]                     
+[1.315s] ^
+[1.315s] 
+[1.315s] ./rse_observation_models/odometry_imu_observation_models.py:79:1: W191 indentation contains tabs
+[1.315s] 	return observation_function_h, jacobian_of_h_wrt_state_H
+[1.315s] ^
+[1.315s] 
+[1.315s] ./rse_observation_models/odometry_imu_observation_models.py:79:2: E303 too many blank lines (2)
+[1.315s] 	return observation_function_h, jacobian_of_h_wrt_state_H
+[1.315s] 	^
+[1.315s] 
+[1.316s] ./rse_observation_models/odometry_imu_observation_models.py:81:1: E302 expected 2 blank lines, found 1
+[1.316s] def odometry_imu_observation_model_with_acceleration_motion_model_no_input_linearized():
+[1.316s] ^
+[1.316s] 
+[1.316s] ./rse_observation_models/odometry_imu_observation_models.py:82:1: W191 indentation contains tabs
+[1.316s] 	def observation_function_h(mu):
+[1.316s] ^
+[1.316s] 
+[1.316s] ./rse_observation_models/odometry_imu_observation_models.py:83:1: W191 indentation contains tabs
+[1.317s] 		#return np.eye(8) @ mu
+[1.317s] ^
+[1.317s] 
+[1.318s] ./rse_observation_models/odometry_imu_observation_models.py:83:3: E265 block comment should start with '# '
+[1.318s] 		#return np.eye(8) @ mu
+[1.318s] 		^
+[1.318s] 
+[1.318s] ./rse_observation_models/odometry_imu_observation_models.py:84:1: W191 indentation contains tabs
+[1.318s] 		x, y, theta, vx, vy, w, ax, ay = mu
+[1.318s] ^
+[1.319s] 
+[1.319s] ./rse_observation_models/odometry_imu_observation_models.py:85:1: W191 indentation contains tabs
+[1.319s] 		return np.array([[x], [y], [theta], [theta], [w], [ax], [ay]])
+[1.319s] ^
+[1.319s] 
+[1.319s] ./rse_observation_models/odometry_imu_observation_models.py:86:1: W191 indentation contains tabs
+[1.319s] 	
+[1.319s] ^
+[1.319s] 
+[1.319s] ./rse_observation_models/odometry_imu_observation_models.py:86:1: W293 blank line contains whitespace
+[1.319s] 	
+[1.319s] ^
+[1.319s] 
+[1.319s] ./rse_observation_models/odometry_imu_observation_models.py:87:1: W191 indentation contains tabs
+[1.320s] 	def jacobian_of_h_wrt_state_H(mu):
+[1.320s] ^
+[1.320s] 
+[1.320s] ./rse_observation_models/odometry_imu_observation_models.py:88:1: W191 indentation contains tabs
+[1.320s] 		return np.array([[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],   # x = x
+[1.320s] ^
+[1.320s] 
+[1.320s] ./rse_observation_models/odometry_imu_observation_models.py:89:1: E101 indentation contains mixed spaces and tabs
+[1.320s]                     [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	 # y = y
+[1.320s] ^
+[1.321s] 
+[1.321s] ./rse_observation_models/odometry_imu_observation_models.py:90:1: E101 indentation contains mixed spaces and tabs
+[1.321s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],   	 # theta = theta
+[1.321s] ^
+[1.321s] 
+[1.321s] ./rse_observation_models/odometry_imu_observation_models.py:91:1: E101 indentation contains mixed spaces and tabs
+[1.321s]                     [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],  	     # theta = theta_imu
+[1.321s] ^
+[1.321s] 
+[1.321s] ./rse_observation_models/odometry_imu_observation_models.py:92:1: E101 indentation contains mixed spaces and tabs
+[1.321s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0],   	 # omega = omega
+[1.321s] ^
+[1.321s] 
+[1.322s] ./rse_observation_models/odometry_imu_observation_models.py:93:1: E101 indentation contains mixed spaces and tabs
+[1.322s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0],   	 # a_x = a_x
+[1.322s] ^
+[1.322s] 
+[1.322s] ./rse_observation_models/odometry_imu_observation_models.py:94:1: E101 indentation contains mixed spaces and tabs
+[1.322s]                     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]])   	 # a_y = a_y
+[1.322s] ^
+[1.322s] 
+[1.322s] ./rse_observation_models/odometry_imu_observation_models.py:95:1: E101 indentation contains mixed spaces and tabs
+[1.322s]                     
+[1.322s] ^
+[1.322s] 
+[1.322s] ./rse_observation_models/odometry_imu_observation_models.py:95:1: W293 blank line contains whitespace
+[1.322s]                     
+[1.322s] ^
+[1.322s] 
+[1.322s] ./rse_observation_models/odometry_imu_observation_models.py:96:1: W191 indentation contains tabs
+[1.323s] 	return observation_function_h, jacobian_of_h_wrt_state_H
+[1.323s] ^
+[1.323s] 
+[1.323s] ./rse_observation_models/odometry_imu_observation_models.py:100:1: W191 indentation contains tabs
+[1.323s] 	def observation_function_h(mu):
+[1.323s] ^
+[1.323s] 
+[1.323s] ./rse_observation_models/odometry_imu_observation_models.py:101:1: W191 indentation contains tabs
+[1.323s] 		x, y, z, roll, pitch, yaw, v_x, v_y, v_z, w_x, w_y, w_z, a_x, a_y, a_z = mu
+[1.323s] ^
+[1.323s] 
+[1.323s] ./rse_observation_models/odometry_imu_observation_models.py:102:1: W191 indentation contains tabs
+[1.323s] 		return np.array([[x], [y], [z], [roll], [pitch], [yaw], [roll], [pitch], [yaw], [w_x], [w_y], [w_z], [a_x], [a_y], [a_z]])
+[1.323s] ^
+[1.323s] 
+[1.323s] ./rse_observation_models/odometry_imu_observation_models.py:102:100: E501 line too long (124 > 99 characters)
+[1.323s] 		return np.array([[x], [y], [z], [roll], [pitch], [yaw], [roll], [pitch], [yaw], [w_x], [w_y], [w_z], [a_x], [a_y], [a_z]])
+[1.324s] 		                                                                                                 ^
+[1.324s] 
+[1.324s] ./rse_observation_models/odometry_imu_observation_models.py:103:1: W191 indentation contains tabs
+[1.324s] 	
+[1.324s] ^
+[1.324s] 
+[1.324s] ./rse_observation_models/odometry_imu_observation_models.py:103:1: W293 blank line contains whitespace
+[1.324s] 	
+[1.324s] ^
+[1.324s] 
+[1.324s] ./rse_observation_models/odometry_imu_observation_models.py:104:1: W191 indentation contains tabs
+[1.324s] 	return observation_function_h
+[1.324s] ^
+[1.324s] 
+[1.324s] ./rse_observation_models/odometry_imu_observation_models.py:106:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.324s] '''
+[1.325s] def odometry_imu_observation_model_particles():
+[1.325s] 	def observation_model(particles, z, Q):
+[1.325s] 		# Calculate the error between the measured pose and each particle's pose
+[1.325s] 		error = particles - z
+[1.325s] 		
+[1.325s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.325s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.325s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.325s] 		
+[1.325s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.325s] 		# The mean of the error is [0, 0, 0].
+[1.325s] 		# This gives a high likelihood to particles with low error.
+[1.325s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.325s] 
+[1.325s] 		return likelihood
+[1.325s] 	
+[1.325s] 	return observation_model
+[1.326s] '''
+[1.326s] ^
+[1.326s] 
+[1.326s] ./rse_observation_models/odometry_imu_observation_models.py:108:1: W191 indentation contains tabs
+[1.326s] '''
+[1.326s] def odometry_imu_observation_model_particles():
+[1.326s] 	def observation_model(particles, z, Q):
+[1.326s] 		# Calculate the error between the measured pose and each particle's pose
+[1.326s] 		error = particles - z
+[1.326s] 		
+[1.326s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.326s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.326s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.326s] 		
+[1.326s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.326s] 		# The mean of the error is [0, 0, 0].
+[1.326s] 		# This gives a high likelihood to particles with low error.
+[1.327s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.327s] 
+[1.327s] 		return likelihood
+[1.327s] 	
+[1.327s] 	return observation_model
+[1.327s] '''
+[1.327s] ^
+[1.327s] 
+[1.327s] ./rse_observation_models/odometry_imu_observation_models.py:109:1: W191 indentation contains tabs
+[1.327s] '''
+[1.327s] def odometry_imu_observation_model_particles():
+[1.327s] 	def observation_model(particles, z, Q):
+[1.327s] 		# Calculate the error between the measured pose and each particle's pose
+[1.328s] 		error = particles - z
+[1.328s] 		
+[1.328s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.328s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.328s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.328s] 		
+[1.328s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.328s] 		# The mean of the error is [0, 0, 0].
+[1.328s] 		# This gives a high likelihood to particles with low error.
+[1.328s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.328s] 
+[1.329s] 		return likelihood
+[1.329s] 	
+[1.329s] 	return observation_model
+[1.329s] '''
+[1.329s] ^
+[1.329s] 
+[1.329s] ./rse_observation_models/odometry_imu_observation_models.py:110:1: W191 indentation contains tabs
+[1.329s] '''
+[1.330s] def odometry_imu_observation_model_particles():
+[1.330s] 	def observation_model(particles, z, Q):
+[1.330s] 		# Calculate the error between the measured pose and each particle's pose
+[1.330s] 		error = particles - z
+[1.330s] 		
+[1.330s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.330s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.331s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.331s] 		
+[1.331s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.331s] 		# The mean of the error is [0, 0, 0].
+[1.331s] 		# This gives a high likelihood to particles with low error.
+[1.331s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.331s] 
+[1.331s] 		return likelihood
+[1.332s] 	
+[1.332s] 	return observation_model
+[1.332s] '''
+[1.332s] ^
+[1.332s] 
+[1.332s] ./rse_observation_models/odometry_imu_observation_models.py:111:1: W191 indentation contains tabs
+[1.332s] '''
+[1.333s] def odometry_imu_observation_model_particles():
+[1.333s] 	def observation_model(particles, z, Q):
+[1.333s] 		# Calculate the error between the measured pose and each particle's pose
+[1.333s] 		error = particles - z
+[1.333s] 		
+[1.333s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.333s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.334s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.334s] 		
+[1.334s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.334s] 		# The mean of the error is [0, 0, 0].
+[1.334s] 		# This gives a high likelihood to particles with low error.
+[1.334s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.334s] 
+[1.334s] 		return likelihood
+[1.334s] 	
+[1.334s] 	return observation_model
+[1.334s] '''
+[1.335s] ^
+[1.335s] 
+[1.335s] ./rse_observation_models/odometry_imu_observation_models.py:111:1: W293 blank line contains whitespace
+[1.335s] '''
+[1.335s] def odometry_imu_observation_model_particles():
+[1.335s] 	def observation_model(particles, z, Q):
+[1.335s] 		# Calculate the error between the measured pose and each particle's pose
+[1.335s] 		error = particles - z
+[1.335s] 		
+[1.335s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.335s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.335s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.335s] 		
+[1.336s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.336s] 		# The mean of the error is [0, 0, 0].
+[1.336s] 		# This gives a high likelihood to particles with low error.
+[1.336s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.336s] 
+[1.336s] 		return likelihood
+[1.336s] 	
+[1.336s] 	return observation_model
+[1.336s] '''
+[1.336s] ^
+[1.336s] 
+[1.336s] ./rse_observation_models/odometry_imu_observation_models.py:112:1: W191 indentation contains tabs
+[1.336s] '''
+[1.336s] def odometry_imu_observation_model_particles():
+[1.336s] 	def observation_model(particles, z, Q):
+[1.336s] 		# Calculate the error between the measured pose and each particle's pose
+[1.337s] 		error = particles - z
+[1.337s] 		
+[1.337s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.337s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.337s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.337s] 		
+[1.337s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.337s] 		# The mean of the error is [0, 0, 0].
+[1.337s] 		# This gives a high likelihood to particles with low error.
+[1.337s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.337s] 
+[1.337s] 		return likelihood
+[1.337s] 	
+[1.337s] 	return observation_model
+[1.337s] '''
+[1.338s] ^
+[1.338s] 
+[1.338s] ./rse_observation_models/odometry_imu_observation_models.py:113:1: W191 indentation contains tabs
+[1.338s] '''
+[1.338s] def odometry_imu_observation_model_particles():
+[1.338s] 	def observation_model(particles, z, Q):
+[1.338s] 		# Calculate the error between the measured pose and each particle's pose
+[1.338s] 		error = particles - z
+[1.338s] 		
+[1.339s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.340s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.340s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.340s] 		
+[1.340s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.340s] 		# The mean of the error is [0, 0, 0].
+[1.340s] 		# This gives a high likelihood to particles with low error.
+[1.340s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.340s] 
+[1.340s] 		return likelihood
+[1.340s] 	
+[1.341s] 	return observation_model
+[1.341s] '''
+[1.341s] ^
+[1.341s] 
+[1.341s] ./rse_observation_models/odometry_imu_observation_models.py:114:1: W191 indentation contains tabs
+[1.341s] '''
+[1.341s] def odometry_imu_observation_model_particles():
+[1.341s] 	def observation_model(particles, z, Q):
+[1.341s] 		# Calculate the error between the measured pose and each particle's pose
+[1.341s] 		error = particles - z
+[1.341s] 		
+[1.341s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.341s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.341s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.341s] 		
+[1.342s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.342s] 		# The mean of the error is [0, 0, 0].
+[1.342s] 		# This gives a high likelihood to particles with low error.
+[1.342s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.342s] 
+[1.342s] 		return likelihood
+[1.342s] 	
+[1.342s] 	return observation_model
+[1.342s] '''
+[1.342s] ^
+[1.342s] 
+[1.342s] ./rse_observation_models/odometry_imu_observation_models.py:115:1: W191 indentation contains tabs
+[1.342s] '''
+[1.342s] def odometry_imu_observation_model_particles():
+[1.342s] 	def observation_model(particles, z, Q):
+[1.342s] 		# Calculate the error between the measured pose and each particle's pose
+[1.343s] 		error = particles - z
+[1.343s] 		
+[1.343s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.343s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.343s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.343s] 		
+[1.343s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.343s] 		# The mean of the error is [0, 0, 0].
+[1.343s] 		# This gives a high likelihood to particles with low error.
+[1.343s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.343s] 
+[1.343s] 		return likelihood
+[1.343s] 	
+[1.343s] 	return observation_model
+[1.343s] '''
+[1.344s] ^
+[1.344s] 
+[1.344s] ./rse_observation_models/odometry_imu_observation_models.py:115:1: W293 blank line contains whitespace
+[1.344s] '''
+[1.344s] def odometry_imu_observation_model_particles():
+[1.344s] 	def observation_model(particles, z, Q):
+[1.344s] 		# Calculate the error between the measured pose and each particle's pose
+[1.344s] 		error = particles - z
+[1.344s] 		
+[1.344s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.344s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.344s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.344s] 		
+[1.344s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.344s] 		# The mean of the error is [0, 0, 0].
+[1.345s] 		# This gives a high likelihood to particles with low error.
+[1.345s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.345s] 
+[1.345s] 		return likelihood
+[1.345s] 	
+[1.345s] 	return observation_model
+[1.345s] '''
+[1.345s] ^
+[1.345s] 
+[1.345s] ./rse_observation_models/odometry_imu_observation_models.py:116:1: W191 indentation contains tabs
+[1.345s] '''
+[1.345s] def odometry_imu_observation_model_particles():
+[1.345s] 	def observation_model(particles, z, Q):
+[1.345s] 		# Calculate the error between the measured pose and each particle's pose
+[1.345s] 		error = particles - z
+[1.345s] 		
+[1.346s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.346s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.346s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.346s] 		
+[1.346s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.346s] 		# The mean of the error is [0, 0, 0].
+[1.346s] 		# This gives a high likelihood to particles with low error.
+[1.346s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.346s] 
+[1.346s] 		return likelihood
+[1.346s] 	
+[1.346s] 	return observation_model
+[1.346s] '''
+[1.346s] ^
+[1.346s] 
+[1.346s] ./rse_observation_models/odometry_imu_observation_models.py:117:1: W191 indentation contains tabs
+[1.347s] '''
+[1.347s] def odometry_imu_observation_model_particles():
+[1.347s] 	def observation_model(particles, z, Q):
+[1.347s] 		# Calculate the error between the measured pose and each particle's pose
+[1.347s] 		error = particles - z
+[1.347s] 		
+[1.347s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.347s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.347s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.347s] 		
+[1.347s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.347s] 		# The mean of the error is [0, 0, 0].
+[1.347s] 		# This gives a high likelihood to particles with low error.
+[1.347s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.347s] 
+[1.347s] 		return likelihood
+[1.347s] 	
+[1.348s] 	return observation_model
+[1.348s] '''
+[1.348s] ^
+[1.348s] 
+[1.348s] ./rse_observation_models/odometry_imu_observation_models.py:118:1: W191 indentation contains tabs
+[1.348s] '''
+[1.348s] def odometry_imu_observation_model_particles():
+[1.348s] 	def observation_model(particles, z, Q):
+[1.348s] 		# Calculate the error between the measured pose and each particle's pose
+[1.348s] 		error = particles - z
+[1.348s] 		
+[1.348s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.348s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.348s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.348s] 		
+[1.348s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.349s] 		# The mean of the error is [0, 0, 0].
+[1.349s] 		# This gives a high likelihood to particles with low error.
+[1.349s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.349s] 
+[1.349s] 		return likelihood
+[1.349s] 	
+[1.349s] 	return observation_model
+[1.349s] '''
+[1.349s] ^
+[1.349s] 
+[1.349s] ./rse_observation_models/odometry_imu_observation_models.py:119:1: W191 indentation contains tabs
+[1.349s] '''
+[1.349s] def odometry_imu_observation_model_particles():
+[1.349s] 	def observation_model(particles, z, Q):
+[1.349s] 		# Calculate the error between the measured pose and each particle's pose
+[1.349s] 		error = particles - z
+[1.349s] 		
+[1.350s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.350s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.350s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.350s] 		
+[1.350s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.350s] 		# The mean of the error is [0, 0, 0].
+[1.350s] 		# This gives a high likelihood to particles with low error.
+[1.350s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.350s] 
+[1.350s] 		return likelihood
+[1.350s] 	
+[1.350s] 	return observation_model
+[1.350s] '''
+[1.350s] ^
+[1.350s] 
+[1.350s] ./rse_observation_models/odometry_imu_observation_models.py:121:1: W191 indentation contains tabs
+[1.351s] '''
+[1.351s] def odometry_imu_observation_model_particles():
+[1.351s] 	def observation_model(particles, z, Q):
+[1.351s] 		# Calculate the error between the measured pose and each particle's pose
+[1.351s] 		error = particles - z
+[1.351s] 		
+[1.351s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.351s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.351s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.351s] 		
+[1.351s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.351s] 		# The mean of the error is [0, 0, 0].
+[1.351s] 		# This gives a high likelihood to particles with low error.
+[1.351s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.351s] 
+[1.351s] 		return likelihood
+[1.352s] 	
+[1.352s] 	return observation_model
+[1.352s] '''
+[1.352s] ^
+[1.352s] 
+[1.352s] ./rse_observation_models/odometry_imu_observation_models.py:122:1: W191 indentation contains tabs
+[1.352s] '''
+[1.352s] def odometry_imu_observation_model_particles():
+[1.352s] 	def observation_model(particles, z, Q):
+[1.352s] 		# Calculate the error between the measured pose and each particle's pose
+[1.352s] 		error = particles - z
+[1.352s] 		
+[1.352s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.352s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.352s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.353s] 		
+[1.353s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.353s] 		# The mean of the error is [0, 0, 0].
+[1.353s] 		# This gives a high likelihood to particles with low error.
+[1.353s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.353s] 
+[1.353s] 		return likelihood
+[1.353s] 	
+[1.353s] 	return observation_model
+[1.353s] '''
+[1.353s] ^
+[1.353s] 
+[1.353s] ./rse_observation_models/odometry_imu_observation_models.py:122:1: W293 blank line contains whitespace
+[1.353s] '''
+[1.353s] def odometry_imu_observation_model_particles():
+[1.353s] 	def observation_model(particles, z, Q):
+[1.473s] 		# Calculate the error between the measured pose and each particle's pose
+[1.473s] 		error = particles - z
+[1.473s] 		
+[1.473s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.473s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.473s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.473s] 		
+[1.473s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.473s] 		# The mean of the error is [0, 0, 0].
+[1.473s] 		# This gives a high likelihood to particles with low error.
+[1.473s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.473s] 
+[1.473s] 		return likelihood
+[1.473s] 	
+[1.474s] 	return observation_model
+[1.474s] '''
+[1.474s] ^
+[1.474s] 
+[1.474s] ./rse_observation_models/odometry_imu_observation_models.py:123:1: W191 indentation contains tabs
+[1.474s] '''
+[1.474s] def odometry_imu_observation_model_particles():
+[1.474s] 	def observation_model(particles, z, Q):
+[1.474s] 		# Calculate the error between the measured pose and each particle's pose
+[1.474s] 		error = particles - z
+[1.474s] 		
+[1.474s] 		# Handle angle wrapping for the heading error. This is crucial.
+[1.474s] 		# We subtract the angles and then wrap the result to the [-pi, pi] range.
+[1.474s] 		error[:, 2] = (error[:, 2] - z[2] + np.pi) % (2 * np.pi) - np.pi
+[1.474s] 		
+[1.474s] 		# Calculate the likelihood of the error using a multivariate normal PDF.
+[1.474s] 		# The mean of the error is [0, 0, 0].
+[1.475s] 		# This gives a high likelihood to particles with low error.
+[1.475s] 		likelihood = scipy.stats.multivariate_normal(mean=np.zeros(8), cov=Q).pdf(error)
+[1.475s] 
+[1.475s] 		return likelihood
+[1.475s] 	
+[1.475s] 	return observation_model
+[1.475s] '''
+[1.475s] ^
+[1.475s] 
+[1.475s] ./rse_observation_models/odometry_imu_observation_models.py:126:1: E302 expected 2 blank lines, found 1
+[1.475s] def odometry_imu_observation_model_particles_1():
+[1.475s] ^
+[1.475s] 
+[1.475s] ./rse_observation_models/odometry_imu_observation_models.py:127:1: E101 indentation contains mixed spaces and tabs
+[1.475s]     def observation_model(particles, z, Q):
+[1.475s] ^
+[1.475s] 
+[1.476s] ./rse_observation_models/odometry_imu_observation_models.py:128:1: E101 indentation contains mixed spaces and tabs
+[1.476s]         z = z.reshape(-1)  # (7,)
+[1.476s] ^
+[1.476s] 
+[1.476s] ./rse_observation_models/odometry_imu_observation_models.py:129:1: E101 indentation contains mixed spaces and tabs
+[1.476s]         obs_indices = [0, 1, 2, 2, 5, 6, 7]  # x, y, theta(odom), theta(imu), w, ax, ay
+[1.476s] ^
+[1.476s] 
+[1.476s] ./rse_observation_models/odometry_imu_observation_models.py:131:1: E101 indentation contains mixed spaces and tabs
+[1.476s]         observed_particles = particles[:, obs_indices]
+[1.476s] ^
+[1.476s] 
+[1.476s] ./rse_observation_models/odometry_imu_observation_models.py:132:1: E101 indentation contains mixed spaces and tabs
+[1.476s]         error = observed_particles - z
+[1.476s] ^
+[1.476s] 
+[1.477s] ./rse_observation_models/odometry_imu_observation_models.py:134:1: E101 indentation contains mixed spaces and tabs
+[1.477s]         # Wrap every column that maps the angular state 'theta' (index 2 in the state)
+[1.477s] ^
+[1.477s] 
+[1.477s] ./rse_observation_models/odometry_imu_observation_models.py:135:1: E101 indentation contains mixed spaces and tabs
+[1.477s]         theta_cols = np.where(np.array(obs_indices) == 2)[0]  # could be [2, 3]
+[1.477s] ^
+[1.477s] 
+[1.477s] ./rse_observation_models/odometry_imu_observation_models.py:136:1: E101 indentation contains mixed spaces and tabs
+[1.477s]         for c in theta_cols:
+[1.477s] ^
+[1.477s] 
+[1.477s] ./rse_observation_models/odometry_imu_observation_models.py:137:1: E101 indentation contains mixed spaces and tabs
+[1.477s]             error[:, c] = (error[:, c] + np.pi) % (2 * np.pi) - np.pi
+[1.477s] ^
+[1.477s] 
+[1.477s] ./rse_observation_models/odometry_imu_observation_models.py:139:1: E101 indentation contains mixed spaces and tabs
+[1.478s]         # Now safe to evaluate with a 7x7 PD Q
+[1.478s] ^
+[1.478s] 
+[1.478s] ./rse_observation_models/odometry_imu_observation_models.py:140:1: E101 indentation contains mixed spaces and tabs
+[1.478s]         likelihood = scipy.stats.multivariate_normal(
+[1.478s] ^
+[1.478s] 
+[1.478s] ./rse_observation_models/odometry_imu_observation_models.py:141:1: E101 indentation contains mixed spaces and tabs
+[1.478s]             mean=np.zeros(7), cov=Q
+[1.478s] ^
+[1.478s] 
+[1.478s] ./rse_observation_models/odometry_imu_observation_models.py:142:1: E101 indentation contains mixed spaces and tabs
+[1.478s]         ).pdf(error)
+[1.478s] ^
+[1.478s] 
+[1.478s] ./rse_observation_models/odometry_imu_observation_models.py:144:1: E101 indentation contains mixed spaces and tabs
+[1.479s]         return likelihood
+[1.479s] ^
+[1.479s] 
+[1.479s] ./rse_observation_models/odometry_imu_observation_models.py:145:1: E101 indentation contains mixed spaces and tabs
+[1.479s]     return observation_model
+[1.479s] ^
+[1.479s] 
+[1.479s] ./rse_observation_models/odometry_imu_observation_models.py:150:1: E101 indentation contains mixed spaces and tabs
+[1.479s]     """
+[1.479s]     Observation z = [x, y, theta_odom, theta_imu, w, a_x, a_y].
+[1.479s]     Particles state = [x, y, theta, v_x, v_y, w, a_x, a_y].
+[1.479s]     Q is 7x7 diagonal (pass as diag or full); use stds ~ realistic scales.
+[1.479s] 
+[1.479s]     beta: temperature in (0,1]; <1 softens likelihood to reduce collapse.
+[1.479s]     gate_mahal_sq: if set (e.g., 25.0), downweights outliers via gating.
+[1.479s]     """
+[1.480s] ^
+[1.480s] 
+[1.480s] ./rse_observation_models/odometry_imu_observation_models.py:151:1: E101 indentation contains mixed spaces and tabs
+[1.480s]     """
+[1.480s]     Observation z = [x, y, theta_odom, theta_imu, w, a_x, a_y].
+[1.480s]     Particles state = [x, y, theta, v_x, v_y, w, a_x, a_y].
+[1.480s]     Q is 7x7 diagonal (pass as diag or full); use stds ~ realistic scales.
+[1.480s] 
+[1.480s]     beta: temperature in (0,1]; <1 softens likelihood to reduce collapse.
+[1.480s]     gate_mahal_sq: if set (e.g., 25.0), downweights outliers via gating.
+[1.480s]     """
+[1.480s] ^
+[1.480s] 
+[1.480s] ./rse_observation_models/odometry_imu_observation_models.py:152:1: E101 indentation contains mixed spaces and tabs
+[1.480s]     """
+[1.480s]     Observation z = [x, y, theta_odom, theta_imu, w, a_x, a_y].
+[1.480s]     Particles state = [x, y, theta, v_x, v_y, w, a_x, a_y].
+[1.481s]     Q is 7x7 diagonal (pass as diag or full); use stds ~ realistic scales.
+[1.481s] 
+[1.481s]     beta: temperature in (0,1]; <1 softens likelihood to reduce collapse.
+[1.481s]     gate_mahal_sq: if set (e.g., 25.0), downweights outliers via gating.
+[1.481s]     """
+[1.481s] ^
+[1.481s] 
+[1.481s] ./rse_observation_models/odometry_imu_observation_models.py:154:1: E101 indentation contains mixed spaces and tabs
+[1.481s]     """
+[1.481s]     Observation z = [x, y, theta_odom, theta_imu, w, a_x, a_y].
+[1.481s]     Particles state = [x, y, theta, v_x, v_y, w, a_x, a_y].
+[1.481s]     Q is 7x7 diagonal (pass as diag or full); use stds ~ realistic scales.
+[1.481s] 
+[1.481s]     beta: temperature in (0,1]; <1 softens likelihood to reduce collapse.
+[1.481s]     gate_mahal_sq: if set (e.g., 25.0), downweights outliers via gating.
+[1.481s]     """
+[1.481s] ^
+[1.482s] 
+[1.482s] ./rse_observation_models/odometry_imu_observation_models.py:155:1: E101 indentation contains mixed spaces and tabs
+[1.482s]     """
+[1.482s]     Observation z = [x, y, theta_odom, theta_imu, w, a_x, a_y].
+[1.482s]     Particles state = [x, y, theta, v_x, v_y, w, a_x, a_y].
+[1.482s]     Q is 7x7 diagonal (pass as diag or full); use stds ~ realistic scales.
+[1.482s] 
+[1.482s]     beta: temperature in (0,1]; <1 softens likelihood to reduce collapse.
+[1.482s]     gate_mahal_sq: if set (e.g., 25.0), downweights outliers via gating.
+[1.482s]     """
+[1.482s] ^
+[1.482s] 
+[1.482s] ./rse_observation_models/odometry_imu_observation_models.py:156:1: E101 indentation contains mixed spaces and tabs
+[1.482s]     """
+[1.482s]     Observation z = [x, y, theta_odom, theta_imu, w, a_x, a_y].
+[1.482s]     Particles state = [x, y, theta, v_x, v_y, w, a_x, a_y].
+[1.483s]     Q is 7x7 diagonal (pass as diag or full); use stds ~ realistic scales.
+[1.483s] 
+[1.483s]     beta: temperature in (0,1]; <1 softens likelihood to reduce collapse.
+[1.483s]     gate_mahal_sq: if set (e.g., 25.0), downweights outliers via gating.
+[1.483s]     """
+[1.483s] ^
+[1.483s] 
+[1.483s] ./rse_observation_models/odometry_imu_observation_models.py:158:1: E101 indentation contains mixed spaces and tabs
+[1.483s]     TWO_PI = 2.0 * np.pi
+[1.483s] ^
+[1.483s] 
+[1.483s] ./rse_observation_models/odometry_imu_observation_models.py:159:1: E101 indentation contains mixed spaces and tabs
+[1.483s]     LOG2PI = np.log(2.0 * np.pi)
+[1.483s] ^
+[1.483s] 
+[1.483s] ./rse_observation_models/odometry_imu_observation_models.py:161:1: E101 indentation contains mixed spaces and tabs
+[1.484s]     def normal_logpdf(residual, var):
+[1.484s] ^
+[1.484s] 
+[1.484s] ./rse_observation_models/odometry_imu_observation_models.py:162:1: E101 indentation contains mixed spaces and tabs
+[1.484s]         # residual, var: arrays broadcastable to same shape
+[1.484s] ^
+[1.484s] 
+[1.484s] ./rse_observation_models/odometry_imu_observation_models.py:163:1: E101 indentation contains mixed spaces and tabs
+[1.484s]         return -0.5 * (residual * residual / var + np.log(var) + LOG2PI)
+[1.484s] ^
+[1.484s] 
+[1.484s] ./rse_observation_models/odometry_imu_observation_models.py:165:1: E101 indentation contains mixed spaces and tabs
+[1.484s]     def observation_model(particles, z, Q):
+[1.484s] ^
+[1.484s] 
+[1.484s] ./rse_observation_models/odometry_imu_observation_models.py:166:1: E101 indentation contains mixed spaces and tabs
+[1.484s]         z = np.asarray(z, dtype=np.float64).reshape(-1)  # (7,)
+[1.485s] ^
+[1.485s] 
+[1.485s] ./rse_observation_models/odometry_imu_observation_models.py:167:1: E101 indentation contains mixed spaces and tabs
+[1.485s]         assert z.shape[0] == 7, "z must be 7D"
+[1.485s] ^
+[1.485s] 
+[1.485s] ./rse_observation_models/odometry_imu_observation_models.py:169:1: E101 indentation contains mixed spaces and tabs
+[1.485s]         # Build diagonal variances from Q (accept diag vector or full matrix)
+[1.485s] ^
+[1.485s] 
+[1.485s] ./rse_observation_models/odometry_imu_observation_models.py:170:1: E101 indentation contains mixed spaces and tabs
+[1.485s]         if Q.ndim == 1:
+[1.485s] ^
+[1.485s] 
+[1.485s] ./rse_observation_models/odometry_imu_observation_models.py:171:1: E101 indentation contains mixed spaces and tabs
+[1.485s]             var = np.asarray(Q, dtype=np.float64)
+[1.486s] ^
+[1.486s] 
+[1.486s] ./rse_observation_models/odometry_imu_observation_models.py:172:1: E101 indentation contains mixed spaces and tabs
+[1.486s]         else:
+[1.486s] ^
+[1.486s] 
+[1.486s] ./rse_observation_models/odometry_imu_observation_models.py:173:1: E101 indentation contains mixed spaces and tabs
+[1.486s]             var = np.asarray(np.diag(Q), dtype=np.float64)
+[1.486s] ^
+[1.486s] 
+[1.486s] ./rse_observation_models/odometry_imu_observation_models.py:174:1: E101 indentation contains mixed spaces and tabs
+[1.486s]         assert var.shape[0] == 7, "Q must be 7x7 or diag len 7"
+[1.486s] ^
+[1.486s] 
+[1.486s] ./rse_observation_models/odometry_imu_observation_models.py:175:1: E101 indentation contains mixed spaces and tabs
+[1.486s]         # Put a floor to avoid near-singular channels
+[1.486s] ^
+[1.487s] 
+[1.487s] ./rse_observation_models/odometry_imu_observation_models.py:176:1: E101 indentation contains mixed spaces and tabs
+[1.487s]         var = np.maximum(var, 1e-6)
+[1.487s] ^
+[1.487s] 
+[1.487s] ./rse_observation_models/odometry_imu_observation_models.py:178:1: E101 indentation contains mixed spaces and tabs
+[1.487s]         # Map state to measured components (same as your indices)
+[1.487s] ^
+[1.487s] 
+[1.487s] ./rse_observation_models/odometry_imu_observation_models.py:179:1: E101 indentation contains mixed spaces and tabs
+[1.487s]         obs_indices = np.array([0, 1, 2, 2, 5, 6, 7], dtype=int)
+[1.487s] ^
+[1.487s] 
+[1.487s] ./rse_observation_models/odometry_imu_observation_models.py:180:1: E101 indentation contains mixed spaces and tabs
+[1.487s]         Hx = particles[:, obs_indices]  # (N,7)
+[1.488s] ^
+[1.488s] 
+[1.488s] ./rse_observation_models/odometry_imu_observation_models.py:182:1: E101 indentation contains mixed spaces and tabs
+[1.488s]         # Residuals
+[1.488s] ^
+[1.488s] 
+[1.488s] ./rse_observation_models/odometry_imu_observation_models.py:183:1: E101 indentation contains mixed spaces and tabs
+[1.488s]         err = Hx - z  # (N,7)
+[1.488s] ^
+[1.488s] 
+[1.488s] ./rse_observation_models/odometry_imu_observation_models.py:185:1: E101 indentation contains mixed spaces and tabs
+[1.488s]         # Wrap BOTH theta residuals (cols where obs_indices == 2)
+[1.488s] ^
+[1.488s] 
+[1.488s] ./rse_observation_models/odometry_imu_observation_models.py:186:1: E101 indentation contains mixed spaces and tabs
+[1.488s]         theta_cols = np.where(obs_indices == 2)[0]
+[1.488s] ^
+[1.489s] 
+[1.489s] ./rse_observation_models/odometry_imu_observation_models.py:187:1: E101 indentation contains mixed spaces and tabs
+[1.489s]         for c in theta_cols:
+[1.489s] ^
+[1.489s] 
+[1.489s] ./rse_observation_models/odometry_imu_observation_models.py:188:1: E101 indentation contains mixed spaces and tabs
+[1.489s]             # wrap to (-pi, pi]
+[1.489s] ^
+[1.489s] 
+[1.489s] ./rse_observation_models/odometry_imu_observation_models.py:189:1: E101 indentation contains mixed spaces and tabs
+[1.489s]             err[:, c] = (err[:, c] + np.pi) % (TWO_PI) - np.pi
+[1.489s] ^
+[1.489s] 
+[1.489s] ./rse_observation_models/odometry_imu_observation_models.py:191:1: E101 indentation contains mixed spaces and tabs
+[1.489s]         # Per-dimension logpdf, then sum → total log-likelihood
+[1.489s] ^
+[1.490s] 
+[1.490s] ./rse_observation_models/odometry_imu_observation_models.py:192:1: E101 indentation contains mixed spaces and tabs
+[1.490s]         # (Kinda like diag-cov MVN but explicit and stable)
+[1.490s] ^
+[1.490s] 
+[1.490s] ./rse_observation_models/odometry_imu_observation_models.py:193:1: E101 indentation contains mixed spaces and tabs
+[1.490s]         # Broadcast var to (N,7)
+[1.490s] ^
+[1.490s] 
+[1.490s] ./rse_observation_models/odometry_imu_observation_models.py:194:1: E101 indentation contains mixed spaces and tabs
+[1.490s]         var_row = var.reshape(1, 7)
+[1.490s] ^
+[1.490s] 
+[1.490s] ./rse_observation_models/odometry_imu_observation_models.py:195:1: E101 indentation contains mixed spaces and tabs
+[1.490s]         logp_dim = normal_logpdf(err, var_row)  # (N,7)
+[1.490s] ^
+[1.490s] 
+[1.491s] ./rse_observation_models/odometry_imu_observation_models.py:196:1: E101 indentation contains mixed spaces and tabs
+[1.491s]         logp = np.sum(logp_dim, axis=1)         # (N,)
+[1.491s] ^
+[1.491s] 
+[1.491s] ./rse_observation_models/odometry_imu_observation_models.py:198:1: E101 indentation contains mixed spaces and tabs
+[1.491s]         # Optional mild tempering to reduce degeneracy (beta in (0,1])
+[1.491s] ^
+[1.491s] 
+[1.491s] ./rse_observation_models/odometry_imu_observation_models.py:199:1: E101 indentation contains mixed spaces and tabs
+[1.491s]         if beta != 1.0:
+[1.491s] ^
+[1.491s] 
+[1.491s] ./rse_observation_models/odometry_imu_observation_models.py:200:1: E101 indentation contains mixed spaces and tabs
+[1.491s]             logp = beta * logp
+[1.491s] ^
+[1.491s] 
+[1.492s] ./rse_observation_models/odometry_imu_observation_models.py:202:1: E101 indentation contains mixed spaces and tabs
+[1.492s]         # Optional gating by Mahalanobis distance
+[1.492s] ^
+[1.492s] 
+[1.492s] ./rse_observation_models/odometry_imu_observation_models.py:203:1: E101 indentation contains mixed spaces and tabs
+[1.492s]         # m^2 = sum(err^2 / var); gate e.g. at 5^2=25
+[1.492s] ^
+[1.492s] 
+[1.492s] ./rse_observation_models/odometry_imu_observation_models.py:204:1: E101 indentation contains mixed spaces and tabs
+[1.492s]         if gate_mahal_sq is not None:
+[1.492s] ^
+[1.492s] 
+[1.492s] ./rse_observation_models/odometry_imu_observation_models.py:205:1: E101 indentation contains mixed spaces and tabs
+[1.492s]             m2 = np.sum((err * err) / var_row, axis=1)
+[1.492s] ^
+[1.492s] 
+[1.492s] ./rse_observation_models/odometry_imu_observation_models.py:206:1: E101 indentation contains mixed spaces and tabs
+[1.493s]             # Soft gate: subtract a penalty for very large m^2
+[1.493s] ^
+[1.493s] 
+[1.493s] ./rse_observation_models/odometry_imu_observation_models.py:207:1: E101 indentation contains mixed spaces and tabs
+[1.493s]             # (Hard gate would set to -inf; soft is safer)
+[1.493s] ^
+[1.493s] 
+[1.493s] ./rse_observation_models/odometry_imu_observation_models.py:208:1: E101 indentation contains mixed spaces and tabs
+[1.493s]             too_far = m2 > gate_mahal_sq
+[1.493s] ^
+[1.493s] 
+[1.493s] ./rse_observation_models/odometry_imu_observation_models.py:209:1: E101 indentation contains mixed spaces and tabs
+[1.493s]             logp[too_far] += -0.5 * (m2[too_far] - gate_mahal_sq)
+[1.493s] ^
+[1.493s] 
+[1.493s] ./rse_observation_models/odometry_imu_observation_models.py:211:1: E101 indentation contains mixed spaces and tabs
+[1.494s]         # Stabilize: subtract max before exp
+[1.494s] ^
+[1.494s] 
+[1.494s] ./rse_observation_models/odometry_imu_observation_models.py:212:1: E101 indentation contains mixed spaces and tabs
+[1.494s]         logp -= np.max(logp)
+[1.494s] ^
+[1.494s] 
+[1.494s] ./rse_observation_models/odometry_imu_observation_models.py:213:1: E101 indentation contains mixed spaces and tabs
+[1.494s]         w = np.exp(logp)  # unnormalized weights proportional to likelihood
+[1.494s] ^
+[1.494s] 
+[1.494s] ./rse_observation_models/odometry_imu_observation_models.py:214:1: E101 indentation contains mixed spaces and tabs
+[1.494s]         # Return likelihoods; PF will normalize weights outside
+[1.494s] ^
+[1.494s] 
+[1.494s] ./rse_observation_models/odometry_imu_observation_models.py:215:1: E101 indentation contains mixed spaces and tabs
+[1.495s]         return w
+[1.495s] ^
+[1.495s] 
+[1.495s] ./rse_observation_models/odometry_imu_observation_models.py:217:1: E101 indentation contains mixed spaces and tabs
+[1.495s]     return observation_model
+[1.495s] ^
+[1.495s] 
+[1.495s] ./rse_observation_models/odometry_imu_observation_models.py:219:1: W391 blank line at end of file
+[1.495s] 
+[1.495s] ^
+[1.495s] 
+[1.495s] 91    E101 indentation contains mixed spaces and tabs
+[1.495s] 1     E265 block comment should start with '# '
+[1.495s] 6     E302 expected 2 blank lines, found 1
+[1.495s] 4     E303 too many blank lines (2)
+[1.495s] 1     E305 expected 2 blank lines after class or function definition, found 1
+[1.495s] 1     E501 line too long (124 > 99 characters)
+[1.496s] 99    W191 indentation contains tabs
+[1.496s] 14    W291 trailing whitespace
+[1.496s] 1     W292 no newline at end of file
+[1.496s] 16    W293 blank line contains whitespace
+[1.496s] 1     W391 blank line at end of file
+[1.496s] 
+[1.496s] 7 files checked
+[1.496s] 235 errors
+[1.496s] 
+[1.496s] 'E'-type errors: 104
+[1.496s] 'W'-type errors: 131
+[1.496s] 
+[1.496s] Checked files:
+[1.496s] 
+[1.496s] * ./setup.py
+[1.497s] * ./rse_observation_models/odometry_observation_models.py
+[1.497s] * ./rse_observation_models/odometry_imu_observation_models.py
+[1.497s] * ./rse_observation_models/__init__.py
+[1.497s] * ./test/test_copyright.py
+[1.497s] * ./test/test_pep257.py
+[1.520s] =============================== warnings summary ===============================
+[1.520s] test/test_flake8.py::test_flake8
+[1.520s] test/test_flake8.py::test_flake8
+[1.521s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[1.521s] 
+[1.521s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[1.522s] * ./test/test_flake8.py
+[1.522s] ----------------------------- Captured stderr call -----------------------------
+[1.522s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[1.522s] _________________________________ test_pep257 __________________________________
+[1.522s] test/test_pep257.py:23: in test_pep257
+[1.522s]     assert rc == 0, 'Found code style errors / warnings'
+[1.522s] E   AssertionError: Found code style errors / warnings
+[1.522s] E   assert 1 == 0
+[1.522s] ----------------------------- Captured stdout call -----------------------------
+[1.522s] checking ./rse_observation_models/__init__.py
+[1.523s] checking ./rse_observation_models/odometry_imu_observation_models.py
+[1.523s] ./rse_observation_models/odometry_imu_observation_models.py:149 in public function `odometry_imu_observation_model_particles_2`: D202: No blank lines allowed after function docstring (found 1)
+[1.523s] ./rse_observation_models/odometry_imu_observation_models.py:149 in public function `odometry_imu_observation_model_particles_2`: D205: 1 blank line required between summary line and description (found 0)
+[1.523s] checking ./rse_observation_models/odometry_observation_models.py
+[1.523s] checking ./setup.py
+[1.523s] checking ./test/test_copyright.py
+[1.523s] checking ./test/test_flake8.py
+[1.523s] checking ./test/test_pep257.py
+[1.523s] checking test/test_copyright.py
+[1.523s] checking test/test_flake8.py
+[1.523s] checking test/test_pep257.py
+[1.523s] 2 errors
+[1.523s] - generated xml file: /home/jjy/ros2_ws/build/rse_observation_models/pytest.xml -
+[1.523s] =========================== short test summary info ============================
+[1.523s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 235 code styl...
+[1.523s] FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...
+[1.524s] =================== 2 failed, 1 skipped, 2 warnings in 0.63s ===================
+[1.525s] Invoked command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_observation_models' returned '1': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_motion_models:/home/jjy/ros2_ws/install/rse_map_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_observation_models/pytest.xml --junit-prefix=rse_observation_models -o cache_dir=/home/jjy/ros2_ws/build/rse_observation_models/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest

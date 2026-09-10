@@ -1,0 +1,1119 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/jjy/ros2_ws/build/rse_common_utils/.pytest_cache
+rootdir: /home/jjy/ros2_ws/src/rse_prob_robotics/rse_common_utils
+plugins: ament-lint-0.12.14, launch-testing-1.0.13, ament-pep257-0.12.14, ament-copyright-0.12.14, launch-testing-ros-0.19.13, ament-xmllint-0.12.14, ament-flake8-0.12.14, cov-3.0.0, colcon-core-0.20.1
+collected 3 items
+
+test/test_copyright.py s                                                 [ 33%]
+test/test_flake8.py F                                                    [ 66%]
+test/test_pep257.py F                                                    [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_flake8 __________________________________
+test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 186 code style errors / warnings:
+E     ./rse_common_utils/jacobians_odom_imu.py:8:100: E501 line too long (126 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:14:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/jacobians_odom_imu.py:18:100: E501 line too long (100 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:23:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/jacobians_odom_imu.py:24:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:27:75: W291 trailing whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:33:100: E501 line too long (134 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:37:23: E225 missing whitespace around operator
+E     ./rse_common_utils/jacobians_odom_imu.py:70:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:71:100: E501 line too long (172 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:76:100: E501 line too long (118 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:77:100: E501 line too long (137 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:87:100: E501 line too long (101 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:88:100: E501 line too long (101 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:92:100: E501 line too long (121 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:93:100: E501 line too long (121 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:94:100: E501 line too long (104 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:95:100: E501 line too long (123 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:96:100: E501 line too long (116 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:97:100: E501 line too long (124 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:98:100: E501 line too long (124 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:101:100: E501 line too long (109 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:103:100: E501 line too long (133 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:104:100: E501 line too long (133 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:109:100: E501 line too long (105 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:110:100: E501 line too long (105 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:114:9: E303 too many blank lines (2)
+E     ./rse_common_utils/jacobians_odom_imu.py:146:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:147:100: E501 line too long (148 > 99 characters)
+E     ./rse_common_utils/jacobians_odom_imu.py:150:5: E303 too many blank lines (2)
+E     ./rse_common_utils/jacobians_odom_imu.py:167:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:168:5: E303 too many blank lines (2)
+E     ./rse_common_utils/jacobians_odom_imu.py:178:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:180:43: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:180:45: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:180:72: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:180:74: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:193:32: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:193:34: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:193:39: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:193:41: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom_imu.py:194:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:196:42: W291 trailing whitespace
+E     ./rse_common_utils/jacobians_odom_imu.py:199:1: W293 blank line contains whitespace
+E     ./rse_common_utils/helper_utils.py:6:19: W291 trailing whitespace
+E     ./rse_common_utils/helper_utils.py:9:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/helper_utils.py:13:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/helper_utils.py:18:17: W292 no newline at end of file
+E     ./rse_common_utils/visualization.py:10:1: F401 'math' imported but unused
+E     ./rse_common_utils/visualization.py:12:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/visualization.py:13:29: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:13:31: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:13:69: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:13:71: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:15:100: E501 line too long (108 > 99 characters)
+E     ./rse_common_utils/visualization.py:16:100: E501 line too long (105 > 99 characters)
+E     ./rse_common_utils/visualization.py:20:27: W291 trailing whitespace
+E     ./rse_common_utils/visualization.py:25:100: E501 line too long (100 > 99 characters)
+E     ./rse_common_utils/visualization.py:64:46: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:64:48: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:64:63: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:64:65: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:64:76: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:64:78: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/visualization.py:83:1: W293 blank line contains whitespace
+E     ./rse_common_utils/visualization.py:109:9: E265 block comment should start with '# '
+E     ./rse_common_utils/visualization.py:114:100: E501 line too long (100 > 99 characters)
+E     ./rse_common_utils/visualization.py:250:19: W292 no newline at end of file
+E     ./rse_common_utils/plot_jacobians.py:4:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/plot_jacobians.py:7:1: W293 blank line contains whitespace
+E     ./rse_common_utils/plot_jacobians.py:22:100: E501 line too long (135 > 99 characters)
+E     ./rse_common_utils/plot_jacobians.py:27:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./rse_common_utils/sensor_utils.py:14:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:18:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:24:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:31:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:48:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:49:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:64:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:74:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:93:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:108:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:114:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:133:100: E501 line too long (116 > 99 characters)
+E     ./rse_common_utils/sensor_utils.py:140:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:144:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:160:22: E231 missing whitespace after ','
+E     ./rse_common_utils/sensor_utils.py:169:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:171:1: E266 too many leading '#' for block comment
+E     ./rse_common_utils/sensor_utils.py:180:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:186:13: E201 whitespace after '('
+E     ./rse_common_utils/sensor_utils.py:186:51: E202 whitespace before ')'
+E     ./rse_common_utils/sensor_utils.py:188:15: E201 whitespace after '('
+E     ./rse_common_utils/sensor_utils.py:188:53: E202 whitespace before ')'
+E     ./rse_common_utils/sensor_utils.py:193:9: E265 block comment should start with '# '
+E     ./rse_common_utils/sensor_utils.py:196:68: W291 trailing whitespace
+E     ./rse_common_utils/sensor_utils.py:205:13: E201 whitespace after '('
+E     ./rse_common_utils/sensor_utils.py:205:100: E501 line too long (103 > 99 characters)
+E     ./rse_common_utils/sensor_utils.py:239:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:260:100: E501 line too long (115 > 99 characters)
+E     ./rse_common_utils/sensor_utils.py:261:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:263:100: E501 line too long (105 > 99 characters)
+E     ./rse_common_utils/sensor_utils.py:264:100: E501 line too long (125 > 99 characters)
+E     ./rse_common_utils/sensor_utils.py:265:1: W293 blank line contains whitespace
+E     ./rse_common_utils/sensor_utils.py:321:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sensor_utils.py:330:31: W292 no newline at end of file
+E     ./rse_common_utils/jacobians.py:14:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/jacobians.py:18:100: E501 line too long (100 > 99 characters)
+E     ./rse_common_utils/jacobians.py:23:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/jacobians.py:24:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians.py:27:69: W291 trailing whitespace
+E     ./rse_common_utils/jacobians.py:37:23: E225 missing whitespace around operator
+E     ./rse_common_utils/jacobians.py:70:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians.py:71:100: E501 line too long (151 > 99 characters)
+E     ./rse_common_utils/jacobians.py:103:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians.py:118:32: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians.py:118:34: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians.py:118:39: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians.py:118:41: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians.py:119:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians.py:121:71: W291 trailing whitespace
+E     ./rse_common_utils/jacobians.py:125:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./rse_common_utils/jacobians_odom.py:8:100: E501 line too long (100 > 99 characters)
+E     ./rse_common_utils/jacobians_odom.py:14:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/jacobians_odom.py:18:100: E501 line too long (100 > 99 characters)
+E     ./rse_common_utils/jacobians_odom.py:23:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/jacobians_odom.py:24:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom.py:27:71: W291 trailing whitespace
+E     ./rse_common_utils/jacobians_odom.py:68:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom.py:80:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom.py:81:100: E501 line too long (151 > 99 characters)
+E     ./rse_common_utils/jacobians_odom.py:113:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom.py:128:32: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom.py:128:34: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom.py:128:39: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom.py:128:41: E251 unexpected spaces around keyword / parameter equals
+E     ./rse_common_utils/jacobians_odom.py:129:1: W293 blank line contains whitespace
+E     ./rse_common_utils/jacobians_odom.py:131:71: W291 trailing whitespace
+E     ./rse_common_utils/jacobians_odom.py:135:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./rse_common_utils/sampling_utils.py:5:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/sampling_utils.py:10:1: E303 too many blank lines (3)
+E     ./rse_common_utils/sampling_utils.py:11:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:11:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:11:2: E117 over-indented (comment)
+E     ./rse_common_utils/sampling_utils.py:12:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:12:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:12:2: E117 over-indented
+E     ./rse_common_utils/sampling_utils.py:13:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:13:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:15:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:15:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:17:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:17:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:18:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:18:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:20:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:20:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:21:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:21:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:23:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:23:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:24:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:24:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:25:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:25:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:26:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:26:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:28:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:28:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:29:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:29:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:31:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./rse_common_utils/sampling_utils.py:32:1: W191 indentation contains tabs
+E     ./rse_common_utils/sampling_utils.py:32:1: E101 indentation contains mixed spaces and tabs
+E     ./rse_common_utils/sampling_utils.py:32:2: E117 over-indented
+E     ./rse_common_utils/sampling_utils.py:32:8: W292 no newline at end of file
+E     ./rse_common_utils/visualization_3D.py:2:1: F401 'mpl_toolkits.mplot3d.Axes3D' imported but unused
+E     ./rse_common_utils/visualization_3D.py:4:1: F401 'matplotlib.patches.Ellipse' imported but unused
+E     ./rse_common_utils/visualization_3D.py:7:1: E302 expected 2 blank lines, found 1
+E     ./rse_common_utils/visualization_3D.py:11:100: E501 line too long (112 > 99 characters)
+E     ./rse_common_utils/visualization_3D.py:12:100: E501 line too long (113 > 99 characters)
+E     ./rse_common_utils/visualization_3D.py:13:100: E501 line too long (104 > 99 characters)
+E     ./rse_common_utils/visualization_3D.py:105:100: E501 line too long (114 > 99 characters)
+E     ./rse_common_utils/visualization_3D.py:114:5: F841 local variable 'kf_cov' is assigned to but never used
+E     ./rse_common_utils/visualization_3D.py:119:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./rse_common_utils/visualization_3D.py:120:11: W292 no newline at end of file
+E   assert 1 == 0
+----------------------------- Captured stdout call -----------------------------
+
+./rse_common_utils/jacobians_odom_imu.py:8:100: E501 line too long (126 > 99 characters)
+from rse_observation_models.observation_models import odometry_imu_observation_model_with_acceleration_motion_model_linearized
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:14:1: E302 expected 2 blank lines, found 1
+def plot_matrix(matrix, title="Matrix"):
+^
+
+./rse_common_utils/jacobians_odom_imu.py:18:100: E501 line too long (100 > 99 characters)
+    sp.preview(matrix, viewer='file', filename='output.png', euler=False, dvioptions=['-D', '1200'])
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:23:1: E302 expected 2 blank lines, found 1
+class TestJacobians(unittest.TestCase):
+^
+
+./rse_common_utils/jacobians_odom_imu.py:24:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/jacobians_odom_imu.py:27:75: W291 trailing whitespace
+        _, self.G_np, self.V_np = acceleration_motion_model_linearized_2() 
+                                                                          ^
+
+./rse_common_utils/jacobians_odom_imu.py:33:100: E501 line too long (134 > 99 characters)
+        x, y, theta, v, w, delta_t, prev_theta, v_x, v_y, a_x, a_y = sp.symbols('x y theta v omega Delta_t theta_t-1 v_x v_y a_x a_y')
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:37:23: E225 missing whitespace around operator
+                   x -v/w * sp.sin(theta) + v/w * sp.sin(theta + w * delta_t),
+                      ^
+
+./rse_common_utils/jacobians_odom_imu.py:70:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/jacobians_odom_imu.py:71:100: E501 line too long (172 > 99 characters)
+        return sp.lambdify((theta, w, delta_t, v), G, 'numpy'), sp.lambdify((theta, w, delta_t, v), V, 'numpy'), sp.lambdify((x, y, theta, prev_theta, delta_t), H, 'numpy')
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:76:100: E501 line too long (118 > 99 characters)
+        # x, y, theta, v, w, delta_t, prev_theta, a_x, a_y = sp.symbols('x y theta v omega Delta_t theta_t-1 a_x a_y')
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:77:100: E501 line too long (137 > 99 characters)
+        x, y, theta, v_x, v_y, v, w, delta_t, prev_theta, a_x, a_y = sp.symbols('x y theta v_x, v_y, v, omega Delta_t theta_t-1 a_x a_y')
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:87:100: E501 line too long (101 > 99 characters)
+        '''g = sp.Matrix([
+            x + v_x * delta_t + 0.5 * a_x * delta_t**2,  # Update for x position
+            y + v_y * delta_t + 0.5 * a_y * delta_t**2,  # Update for y position
+            theta + w * delta_t,                         # Update for orientation
+            v_x + a_x * delta_t,                         # Update for velocity in x
+            v_y + a_y * delta_t,                         # Update for velocity in y
+            w,                                           # Assuming constant angular velocity
+            a_x,                                         # Assuming constant linear acceleration in x
+            a_y                                          # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:88:100: E501 line too long (101 > 99 characters)
+        '''g = sp.Matrix([
+            x + v_x * delta_t + 0.5 * a_x * delta_t**2,  # Update for x position
+            y + v_y * delta_t + 0.5 * a_y * delta_t**2,  # Update for y position
+            theta + w * delta_t,                         # Update for orientation
+            v_x + a_x * delta_t,                         # Update for velocity in x
+            v_y + a_y * delta_t,                         # Update for velocity in y
+            w,                                           # Assuming constant angular velocity
+            a_x,                                         # Assuming constant linear acceleration in x
+            a_y                                          # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:92:100: E501 line too long (121 > 99 characters)
+        '''g = sp.Matrix([
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,           # Update for x position with acceleration
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,           # Update for y position with acceleration
+            theta + w * delta_t,                                                # Update for orientation
+            v + a_x * sp.cos(theta) * delta_t + a_y * sp.sin(theta) * delta_t,  # Update for velocity in direction of theta
+            w,                                                                  # Assuming constant angular velocity
+            a_x,                                                                # Assuming constant linear acceleration in x
+            a_y                                                                 # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:93:100: E501 line too long (121 > 99 characters)
+        '''g = sp.Matrix([
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,           # Update for x position with acceleration
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,           # Update for y position with acceleration
+            theta + w * delta_t,                                                # Update for orientation
+            v + a_x * sp.cos(theta) * delta_t + a_y * sp.sin(theta) * delta_t,  # Update for velocity in direction of theta
+            w,                                                                  # Assuming constant angular velocity
+            a_x,                                                                # Assuming constant linear acceleration in x
+            a_y                                                                 # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:94:100: E501 line too long (104 > 99 characters)
+        '''g = sp.Matrix([
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,           # Update for x position with acceleration
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,           # Update for y position with acceleration
+            theta + w * delta_t,                                                # Update for orientation
+            v + a_x * sp.cos(theta) * delta_t + a_y * sp.sin(theta) * delta_t,  # Update for velocity in direction of theta
+            w,                                                                  # Assuming constant angular velocity
+            a_x,                                                                # Assuming constant linear acceleration in x
+            a_y                                                                 # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:95:100: E501 line too long (123 > 99 characters)
+        '''g = sp.Matrix([
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,           # Update for x position with acceleration
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,           # Update for y position with acceleration
+            theta + w * delta_t,                                                # Update for orientation
+            v + a_x * sp.cos(theta) * delta_t + a_y * sp.sin(theta) * delta_t,  # Update for velocity in direction of theta
+            w,                                                                  # Assuming constant angular velocity
+            a_x,                                                                # Assuming constant linear acceleration in x
+            a_y                                                                 # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:96:100: E501 line too long (116 > 99 characters)
+        '''g = sp.Matrix([
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,           # Update for x position with acceleration
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,           # Update for y position with acceleration
+            theta + w * delta_t,                                                # Update for orientation
+            v + a_x * sp.cos(theta) * delta_t + a_y * sp.sin(theta) * delta_t,  # Update for velocity in direction of theta
+            w,                                                                  # Assuming constant angular velocity
+            a_x,                                                                # Assuming constant linear acceleration in x
+            a_y                                                                 # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:97:100: E501 line too long (124 > 99 characters)
+        '''g = sp.Matrix([
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,           # Update for x position with acceleration
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,           # Update for y position with acceleration
+            theta + w * delta_t,                                                # Update for orientation
+            v + a_x * sp.cos(theta) * delta_t + a_y * sp.sin(theta) * delta_t,  # Update for velocity in direction of theta
+            w,                                                                  # Assuming constant angular velocity
+            a_x,                                                                # Assuming constant linear acceleration in x
+            a_y                                                                 # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:98:100: E501 line too long (124 > 99 characters)
+        '''g = sp.Matrix([
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,           # Update for x position with acceleration
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,           # Update for y position with acceleration
+            theta + w * delta_t,                                                # Update for orientation
+            v + a_x * sp.cos(theta) * delta_t + a_y * sp.sin(theta) * delta_t,  # Update for velocity in direction of theta
+            w,                                                                  # Assuming constant angular velocity
+            a_x,                                                                # Assuming constant linear acceleration in x
+            a_y                                                                 # Assuming constant linear acceleration in y
+        ])'''
+                          
+                                                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:101:100: E501 line too long (109 > 99 characters)
+        # Updated motion model matrix 'g' including linear acceleration and direct velocity component updates
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:103:100: E501 line too long (133 > 99 characters)
+            x + v * sp.cos(theta) * delta_t + 0.5 * a_x * delta_t**2,  # Update for x position with acceleration and forward velocity
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:104:100: E501 line too long (133 > 99 characters)
+            y + v * sp.sin(theta) * delta_t + 0.5 * a_y * delta_t**2,  # Update for y position with acceleration and forward velocity
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:109:100: E501 line too long (105 > 99 characters)
+            a_x,                                             # Assuming constant linear acceleration in x
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:110:100: E501 line too long (105 > 99 characters)
+            a_y                                              # Assuming constant linear acceleration in y
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:114:9: E303 too many blank lines (2)
+        # Define matrix h
+        ^
+
+./rse_common_utils/jacobians_odom_imu.py:146:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/jacobians_odom_imu.py:147:100: E501 line too long (148 > 99 characters)
+        return sp.lambdify((theta, v, a_x, a_y, delta_t), G, 'numpy'), sp.lambdify((theta, delta_t), V, 'numpy'), sp.lambdify((delta_t), H, 'numpy')
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom_imu.py:150:5: E303 too many blank lines (2)
+    def test_jacobian_G(self):
+    ^
+
+./rse_common_utils/jacobians_odom_imu.py:167:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/jacobians_odom_imu.py:168:5: E303 too many blank lines (2)
+    def test_jacobian_V(self):
+    ^
+
+./rse_common_utils/jacobians_odom_imu.py:178:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/jacobians_odom_imu.py:180:43: E251 unexpected spaces around keyword / parameter equals
+                result_V_np = self.V_np(mu = [0.0, 0.0, theta], delta_t = delta_t)
+                                          ^
+
+./rse_common_utils/jacobians_odom_imu.py:180:45: E251 unexpected spaces around keyword / parameter equals
+                result_V_np = self.V_np(mu = [0.0, 0.0, theta], delta_t = delta_t)
+                                            ^
+
+./rse_common_utils/jacobians_odom_imu.py:180:72: E251 unexpected spaces around keyword / parameter equals
+                result_V_np = self.V_np(mu = [0.0, 0.0, theta], delta_t = delta_t)
+                                                                       ^
+
+./rse_common_utils/jacobians_odom_imu.py:180:74: E251 unexpected spaces around keyword / parameter equals
+                result_V_np = self.V_np(mu = [0.0, 0.0, theta], delta_t = delta_t)
+                                                                         ^
+
+./rse_common_utils/jacobians_odom_imu.py:193:32: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta, prev_theta=prev_theta, delta_t=delta_t):
+                               ^
+
+./rse_common_utils/jacobians_odom_imu.py:193:34: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta, prev_theta=prev_theta, delta_t=delta_t):
+                                 ^
+
+./rse_common_utils/jacobians_odom_imu.py:193:39: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta, prev_theta=prev_theta, delta_t=delta_t):
+                                      ^
+
+./rse_common_utils/jacobians_odom_imu.py:193:41: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta, prev_theta=prev_theta, delta_t=delta_t):
+                                        ^
+
+./rse_common_utils/jacobians_odom_imu.py:194:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/jacobians_odom_imu.py:196:42: W291 trailing whitespace
+                result_H_np = self.H_np() 
+                                         ^
+
+./rse_common_utils/jacobians_odom_imu.py:199:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/helper_utils.py:6:19: W291 trailing whitespace
+import numpy as np 
+                  ^
+
+./rse_common_utils/helper_utils.py:9:1: E302 expected 2 blank lines, found 1
+def get_yaw_from_quaternion(quaternion):
+^
+
+./rse_common_utils/helper_utils.py:13:1: E302 expected 2 blank lines, found 1
+def normalize_angle(angle):
+^
+
+./rse_common_utils/helper_utils.py:18:17: W292 no newline at end of file
+    return angle                ^
+
+./rse_common_utils/visualization.py:10:1: F401 'math' imported but unused
+import math
+^
+
+./rse_common_utils/visualization.py:12:1: E302 expected 2 blank lines, found 1
+class Visualizer:
+^
+
+./rse_common_utils/visualization.py:13:29: E251 unexpected spaces around keyword / parameter equals
+    def __init__(self, title = "Trajectory Estimation", filter_label = "Kalman Filter"):
+                            ^
+
+./rse_common_utils/visualization.py:13:31: E251 unexpected spaces around keyword / parameter equals
+    def __init__(self, title = "Trajectory Estimation", filter_label = "Kalman Filter"):
+                              ^
+
+./rse_common_utils/visualization.py:13:69: E251 unexpected spaces around keyword / parameter equals
+    def __init__(self, title = "Trajectory Estimation", filter_label = "Kalman Filter"):
+                                                                    ^
+
+./rse_common_utils/visualization.py:13:71: E251 unexpected spaces around keyword / parameter equals
+    def __init__(self, title = "Trajectory Estimation", filter_label = "Kalman Filter"):
+                                                                      ^
+
+./rse_common_utils/visualization.py:15:100: E501 line too long (108 > 99 characters)
+        self.gt_line, = self.ax.plot([], [], 'y-', label='Ground Truth')  # Green line for ground truth path
+                                                                                                   ^
+
+./rse_common_utils/visualization.py:16:100: E501 line too long (105 > 99 characters)
+        self.kf_line, = self.ax.plot([], [], 'b-', label=filter_label)  # Red line for Kalman filter path
+                                                                                                   ^
+
+./rse_common_utils/visualization.py:20:27: W291 trailing whitespace
+        self.obs_path = [] 
+                          ^
+
+./rse_common_utils/visualization.py:25:100: E501 line too long (100 > 99 characters)
+        self.cov_ellipse = Ellipse(xy=(0, 0), width=0, height=0, edgecolor='black', fc='None', lw=2)
+                                                                                                   ^
+
+./rse_common_utils/visualization.py:64:46: E251 unexpected spaces around keyword / parameter equals
+    def update(self, gt_pose, kf_pose, kf_cov = None, obs_pose = None, step = "update"):
+                                             ^
+
+./rse_common_utils/visualization.py:64:48: E251 unexpected spaces around keyword / parameter equals
+    def update(self, gt_pose, kf_pose, kf_cov = None, obs_pose = None, step = "update"):
+                                               ^
+
+./rse_common_utils/visualization.py:64:63: E251 unexpected spaces around keyword / parameter equals
+    def update(self, gt_pose, kf_pose, kf_cov = None, obs_pose = None, step = "update"):
+                                                              ^
+
+./rse_common_utils/visualization.py:64:65: E251 unexpected spaces around keyword / parameter equals
+    def update(self, gt_pose, kf_pose, kf_cov = None, obs_pose = None, step = "update"):
+                                                                ^
+
+./rse_common_utils/visualization.py:64:76: E251 unexpected spaces around keyword / parameter equals
+    def update(self, gt_pose, kf_pose, kf_cov = None, obs_pose = None, step = "update"):
+                                                                           ^
+
+./rse_common_utils/visualization.py:64:78: E251 unexpected spaces around keyword / parameter equals
+    def update(self, gt_pose, kf_pose, kf_cov = None, obs_pose = None, step = "update"):
+                                                                             ^
+
+./rse_common_utils/visualization.py:83:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/visualization.py:109:9: E265 block comment should start with '# '
+        #angle = np.rad2deg(np.arctan2(*eigenvecs[:, 0][::-1]))
+        ^
+
+./rse_common_utils/visualization.py:114:100: E501 line too long (100 > 99 characters)
+            angle = np.rad2deg(np.arctan2(np.real(eigenvecs[:, 0][1]), np.real(eigenvecs[:, 0][0])))
+                                                                                                   ^
+
+./rse_common_utils/visualization.py:250:19: W292 no newline at end of file
+        plt.show()                  ^
+
+./rse_common_utils/plot_jacobians.py:4:1: E302 expected 2 blank lines, found 1
+def plot_matrix(matrix, title=None, label=""):
+^
+
+./rse_common_utils/plot_jacobians.py:7:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/plot_jacobians.py:22:100: E501 line too long (135 > 99 characters)
+        ax.text(0, 0.5, f"{label} =", va='center', ha='right', transform=ax.transAxes, fontsize=30, color='black')  # Increase fontsize
+                                                                                                   ^
+
+./rse_common_utils/plot_jacobians.py:27:1: E305 expected 2 blank lines after class or function definition, found 1
+x, y, theta, v, w, delta_t = sp.symbols('x y theta v omega Delta_t')
+^
+
+./rse_common_utils/sensor_utils.py:14:1: E302 expected 2 blank lines, found 1
+def add_noise_to_observation(z, noise_std):
+^
+
+./rse_common_utils/sensor_utils.py:18:1: E302 expected 2 blank lines, found 1
+def odom_to_pose2D(odom):
+^
+
+./rse_common_utils/sensor_utils.py:24:1: E302 expected 2 blank lines, found 1
+def odom_to_pose3D(odom):
+^
+
+./rse_common_utils/sensor_utils.py:31:1: E302 expected 2 blank lines, found 1
+def get_normalized_pose2D(initial_pose, current_pose):
+^
+
+./rse_common_utils/sensor_utils.py:48:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/sensor_utils.py:49:1: E302 expected 2 blank lines, found 1
+def get_normalized_pose3D(initial_pose, current_pose):
+^
+
+./rse_common_utils/sensor_utils.py:64:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/sensor_utils.py:74:1: E302 expected 2 blank lines, found 1
+def rotate_pose2D(pose, degrees):
+^
+
+./rse_common_utils/sensor_utils.py:93:1: E302 expected 2 blank lines, found 1
+def rotate_pose3D(pose, roll_angle, pitch_angle, yaw_angle):
+^
+
+./rse_common_utils/sensor_utils.py:108:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/sensor_utils.py:114:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/sensor_utils.py:133:100: E501 line too long (116 > 99 characters)
+    return (rotated_position[0], rotated_position[1], rotated_position[2], rotated_roll, rotated_pitch, rotated_yaw)
+                                                                                                   ^
+
+./rse_common_utils/sensor_utils.py:140:1: E302 expected 2 blank lines, found 1
+def get_rpy_from_quaternion(quaternion):
+^
+
+./rse_common_utils/sensor_utils.py:144:1: E302 expected 2 blank lines, found 1
+class Odom2DDriftSimulator:
+^
+
+./rse_common_utils/sensor_utils.py:160:22: E231 missing whitespace after ','
+        print("Error",self.error_accumulation)
+                     ^
+
+./rse_common_utils/sensor_utils.py:169:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/sensor_utils.py:171:1: E266 too many leading '#' for block comment
+##### Mapping Utils #####
+^
+
+./rse_common_utils/sensor_utils.py:180:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/sensor_utils.py:186:13: E201 whitespace after '('
+        if ( msgScan.ranges[i] > msgScan.range_max ):
+            ^
+
+./rse_common_utils/sensor_utils.py:186:51: E202 whitespace before ')'
+        if ( msgScan.ranges[i] > msgScan.range_max ):
+                                                  ^
+
+./rse_common_utils/sensor_utils.py:188:15: E201 whitespace after '('
+        elif ( msgScan.ranges[i] < msgScan.range_min ):
+              ^
+
+./rse_common_utils/sensor_utils.py:188:53: E202 whitespace before ')'
+        elif ( msgScan.ranges[i] < msgScan.range_min ):
+                                                    ^
+
+./rse_common_utils/sensor_utils.py:193:9: E265 block comment should start with '# '
+        #dist = msgScan.ranges[i]
+        ^
+
+./rse_common_utils/sensor_utils.py:196:68: W291 trailing whitespace
+        inf = ((msgScan.range_max - dist) / msgScan.range_max) ** 2 
+                                                                   ^
+
+./rse_common_utils/sensor_utils.py:205:13: E201 whitespace after '('
+    return ( distances, angles, information,  msgScan.range_max, msgScan.angle_max - msgScan.angle_min)
+            ^
+
+./rse_common_utils/sensor_utils.py:205:100: E501 line too long (103 > 99 characters)
+    return ( distances, angles, information,  msgScan.range_max, msgScan.angle_max - msgScan.angle_min)
+                                                                                                   ^
+
+./rse_common_utils/sensor_utils.py:239:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/sensor_utils.py:260:100: E501 line too long (115 > 99 characters)
+def is_in_perceptual_field(cell_center, sensor_position, sensor_orientation, sensor_range_max, sensor_angle_range):
+                                                                                                   ^
+
+./rse_common_utils/sensor_utils.py:261:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/sensor_utils.py:263:100: E501 line too long (105 > 99 characters)
+    distance_to_cell = np.hypot(cell_center[0] - sensor_position[0], cell_center[1] - sensor_position[1])
+                                                                                                   ^
+
+./rse_common_utils/sensor_utils.py:264:100: E501 line too long (125 > 99 characters)
+    angle_to_cell = np.arctan2(cell_center[1] - sensor_position[1], cell_center[0] - sensor_position[0]) - sensor_orientation
+                                                                                                   ^
+
+./rse_common_utils/sensor_utils.py:265:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/sensor_utils.py:321:1: E302 expected 2 blank lines, found 1
+def log_odds(p):
+^
+
+./rse_common_utils/sensor_utils.py:330:31: W292 no newline at end of file
+    return np.log(p / (1 - p))                              ^
+
+./rse_common_utils/jacobians.py:14:1: E302 expected 2 blank lines, found 1
+def plot_matrix(matrix, title="Matrix"):
+^
+
+./rse_common_utils/jacobians.py:18:100: E501 line too long (100 > 99 characters)
+    sp.preview(matrix, viewer='file', filename='output.png', euler=False, dvioptions=['-D', '1200'])
+                                                                                                   ^
+
+./rse_common_utils/jacobians.py:23:1: E302 expected 2 blank lines, found 1
+class TestJacobians(unittest.TestCase):
+^
+
+./rse_common_utils/jacobians.py:24:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/jacobians.py:27:69: W291 trailing whitespace
+        _, self.G_np, self.V_np = velocity_motion_model_linearized() 
+                                                                    ^
+
+./rse_common_utils/jacobians.py:37:23: E225 missing whitespace around operator
+                   x -v/w * sp.sin(theta) + v/w * sp.sin(theta + w * delta_t),
+                      ^
+
+./rse_common_utils/jacobians.py:70:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/jacobians.py:71:100: E501 line too long (151 > 99 characters)
+        return sp.lambdify((theta, w, delta_t, v), G, 'numpy'), sp.lambdify((theta, w, delta_t, v), V, 'numpy'), sp.lambdify((x, y, theta), H, 'numpy')
+                                                                                                   ^
+
+./rse_common_utils/jacobians.py:103:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/jacobians.py:118:32: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                               ^
+
+./rse_common_utils/jacobians.py:118:34: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                                 ^
+
+./rse_common_utils/jacobians.py:118:39: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                                      ^
+
+./rse_common_utils/jacobians.py:118:41: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                                        ^
+
+./rse_common_utils/jacobians.py:119:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/jacobians.py:121:71: W291 trailing whitespace
+                result_H_np = self.H_np(np.array([[x], [y], [theta]])) 
+                                                                      ^
+
+./rse_common_utils/jacobians.py:125:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == "__main__":
+^
+
+./rse_common_utils/jacobians_odom.py:8:100: E501 line too long (100 > 99 characters)
+from rse_observation_models.odometry_observation_models import odometry_observation_model_linearized
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom.py:14:1: E302 expected 2 blank lines, found 1
+def plot_matrix(matrix, title="Matrix"):
+^
+
+./rse_common_utils/jacobians_odom.py:18:100: E501 line too long (100 > 99 characters)
+    sp.preview(matrix, viewer='file', filename='output.png', euler=False, dvioptions=['-D', '1200'])
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom.py:23:1: E302 expected 2 blank lines, found 1
+class TestJacobians(unittest.TestCase):
+^
+
+./rse_common_utils/jacobians_odom.py:24:1: W293 blank line contains whitespace
+    
+^
+
+./rse_common_utils/jacobians_odom.py:27:71: W291 trailing whitespace
+        _, self.G_np, self.V_np = velocity_motion_model_linearized_1() 
+                                                                      ^
+
+./rse_common_utils/jacobians_odom.py:68:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/jacobians_odom.py:80:1: W293 blank line contains whitespace
+        
+^
+
+./rse_common_utils/jacobians_odom.py:81:100: E501 line too long (151 > 99 characters)
+        return sp.lambdify((theta, w, delta_t, v), G, 'numpy'), sp.lambdify((theta, w, delta_t, v), V, 'numpy'), sp.lambdify((x, y, theta), H, 'numpy')
+                                                                                                   ^
+
+./rse_common_utils/jacobians_odom.py:113:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/jacobians_odom.py:128:32: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                               ^
+
+./rse_common_utils/jacobians_odom.py:128:34: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                                 ^
+
+./rse_common_utils/jacobians_odom.py:128:39: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                                      ^
+
+./rse_common_utils/jacobians_odom.py:128:41: E251 unexpected spaces around keyword / parameter equals
+            with self.subTest(x = x, y = y, theta=theta):
+                                        ^
+
+./rse_common_utils/jacobians_odom.py:129:1: W293 blank line contains whitespace
+                
+^
+
+./rse_common_utils/jacobians_odom.py:131:71: W291 trailing whitespace
+                result_H_np = self.H_np(np.array([[x], [y], [theta]])) 
+                                                                      ^
+
+./rse_common_utils/jacobians_odom.py:135:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == "__main__":
+^
+
+./rse_common_utils/sampling_utils.py:5:1: E302 expected 2 blank lines, found 1
+def sample_normal_distribution(b_sqrd):
+^
+
+./rse_common_utils/sampling_utils.py:10:1: E303 too many blank lines (3)
+def main():
+^
+
+./rse_common_utils/sampling_utils.py:11:1: W191 indentation contains tabs
+	# Number of samples to collect
+^
+
+./rse_common_utils/sampling_utils.py:11:1: E101 indentation contains mixed spaces and tabs
+	# Number of samples to collect
+^
+
+./rse_common_utils/sampling_utils.py:11:2: E117 over-indented (comment)
+	# Number of samples to collect
+	^
+
+./rse_common_utils/sampling_utils.py:12:1: W191 indentation contains tabs
+	num_samples = 10000
+^
+
+./rse_common_utils/sampling_utils.py:12:1: E101 indentation contains mixed spaces and tabs
+	num_samples = 10000
+^
+
+./rse_common_utils/sampling_utils.py:12:2: E117 over-indented
+	num_samples = 10000
+	^
+
+./rse_common_utils/sampling_utils.py:13:1: W191 indentation contains tabs
+	b_sqrd = 4  # Variance, b^2
+^
+
+./rse_common_utils/sampling_utils.py:13:1: E101 indentation contains mixed spaces and tabs
+	b_sqrd = 4  # Variance, b^2
+^
+
+./rse_common_utils/sampling_utils.py:15:1: W191 indentation contains tabs
+	print(sample_normal_distribution(b_sqrd))
+^
+
+./rse_common_utils/sampling_utils.py:15:1: E101 indentation contains mixed spaces and tabs
+	print(sample_normal_distribution(b_sqrd))
+^
+
+./rse_common_utils/sampling_utils.py:17:1: W191 indentation contains tabs
+	# Collect samples
+^
+
+./rse_common_utils/sampling_utils.py:17:1: E101 indentation contains mixed spaces and tabs
+	# Collect samples
+^
+
+./rse_common_utils/sampling_utils.py:18:1: W191 indentation contains tabs
+	samples = np.array([sample_normal_distribution(b_sqrd).sum() for _ in range(num_samples)])
+^
+
+./rse_common_utils/sampling_utils.py:18:1: E101 indentation contains mixed spaces and tabs
+	samples = np.array([sample_normal_distribution(b_sqrd).sum() for _ in range(num_samples)])
+^
+
+./rse_common_utils/sampling_utils.py:20:1: W191 indentation contains tabs
+	# Plotting the histogram of the samples
+^
+
+./rse_common_utils/sampling_utils.py:20:1: E101 indentation contains mixed spaces and tabs
+	# Plotting the histogram of the samples
+^
+
+./rse_common_utils/sampling_utils.py:21:1: W191 indentation contains tabs
+	plt.hist(samples, bins=50, density=True, alpha=0.6, color='g')
+^
+
+./rse_common_utils/sampling_utils.py:21:1: E101 indentation contains mixed spaces and tabs
+	plt.hist(samples, bins=50, density=True, alpha=0.6, color='g')
+^
+
+./rse_common_utils/sampling_utils.py:23:1: W191 indentation contains tabs
+	# Plot formatting
+^
+
+./rse_common_utils/sampling_utils.py:23:1: E101 indentation contains mixed spaces and tabs
+	# Plot formatting
+^
+
+./rse_common_utils/sampling_utils.py:24:1: W191 indentation contains tabs
+	plt.title('Histogram of Normal Distribution Samples')
+^
+
+./rse_common_utils/sampling_utils.py:24:1: E101 indentation contains mixed spaces and tabs
+	plt.title('Histogram of Normal Distribution Samples')
+^
+
+./rse_common_utils/sampling_utils.py:25:1: W191 indentation contains tabs
+	plt.xlabel('Value')
+^
+
+./rse_common_utils/sampling_utils.py:25:1: E101 indentation contains mixed spaces and tabs
+	plt.xlabel('Value')
+^
+
+./rse_common_utils/sampling_utils.py:26:1: W191 indentation contains tabs
+	plt.ylabel('Frequency')
+^
+
+./rse_common_utils/sampling_utils.py:26:1: E101 indentation contains mixed spaces and tabs
+	plt.ylabel('Frequency')
+^
+
+./rse_common_utils/sampling_utils.py:28:1: W191 indentation contains tabs
+	# Show the plot
+^
+
+./rse_common_utils/sampling_utils.py:28:1: E101 indentation contains mixed spaces and tabs
+	# Show the plot
+^
+
+./rse_common_utils/sampling_utils.py:29:1: W191 indentation contains tabs
+	plt.show()
+^
+
+./rse_common_utils/sampling_utils.py:29:1: E101 indentation contains mixed spaces and tabs
+	plt.show()
+^
+
+./rse_common_utils/sampling_utils.py:31:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./rse_common_utils/sampling_utils.py:32:1: W191 indentation contains tabs
+	main()^
+
+./rse_common_utils/sampling_utils.py:32:1: E101 indentation contains mixed spaces and tabs
+	main()^
+
+./rse_common_utils/sampling_utils.py:32:2: E117 over-indented
+	main()	^
+
+./rse_common_utils/sampling_utils.py:32:8: W292 no newline at end of file
+	main()	      ^
+
+./rse_common_utils/visualization_3D.py:2:1: F401 'mpl_toolkits.mplot3d.Axes3D' imported but unused
+from mpl_toolkits.mplot3d import Axes3D
+^
+
+./rse_common_utils/visualization_3D.py:4:1: F401 'matplotlib.patches.Ellipse' imported but unused
+from matplotlib.patches import Ellipse
+^
+
+./rse_common_utils/visualization_3D.py:7:1: E302 expected 2 blank lines, found 1
+class Visualizer:
+^
+
+./rse_common_utils/visualization_3D.py:11:100: E501 line too long (112 > 99 characters)
+        self.gt_line, = self.ax.plot([], [], [], 'g-', label='Ground Truth')  # Green line for ground truth path
+                                                                                                   ^
+
+./rse_common_utils/visualization_3D.py:12:100: E501 line too long (113 > 99 characters)
+        self.kf_line, = self.ax.plot([], [], [], 'b-', label='Kalman Filter')  # Blue line for Kalman filter path
+                                                                                                   ^
+
+./rse_common_utils/visualization_3D.py:13:100: E501 line too long (104 > 99 characters)
+        self.obs_line, = self.ax.plot([], [], [], 'r-', label='Observation')  # Red line for Observation
+                                                                                                   ^
+
+./rse_common_utils/visualization_3D.py:105:100: E501 line too long (114 > 99 characters)
+        self.cov_ellipse = Poly3DCollection([list(zip(x.flatten(), y.flatten(), z.flatten()))], edgecolor='black')
+                                                                                                   ^
+
+./rse_common_utils/visualization_3D.py:114:5: F841 local variable 'kf_cov' is assigned to but never used
+    kf_cov = np.diag([0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1])
+    ^
+
+./rse_common_utils/visualization_3D.py:119:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./rse_common_utils/visualization_3D.py:120:11: W292 no newline at end of file
+    main()          ^
+
+15    E101 indentation contains mixed spaces and tabs
+3     E117 over-indented (comment)
+3     E201 whitespace after '('
+2     E202 whitespace before ')'
+2     E225 missing whitespace around operator
+1     E231 missing whitespace after ','
+26    E251 unexpected spaces around keyword / parameter equals
+2     E265 block comment should start with '# '
+1     E266 too many leading '#' for block comment
+22    E302 expected 2 blank lines, found 1
+4     E303 too many blank lines (2)
+5     E305 expected 2 blank lines after class or function definition, found 1
+40    E501 line too long (100 > 99 characters)
+3     F401 'math' imported but unused
+1     F841 local variable 'kf_cov' is assigned to but never used
+15    W191 indentation contains tabs
+9     W291 trailing whitespace
+5     W292 no newline at end of file
+27    W293 blank line contains whitespace
+
+14 files checked
+186 errors
+
+'E'-type errors: 126
+'F'-type errors: 4
+'W'-type errors: 56
+
+Checked files:
+
+* ./setup.py
+* ./rse_common_utils/jacobians_odom_imu.py
+* ./rse_common_utils/helper_utils.py
+* ./rse_common_utils/visualization.py
+* ./rse_common_utils/plot_jacobians.py
+* ./rse_common_utils/sensor_utils.py
+* ./rse_common_utils/jacobians.py
+* ./rse_common_utils/__init__.py
+* ./rse_common_utils/jacobians_odom.py
+* ./rse_common_utils/sampling_utils.py
+* ./rse_common_utils/visualization_3D.py
+* ./test/test_copyright.py
+* ./test/test_pep257.py
+=============================== warnings summary ===============================
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+  Warning: SelectableGroups dict interface is deprecated. Use select.
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+* ./test/test_flake8.py
+----------------------------- Captured stderr call -----------------------------
+option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+_________________________________ test_pep257 __________________________________
+test/test_pep257.py:23: in test_pep257
+    assert rc == 0, 'Found code style errors / warnings'
+E   AssertionError: Found code style errors / warnings
+E   assert 1 == 0
+----------------------------- Captured stdout call -----------------------------
+checking ./rse_common_utils/__init__.py
+checking ./rse_common_utils/helper_utils.py
+checking ./rse_common_utils/jacobians.py
+checking ./rse_common_utils/jacobians_odom.py
+checking ./rse_common_utils/jacobians_odom_imu.py
+checking ./rse_common_utils/plot_jacobians.py
+checking ./rse_common_utils/sampling_utils.py
+checking ./rse_common_utils/sensor_utils.py
+./rse_common_utils/sensor_utils.py:174 in public function `lidar_scan`: D200: One-line docstring should fit on one line with quotes (found 3)
+./rse_common_utils/sensor_utils.py:174 in public function `lidar_scan`: D400: First line should end with a period (not 'y')
+./rse_common_utils/sensor_utils.py:174 in public function `lidar_scan`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+./rse_common_utils/sensor_utils.py:209 in public function `lidar_scan_with_correspondences`: D413: Missing blank line after last section ('Returns')
+./rse_common_utils/sensor_utils.py:209 in public function `lidar_scan_with_correspondences`: D407: Missing dashed underline after section ('Returns')
+./rse_common_utils/sensor_utils.py:209 in public function `lidar_scan_with_correspondences`: D406: Section name should end with a newline ('Returns', not 'Returns:')
+./rse_common_utils/sensor_utils.py:274 in public function `transform_to_global`: D413: Missing blank line after last section ('Returns')
+./rse_common_utils/sensor_utils.py:274 in public function `transform_to_global`: D407: Missing dashed underline after section ('Returns')
+./rse_common_utils/sensor_utils.py:274 in public function `transform_to_global`: D406: Section name should end with a newline ('Returns', not 'Returns:')
+./rse_common_utils/sensor_utils.py:310 in public function `predict_range`: D200: One-line docstring should fit on one line with quotes (found 3)
+./rse_common_utils/sensor_utils.py:322 in public function `log_odds`: D400: First line should end with a period (not ':')
+./rse_common_utils/sensor_utils.py:322 in public function `log_odds`: D415: First line should end with a period, question mark, or exclamation point (not ':')
+checking ./rse_common_utils/visualization.py
+./rse_common_utils/visualization.py:125 in public method `set_particles`: D205: 1 blank line required between summary line and description (found 0)
+./rse_common_utils/visualization.py:125 in public method `set_particles`: D400: First line should end with a period (not ']')
+./rse_common_utils/visualization.py:125 in public method `set_particles`: D415: First line should end with a period, question mark, or exclamation point (not ']')
+checking ./rse_common_utils/visualization_3D.py
+checking ./setup.py
+checking ./test/test_copyright.py
+checking ./test/test_flake8.py
+checking ./test/test_pep257.py
+checking test/test_copyright.py
+checking test/test_flake8.py
+checking test/test_pep257.py
+15 errors
+--- generated xml file: /home/jjy/ros2_ws/build/rse_common_utils/pytest.xml ----
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 186 code styl...
+FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...
+=================== 2 failed, 1 skipped, 2 warnings in 0.22s ===================

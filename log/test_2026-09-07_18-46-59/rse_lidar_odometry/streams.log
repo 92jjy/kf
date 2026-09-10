@@ -1,0 +1,320 @@
+[0.359s] Invoking command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_lidar_odometry': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_map_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_lidar_odometry/pytest.xml --junit-prefix=rse_lidar_odometry -o cache_dir=/home/jjy/ros2_ws/build/rse_lidar_odometry/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest
+[0.609s] ============================= test session starts ==============================
+[0.609s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.609s] cachedir: /home/jjy/ros2_ws/build/rse_lidar_odometry/.pytest_cache
+[0.609s] rootdir: /home/jjy/ros2_ws/src/rse_prob_robotics/rse_lidar_odometry
+[0.609s] plugins: ament-lint-0.12.14, launch-testing-1.0.13, ament-pep257-0.12.14, ament-copyright-0.12.14, launch-testing-ros-0.19.13, ament-xmllint-0.12.14, ament-flake8-0.12.14, cov-3.0.0, colcon-core-0.20.1
+[0.609s] collected 3 items
+[0.610s] 
+[0.612s] test/test_copyright.py s                                                 [ 33%]
+[0.892s] test/test_flake8.py F                                                    [ 66%]
+[0.892s] test/test_pep257.py F                                                    [100%]
+[0.892s] 
+[0.892s] =================================== FAILURES ===================================
+[0.892s] _________________________________ test_flake8 __________________________________
+[0.892s] test/test_flake8.py:23: in test_flake8
+[0.892s]     assert rc == 0, \
+[0.892s] E   AssertionError: Found 43 code style errors / warnings:
+[0.892s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:5:1: F401 '.conversions.read_points' imported but unused
+[0.892s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:13:1: F401 'rse_common_utils.sensor_utils.rotate_pose2D' imported but unused
+[0.892s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:15:1: E302 expected 2 blank lines, found 1
+[0.892s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:29:20: E261 at least two spaces before inline comment
+[0.892s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:29:21: E262 inline comment should start with '# '
+[0.892s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:34:9: E303 too many blank lines (2)
+[0.892s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:37:1: W293 blank line contains whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:48:1: W293 blank line contains whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:49:5: E303 too many blank lines (2)
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:52:1: W293 blank line contains whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:55:1: W293 blank line contains whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:57:1: W293 blank line contains whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:58:28: E203 whitespace before ','
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:59:9: E265 block comment should start with '# '
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:83:47: W291 trailing whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:85:48: E261 at least two spaces before inline comment
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:88:43: W291 trailing whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:92:100: E501 line too long (101 > 99 characters)
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:95:13: E117 over-indented
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:110:1: W293 blank line contains whitespace
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:114:100: E501 line too long (110 > 99 characters)
+[0.893s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:130:1: W293 blank line contains whitespace
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:154:57: E128 continuation line under-indented for visual indent
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:157:1: W293 blank line contains whitespace
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:158:5: E303 too many blank lines (2)
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:163:21: W291 trailing whitespace
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:164:1: W293 blank line contains whitespace
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:172:1: W293 blank line contains whitespace
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:173:1: E302 expected 2 blank lines, found 1
+[0.894s] E     ./rse_lidar_odometry/laser_scan_odometry_node.py:183:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.894s] E     ./rse_lidar_odometry/conversions.py:8:28: E221 multiple spaces before operator
+[0.894s] E     ./rse_lidar_odometry/conversions.py:9:29: E221 multiple spaces before operator
+[0.894s] E     ./rse_lidar_odometry/conversions.py:10:29: E221 multiple spaces before operator
+[0.894s] E     ./rse_lidar_odometry/conversions.py:11:30: E221 multiple spaces before operator
+[0.894s] E     ./rse_lidar_odometry/conversions.py:12:29: E221 multiple spaces before operator
+[0.894s] E     ./rse_lidar_odometry/conversions.py:13:30: E221 multiple spaces before operator
+[0.894s] E     ./rse_lidar_odometry/conversions.py:17:1: E302 expected 2 blank lines, found 1
+[0.894s] E     ./rse_lidar_odometry/conversions.py:17:100: E501 line too long (108 > 99 characters)
+[0.895s] E     ./rse_lidar_odometry/conversions.py:26:100: E501 line too long (105 > 99 characters)
+[0.895s] E     ./rse_lidar_odometry/conversions.py:33:100: E501 line too long (138 > 99 characters)
+[0.895s] E     ./rse_lidar_odometry/conversions.py:83:100: E501 line too long (117 > 99 characters)
+[0.895s] E     ./rse_lidar_odometry/conversions.py:91:16: E221 multiple spaces before operator
+[0.895s] E     ./rse_lidar_odometry/conversions.py:94:15: W292 no newline at end of file
+[0.895s] E   assert 1 == 0
+[0.895s] ----------------------------- Captured stdout call -----------------------------
+[0.895s] 
+[0.895s] ./rse_lidar_odometry/laser_scan_odometry_node.py:5:1: F401 '.conversions.read_points' imported but unused
+[0.895s] from .conversions import read_points
+[0.895s] ^
+[0.895s] 
+[0.895s] ./rse_lidar_odometry/laser_scan_odometry_node.py:13:1: F401 'rse_common_utils.sensor_utils.rotate_pose2D' imported but unused
+[0.895s] from rse_common_utils.sensor_utils import odom_to_pose2D, get_normalized_pose2D, rotate_pose2D
+[0.895s] ^
+[0.895s] 
+[0.896s] ./rse_lidar_odometry/laser_scan_odometry_node.py:15:1: E302 expected 2 blank lines, found 1
+[0.896s] class LaserScanOdometry:
+[0.896s] ^
+[0.896s] 
+[0.896s] ./rse_lidar_odometry/laser_scan_odometry_node.py:29:20: E261 at least two spaces before inline comment
+[0.896s]             'odom', #'wheel_odom',  # Ground Truth
+[0.896s]                    ^
+[0.896s] 
+[0.896s] ./rse_lidar_odometry/laser_scan_odometry_node.py:29:21: E262 inline comment should start with '# '
+[0.896s]             'odom', #'wheel_odom',  # Ground Truth
+[0.896s]                     ^
+[0.896s] 
+[0.896s] ./rse_lidar_odometry/laser_scan_odometry_node.py:34:9: E303 too many blank lines (2)
+[0.896s]         self.ls_odom_msg = Odometry()
+[0.896s]         ^
+[0.897s] 
+[0.897s] ./rse_lidar_odometry/laser_scan_odometry_node.py:37:1: W293 blank line contains whitespace
+[0.897s]         
+[0.897s] ^
+[0.897s] 
+[0.897s] ./rse_lidar_odometry/laser_scan_odometry_node.py:48:1: W293 blank line contains whitespace
+[0.897s]         
+[0.897s] ^
+[0.897s] 
+[0.897s] ./rse_lidar_odometry/laser_scan_odometry_node.py:49:5: E303 too many blank lines (2)
+[0.897s]     def listener_callback(self, msg):
+[0.897s]     ^
+[0.897s] 
+[0.897s] ./rse_lidar_odometry/laser_scan_odometry_node.py:52:1: W293 blank line contains whitespace
+[0.897s]         
+[0.897s] ^
+[0.898s] 
+[0.898s] ./rse_lidar_odometry/laser_scan_odometry_node.py:55:1: W293 blank line contains whitespace
+[0.898s]               
+[0.898s] ^
+[0.898s] 
+[0.898s] ./rse_lidar_odometry/laser_scan_odometry_node.py:57:1: W293 blank line contains whitespace
+[0.898s]         
+[0.898s] ^
+[0.898s] 
+[0.898s] ./rse_lidar_odometry/laser_scan_odometry_node.py:58:28: E203 whitespace before ','
+[0.898s]         self.transformation , inlier_rmse = self.perform_icp_ransac(self.prev_cloud, cloud)
+[0.898s]                            ^
+[0.898s] 
+[0.898s] ./rse_lidar_odometry/laser_scan_odometry_node.py:59:9: E265 block comment should start with '# '
+[0.898s]         #self.perform_icp_point_to_plane(self.prev_cloud, cloud)
+[0.898s]         ^
+[0.899s] 
+[0.899s] ./rse_lidar_odometry/laser_scan_odometry_node.py:83:47: W291 trailing whitespace
+[0.899s]             initial_pose = odom_to_pose2D(msg)  
+[0.899s]                                               ^
+[0.899s] 
+[0.899s] ./rse_lidar_odometry/laser_scan_odometry_node.py:85:48: E261 at least two spaces before inline comment
+[0.899s]             self.initial_gt_pose = initial_pose # rotate_pose2D(initial_pose, 70)
+[0.899s]                                                ^
+[0.899s] 
+[0.899s] ./rse_lidar_odometry/laser_scan_odometry_node.py:88:43: W291 trailing whitespace
+[0.899s]         current_pose = odom_to_pose2D(msg)  
+[0.899s]                                           ^
+[0.899s] 
+[0.899s] ./rse_lidar_odometry/laser_scan_odometry_node.py:92:100: E501 line too long (101 > 99 characters)
+[0.899s]         self.normalized_gt_pose = np.array(get_normalized_pose2D(self.initial_gt_pose, current_pose))
+[0.899s]                                                                                                    ^
+[0.900s] 
+[0.900s] ./rse_lidar_odometry/laser_scan_odometry_node.py:95:13: E117 over-indented
+[0.900s]             quat_x, quat_y, quat_z, quat_w = self.rotation_to_quaternion(np.transpose(R))
+[0.900s]             ^
+[0.900s] 
+[0.900s] ./rse_lidar_odometry/laser_scan_odometry_node.py:110:1: W293 blank line contains whitespace
+[0.900s]         
+[0.900s] ^
+[0.900s] 
+[0.900s] ./rse_lidar_odometry/laser_scan_odometry_node.py:114:100: E501 line too long (110 > 99 characters)
+[0.900s]         points = np.array([np.cos(angles)*msg.ranges, np.sin(angles)*msg.ranges, np.zeros(len(msg.ranges))]).T
+[0.900s]                                                                                                    ^
+[0.900s] 
+[0.900s] ./rse_lidar_odometry/laser_scan_odometry_node.py:130:1: W293 blank line contains whitespace
+[0.900s]     
+[0.900s] ^
+[0.901s] 
+[0.901s] ./rse_lidar_odometry/laser_scan_odometry_node.py:154:57: E128 continuation line under-indented for visual indent
+[0.901s]                                                         std_ratio=2.0)
+[0.901s]                                                         ^
+[0.901s] 
+[0.901s] ./rse_lidar_odometry/laser_scan_odometry_node.py:157:1: W293 blank line contains whitespace
+[0.901s]     
+[0.901s] ^
+[0.901s] 
+[0.901s] ./rse_lidar_odometry/laser_scan_odometry_node.py:158:5: E303 too many blank lines (2)
+[0.901s]     def rotation_to_euler(self, R):
+[0.901s]     ^
+[0.901s] 
+[0.901s] ./rse_lidar_odometry/laser_scan_odometry_node.py:163:21: W291 trailing whitespace
+[0.901s]         return euler   
+[0.901s]                     ^
+[0.902s] 
+[0.902s] ./rse_lidar_odometry/laser_scan_odometry_node.py:164:1: W293 blank line contains whitespace
+[0.902s]     
+[0.902s] ^
+[0.902s] 
+[0.902s] ./rse_lidar_odometry/laser_scan_odometry_node.py:172:1: W293 blank line contains whitespace
+[0.902s]     
+[0.902s] ^
+[0.902s] 
+[0.902s] ./rse_lidar_odometry/laser_scan_odometry_node.py:173:1: E302 expected 2 blank lines, found 1
+[0.902s] def main(args=None):
+[0.902s] ^
+[0.902s] 
+[0.902s] ./rse_lidar_odometry/laser_scan_odometry_node.py:183:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.902s] if __name__ == '__main__':
+[0.902s] ^
+[0.903s] 
+[0.903s] ./rse_lidar_odometry/conversions.py:8:28: E221 multiple spaces before operator
+[0.903s] _DATATYPES[PointField.INT8]    = ('b', 1)
+[0.903s]                            ^
+[0.903s] 
+[0.903s] ./rse_lidar_odometry/conversions.py:9:29: E221 multiple spaces before operator
+[0.903s] _DATATYPES[PointField.UINT8]   = ('B', 1)
+[0.903s]                             ^
+[0.903s] 
+[0.903s] ./rse_lidar_odometry/conversions.py:10:29: E221 multiple spaces before operator
+[0.903s] _DATATYPES[PointField.INT16]   = ('h', 2)
+[0.903s]                             ^
+[0.903s] 
+[0.903s] ./rse_lidar_odometry/conversions.py:11:30: E221 multiple spaces before operator
+[0.903s] _DATATYPES[PointField.UINT16]  = ('H', 2)
+[0.903s]                              ^
+[0.904s] 
+[0.904s] ./rse_lidar_odometry/conversions.py:12:29: E221 multiple spaces before operator
+[0.904s] _DATATYPES[PointField.INT32]   = ('i', 4)
+[0.904s]                             ^
+[0.904s] 
+[0.904s] ./rse_lidar_odometry/conversions.py:13:30: E221 multiple spaces before operator
+[0.904s] _DATATYPES[PointField.UINT32]  = ('I', 4)
+[0.904s]                              ^
+[0.904s] 
+[0.904s] ./rse_lidar_odometry/conversions.py:17:1: E302 expected 2 blank lines, found 1
+[0.904s] def read_points(cloud, field_names=None, skip_nans=False, uvs=[], x_range=None, y_range=None, z_range=None):
+[0.904s] ^
+[0.904s] 
+[0.904s] ./rse_lidar_odometry/conversions.py:17:100: E501 line too long (108 > 99 characters)
+[0.904s] def read_points(cloud, field_names=None, skip_nans=False, uvs=[], x_range=None, y_range=None, z_range=None):
+[0.904s]                                                                                                    ^
+[0.904s] 
+[0.905s] ./rse_lidar_odometry/conversions.py:26:100: E501 line too long (105 > 99 characters)
+[0.905s]     """
+[0.905s]     Read points from a L{sensor_msgs.PointCloud2} message.
+[0.905s]     @param cloud: The point cloud to read from.
+[0.905s]     @type  cloud: L{sensor_msgs.PointCloud2}
+[0.905s]     @param field_names: The names of fields to read. If None, read all fields. [default: None]
+[0.905s]     @type  field_names: iterable
+[0.905s]     @param skip_nans: If True, then don't return any point with a NaN value.
+[0.905s]     @type  skip_nans: bool [default: False]
+[0.905s]     @param uvs: If specified, then only return the points at the given coordinates. [default: empty list]
+[0.905s]     @type  uvs: iterable
+[0.905s]     @return: Generator which yields a list of values for each point.
+[0.905s]     @rtype:  generator
+[0.905s]     """
+[0.905s]        
+[0.905s]                                                           
+[0.906s]                                 ^
+[0.906s] 
+[0.906s] ./rse_lidar_odometry/conversions.py:33:100: E501 line too long (138 > 99 characters)
+[0.906s]     width, height, point_step, row_step, data, isnan = cloud.width, cloud.height, cloud.point_step, cloud.row_step, cloud.data, math.isnan
+[0.906s]                                                                                                    ^
+[0.906s] 
+[0.906s] ./rse_lidar_odometry/conversions.py:83:100: E501 line too long (117 > 99 characters)
+[0.906s]     for field in (f for f in sorted(fields, key=lambda f: f.offset) if field_names is None or f.name in field_names):
+[0.906s]                                                                                                    ^
+[0.906s] 
+[0.906s] ./rse_lidar_odometry/conversions.py:91:16: E221 multiple spaces before operator
+[0.906s]             fmt    += field.count * datatype_fmt
+[0.906s]                ^
+[0.906s] 
+[0.906s] ./rse_lidar_odometry/conversions.py:94:15: W292 no newline at end of file
+[0.906s]     return fmt              ^
+[0.906s] 
+[0.907s] 1     E117 over-indented
+[0.907s] 1     E128 continuation line under-indented for visual indent
+[0.907s] 1     E203 whitespace before ','
+[0.907s] 7     E221 multiple spaces before operator
+[0.907s] 2     E261 at least two spaces before inline comment
+[0.907s] 1     E262 inline comment should start with '# '
+[0.907s] 1     E265 block comment should start with '# '
+[0.907s] 3     E302 expected 2 blank lines, found 1
+[0.907s] 3     E303 too many blank lines (2)
+[0.907s] 1     E305 expected 2 blank lines after class or function definition, found 1
+[0.907s] 6     E501 line too long (108 > 99 characters)
+[0.907s] 2     F401 '.conversions.read_points' imported but unused
+[0.907s] 3     W291 trailing whitespace
+[0.907s] 1     W292 no newline at end of file
+[0.907s] 10    W293 blank line contains whitespace
+[0.907s] 
+[0.908s] 7 files checked
+[0.908s] 43 errors
+[0.908s] 
+[0.908s] 'E'-type errors: 27
+[0.908s] 'F'-type errors: 2
+[0.908s] 'W'-type errors: 14
+[0.908s] 
+[0.908s] Checked files:
+[0.908s] 
+[0.908s] * ./setup.py
+[0.908s] * ./rse_lidar_odometry/laser_scan_odometry_node.py
+[0.908s] * ./rse_lidar_odometry/conversions.py
+[0.908s] * ./rse_lidar_odometry/__init__.py
+[0.908s] * ./test/test_copyright.py
+[0.908s] * ./test/test_pep257.py
+[0.908s] =============================== warnings summary ===============================
+[0.909s] test/test_flake8.py::test_flake8
+[0.909s] test/test_flake8.py::test_flake8
+[0.909s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[0.909s] 
+[0.909s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[0.909s] * ./test/test_flake8.py
+[0.909s] ----------------------------- Captured stderr call -----------------------------
+[0.909s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.909s] _________________________________ test_pep257 __________________________________
+[0.909s] test/test_pep257.py:23: in test_pep257
+[0.909s]     assert rc == 0, 'Found code style errors / warnings'
+[0.909s] E   AssertionError: Found code style errors / warnings
+[0.909s] E   assert 1 == 0
+[0.909s] ----------------------------- Captured stdout call -----------------------------
+[0.909s] checking ./rse_lidar_odometry/__init__.py
+[0.909s] checking ./rse_lidar_odometry/conversions.py
+[0.910s] ./rse_lidar_odometry/conversions.py:18 in public function `read_points`: D205: 1 blank line required between summary line and description (found 0)
+[0.910s] checking ./rse_lidar_odometry/laser_scan_odometry_node.py
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:112 in public method `scan_to_pointcloud`: D210: No whitespaces allowed surrounding docstring text
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:112 in public method `scan_to_pointcloud`: D401: First line should be in imperative mood (perhaps 'Convert', not 'Converts')
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:159 in public method `rotation_to_euler`: D202: No blank lines allowed after function docstring (found 1)
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:159 in public method `rotation_to_euler`: D210: No whitespaces allowed surrounding docstring text
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:159 in public method `rotation_to_euler`: D401: First line should be in imperative mood (perhaps 'Convert', not 'Converts')
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:166 in public method `rotation_to_quaternion`: D202: No blank lines allowed after function docstring (found 1)
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:166 in public method `rotation_to_quaternion`: D210: No whitespaces allowed surrounding docstring text
+[0.910s] ./rse_lidar_odometry/laser_scan_odometry_node.py:166 in public method `rotation_to_quaternion`: D401: First line should be in imperative mood (perhaps 'Convert', not 'Converts')
+[0.910s] checking ./setup.py
+[0.910s] checking ./test/test_copyright.py
+[0.910s] checking ./test/test_flake8.py
+[0.910s] checking ./test/test_pep257.py
+[0.910s] checking test/test_copyright.py
+[0.910s] checking test/test_flake8.py
+[0.910s] checking test/test_pep257.py
+[0.911s] 9 errors
+[0.911s] -- generated xml file: /home/jjy/ros2_ws/build/rse_lidar_odometry/pytest.xml ---
+[0.911s] =========================== short test summary info ============================
+[0.911s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 43 code style...
+[0.911s] FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...
+[0.911s] =================== 2 failed, 1 skipped, 2 warnings in 0.17s ===================
+[0.911s] Invoked command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_lidar_odometry' returned '1': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:/home/jjy/ros2_ws/install/rse_sensor_models:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_map_models:/opt/ros/humble PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjy/ros2_ws/build/rse_lidar_odometry/pytest.xml --junit-prefix=rse_lidar_odometry -o cache_dir=/home/jjy/ros2_ws/build/rse_lidar_odometry/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjy/ros2_ws/build/rse_lidar_odometry:/home/jjy/ros2_ws/install/rse_lidar_odometry/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_common_utils:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_observation_models:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_motion_models:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_sensor_models:/home/jjy/ros2_ws/install/rse_sensor_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_occupancy_grid_mapping:/home/jjy/ros2_ws/install/rse_occupancy_grid_mapping/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_gaussian_filters:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_nonparametric_filters:/home/jjy/ros2_ws/install/rse_nonparametric_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/build/rse_map_models:/home/jjy/ros2_ws/install/rse_map_models/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest

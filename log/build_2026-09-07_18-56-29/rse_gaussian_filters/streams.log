@@ -1,0 +1,117 @@
+[0.434s] Invoking command in '/home/jjy/ros2_ws/build/rse_gaussian_filters': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/jjy/ros2_ws/build/rse_gaussian_filters/build
+[0.563s] running develop
+[0.653s] Removing /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse-gaussian-filters.egg-link (link to .)
+[0.668s] Invoked command in '/home/jjy/ros2_ws/build/rse_gaussian_filters' returned '0': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/jjy/ros2_ws/build/rse_gaussian_filters/build
+[0.669s] Invoking command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_gaussian_filters': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rse_gaussian_filters build --build-base /home/jjy/ros2_ws/build/rse_gaussian_filters/build install --record /home/jjy/ros2_ws/build/rse_gaussian_filters/install.log --single-version-externally-managed install_data --force
+[0.786s] running egg_info
+[0.786s] writing ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/PKG-INFO
+[0.786s] writing dependency_links to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/dependency_links.txt
+[0.786s] writing entry points to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/entry_points.txt
+[0.786s] writing requirements to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/requires.txt
+[0.786s] writing top-level names to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/top_level.txt
+[0.787s] reading manifest file '../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/SOURCES.txt'
+[0.787s] adding license file 'LICENSE'
+[0.788s] writing manifest file '../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/SOURCES.txt'
+[0.789s] running build
+[0.789s] running build_py
+[0.789s] creating /home/jjy/ros2_ws/build/rse_gaussian_filters/build
+[0.789s] creating /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib
+[0.789s] creating /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/ukf_7d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/ekf_7d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/ukf_3d_state_estimation_v2_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/einf_3d_state_estimation_v2_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/ekf_3d_state_estimation_v2_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/kf_3d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/ekf_3d_state_estimation_v1_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/kf_node.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.789s] copying rse_gaussian_filters/einf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] copying rse_gaussian_filters/einf_3d_state_estimation_v1_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] copying rse_gaussian_filters/__init__.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] copying rse_gaussian_filters/ukf_3d_state_estimation_v1_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] copying rse_gaussian_filters/inf_3d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] copying rse_gaussian_filters/einf_7d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] copying rse_gaussian_filters/ukf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] copying rse_gaussian_filters/ekf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters
+[0.790s] creating /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters
+[0.791s] copying rse_gaussian_filters/filters/inf.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters
+[0.791s] copying rse_gaussian_filters/filters/ekf.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters
+[0.791s] copying rse_gaussian_filters/filters/kf.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters
+[0.791s] copying rse_gaussian_filters/filters/einf.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters
+[0.791s] copying rse_gaussian_filters/filters/__init__.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters
+[0.791s] copying rse_gaussian_filters/filters/ukf.py -> /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters
+[0.791s] running install
+[0.792s] running install_lib
+[0.792s] creating /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ukf_7d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ekf_7d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ukf_3d_state_estimation_v2_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/einf_3d_state_estimation_v2_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ekf_3d_state_estimation_v2_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/kf_3d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ekf_3d_state_estimation_v1_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.792s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/kf_node.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/einf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/einf_3d_state_estimation_v1_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] creating /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters/inf.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters/ekf.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters/kf.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters/einf.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters/__init__.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/filters/ukf.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/__init__.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ukf_3d_state_estimation_v1_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/inf_3d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/einf_7d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ukf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] copying /home/jjy/ros2_ws/build/rse_gaussian_filters/build/lib/rse_gaussian_filters/ekf_8d_state_estimation_no_cmd.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ukf_7d_state_estimation_no_cmd.py to ukf_7d_state_estimation_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ekf_7d_state_estimation_no_cmd.py to ekf_7d_state_estimation_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ukf_3d_state_estimation_v2_no_cmd.py to ukf_3d_state_estimation_v2_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/einf_3d_state_estimation_v2_no_cmd.py to einf_3d_state_estimation_v2_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ekf_3d_state_estimation_v2_no_cmd.py to ekf_3d_state_estimation_v2_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/kf_3d_state_estimation_no_cmd.py to kf_3d_state_estimation_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ekf_3d_state_estimation_v1_no_cmd.py to ekf_3d_state_estimation_v1_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/kf_node.py to kf_node.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/einf_8d_state_estimation_no_cmd.py to einf_8d_state_estimation_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/einf_3d_state_estimation_v1_no_cmd.py to einf_3d_state_estimation_v1_no_cmd.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters/inf.py to inf.cpython-310.pyc
+[0.793s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters/ekf.py to ekf.cpython-310.pyc
+[0.794s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters/kf.py to kf.cpython-310.pyc
+[0.794s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters/einf.py to einf.cpython-310.pyc
+[0.794s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters/__init__.py to __init__.cpython-310.pyc
+[0.794s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/filters/ukf.py to ukf.cpython-310.pyc
+[0.794s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/__init__.py to __init__.cpython-310.pyc
+[0.794s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ukf_3d_state_estimation_v1_no_cmd.py to ukf_3d_state_estimation_v1_no_cmd.cpython-310.pyc
+[0.794s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/inf_3d_state_estimation_no_cmd.py to inf_3d_state_estimation_no_cmd.cpython-310.pyc
+[0.795s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/einf_7d_state_estimation_no_cmd.py to einf_7d_state_estimation_no_cmd.cpython-310.pyc
+[0.795s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ukf_8d_state_estimation_no_cmd.py to ukf_8d_state_estimation_no_cmd.cpython-310.pyc
+[0.795s] byte-compiling /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters/ekf_8d_state_estimation_no_cmd.py to ekf_8d_state_estimation_no_cmd.cpython-310.pyc
+[0.795s] running install_data
+[0.795s] copying resource/rse_gaussian_filters -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/ament_index/resource_index/packages
+[0.795s] copying package.xml -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.795s] copying launch/rviz_launch.launch.py -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.795s] copying rviz/kalman.rviz -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.795s] copying rviz/kalman_robot_localization.rviz -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.795s] copying urdf/shl_robot.urdf -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.795s] copying urdf/zed2.stl -> /home/jjy/ros2_ws/install/rse_gaussian_filters/share/rse_gaussian_filters
+[0.795s] running install_egg_info
+[0.796s] Copying ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters-0.0.0-py3.10.egg-info
+[0.797s] running install_scripts
+[0.808s] Installing einf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing einf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing einf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing einf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ekf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ekf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ekf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ekf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing inf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing kf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ukf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ukf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ukf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.808s] Installing ukf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+[0.809s] writing list of installed files to '/home/jjy/ros2_ws/build/rse_gaussian_filters/install.log'
+[0.821s] Invoked command in '/home/jjy/ros2_ws/src/rse_prob_robotics/rse_gaussian_filters' returned '0': AMENT_PREFIX_PATH=/home/jjy/ros2_ws/install/rse_common_utils:/home/jjy/ros2_ws/install/rse_observation_models:/home/jjy/ros2_ws/install/rse_motion_models:${AMENT_PREFIX_PATH} PYTHONPATH=/home/jjy/ros2_ws/build/rse_gaussian_filters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_common_utils/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_observation_models/lib/python3.10/site-packages:/home/jjy/ros2_ws/install/rse_motion_models/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rse_gaussian_filters build --build-base /home/jjy/ros2_ws/build/rse_gaussian_filters/build install --record /home/jjy/ros2_ws/build/rse_gaussian_filters/install.log --single-version-externally-managed install_data --force

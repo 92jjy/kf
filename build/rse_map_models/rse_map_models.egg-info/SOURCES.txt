@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../../build/rse_map_models/rse_map_models.egg-info/PKG-INFO
+../../../build/rse_map_models/rse_map_models.egg-info/SOURCES.txt
+../../../build/rse_map_models/rse_map_models.egg-info/dependency_links.txt
+../../../build/rse_map_models/rse_map_models.egg-info/entry_points.txt
+../../../build/rse_map_models/rse_map_models.egg-info/requires.txt
+../../../build/rse_map_models/rse_map_models.egg-info/top_level.txt
+../../../build/rse_map_models/rse_map_models.egg-info/zip-safe
+resource/rse_map_models
+rse_map_models/__init__.py
+rse_map_models/grid_map.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

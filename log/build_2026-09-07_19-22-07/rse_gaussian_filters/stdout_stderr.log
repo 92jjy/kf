@@ -1,0 +1,33 @@
+running egg_info
+writing ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/PKG-INFO
+writing dependency_links to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/dependency_links.txt
+writing entry points to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/entry_points.txt
+writing requirements to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/requires.txt
+writing top-level names to ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/top_level.txt
+reading manifest file '../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/rse_gaussian_filters/rse_gaussian_filters.egg-info to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/python3.10/site-packages/rse_gaussian_filters-0.0.0-py3.10.egg-info
+running install_scripts
+Installing einf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing einf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing einf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing einf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ekf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing inf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing kf_estimation_3d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_3d_v1 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_3d_v2 script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_7d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+Installing ukf_estimation_8d script to /home/jjy/ros2_ws/install/rse_gaussian_filters/lib/rse_gaussian_filters
+writing list of installed files to '/home/jjy/ros2_ws/build/rse_gaussian_filters/install.log'
