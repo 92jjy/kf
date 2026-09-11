@@ -1,9 +1,0 @@
-source;share/rse_gaussian_filters/hook/pythonpath.ps1
-source;share/rse_gaussian_filters/hook/pythonpath.dsv
-source;share/rse_gaussian_filters/hook/pythonpath.sh
-source;share/rse_gaussian_filters/hook/ament_prefix_path.ps1
-source;share/rse_gaussian_filters/hook/ament_prefix_path.dsv
-source;share/rse_gaussian_filters/hook/ament_prefix_path.sh
-source;../../build/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath_develop.ps1
-source;../../build/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath_develop.dsv
-source;../../build/rse_gaussian_filters/share/rse_gaussian_filters/hook/pythonpath_develop.sh

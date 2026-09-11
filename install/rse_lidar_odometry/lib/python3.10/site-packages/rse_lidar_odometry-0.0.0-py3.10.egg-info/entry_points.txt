@@ -1,3 +1,0 @@
-[console_scripts]
-laser_scan_odometry = rse_lidar_odometry.laser_scan_odometry_node:main
-
